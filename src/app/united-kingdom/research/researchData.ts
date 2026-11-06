@@ -53,6 +53,325 @@ export interface researchPostData {
 
 export const researchData: Record<string, researchPostData> = {
 
+  'uk-office-space-investment-outlook-2026': {
+    title: 'UK Office Space Investment Outlook 2026: Where Capital Can Still Find Income as Prices Reset',
+    excerpt: 'UK office investment is no longer one market but two. This research note examines Bank Rate, prime-versus-secondary pricing and occupier supply, then introduces the Murivest Capital Allocation Matrix for comparing office assets across London and the regional cities.',
+    author: getAuthor('investment'),
+    category: 'Investment',
+    image: '/research-images/uk-office-space-investment-outlook-2026.png',
+    date: '2026-10-11',
+    readTime: '17 min read',
+    featured: true,
+    content: `
+<article>
+  <h1>UK Office Space Investment Outlook 2026: Where Capital Can Still Find Income as Prices Reset</h1>
+  <p class="author-date">By ${getAuthor('investment')} | 2026-10-11 | 17 min read</p>
+  <figure class="featured-image">
+    <img src="/research-images/uk-office-space-investment-outlook-2026.png" alt="Grade A office buildings in the City of London at dusk representing UK office space investment"  >
+  </figure>
+
+  <p><em>A research note for private investors, family offices and cross-border capital on why the UK office market should be underwritten building by building, and a framework for doing it.</em></p>
+
+  <h2>Executive Summary</h2>
+
+  <p>The UK office market in late 2026 is best understood as two markets sharing one label. Bank Rate has stayed at 3.75% through every Monetary Policy Committee decision since March, and a growing minority of members have voted to raise it. Investment volumes have been subdued, and capital values have drifted lower since the start of the year. Yet the picture beneath the average is uneven: Central London values have been broadly flat while outer-London and wider regional offices have repriced downward, and new regional supply is thin.</p>
+
+  <p>For investors, the implication is that "office" is not a sufficient investment thesis. This note introduces the Murivest Capital Allocation Matrix, a six-dimension tool for comparing assets, tests it against five economic scenarios, and closes with the questions to settle before committing capital. It is analysis, not advice, and every figure is attributed and dated.</p>
+
+  <h2>The Argument: The Sector Call Matters Less Than the Selection Call</h2>
+
+  <p>Commentary on UK offices tends to swing between two stories: structural decline driven by hybrid working, or a quality-led recovery. The evidence supports neither as a blanket statement. It supports a narrower and more useful claim: <strong>dispersion between assets has become the dominant source of risk and opportunity</strong>.</p>
+
+  <p>Consider what the published data show. CBRE's mid-year review reported that UK commercial real estate investment reached £23bn in the first half of 2026, down 8% on the same period of 2025, with the living and office sectors each up 7% year on year. The same review recorded values for Outer London and M25 offices falling 4.8% over the half, while Central London values held flat. Its UK Monthly Index also showed an all-property total return of 2.5% for the half, of which income contributed 2.8%, meaning capital values were a drag. (Sources: <a href="https://www.cbre.co.uk/insights/books/uk-real-estate-market-outlook-midyear-review-2026/capital-markets" target="_blank" rel="noopener noreferrer">CBRE UK Real Estate Market Outlook, Midyear 2026</a>.)</p>
+
+  <p>The most recent CBRE index release points the same way. UK commercial capital values fell 0.9% over the latest quarter as yields moved outward, rental values rose 0.5%, and office capital values fell 1.1% while Central London office values were flat and office rental values rose 0.7%. CBRE attributed the weakness to higher government bond yields and borrowing costs. (Source: <a href="https://www.cbre.co.uk/press-releases/uk-all-property-capital-values-declined-over-q3-2026-driven-by-outward-yield-movement" target="_blank" rel="noopener noreferrer">CBRE UK Monthly Index release</a>.)</p>
+
+  <blockquote>
+    <p><strong>Reading the data:</strong> Income is doing the work and capital is not. An office investor in this environment is being paid to wait, and the quality of the income decides whether waiting is rewarded.</p>
+  </blockquote>
+
+  <h2>Why Rates Still Dominate the Office Conversation</h2>
+
+  <p>The Bank of England's Monetary Policy Committee held Bank Rate at 3.75% in March (unanimously), April (8 to 1), June (7 to 2) and July 2026 (6 to 3), with the dissenting members each preferring a rise to 4%. The July Monetary Policy Report said the path of Bank Rate would depend on how higher energy prices feed through to inflation. (Sources: <a href="https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026" target="_blank" rel="noopener noreferrer">March</a>, <a href="https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026" target="_blank" rel="noopener noreferrer">April</a>, <a href="https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026" target="_blank" rel="noopener noreferrer">June</a> and <a href="https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026" target="_blank" rel="noopener noreferrer">July 2026</a> Bank of England summaries.) Secondary reporting indicates a further 6 to 3 hold on 17 September, with the next decision due on 5 November 2026.</p>
+
+  <p>For property, the relevant point is not the policy rate itself but what it signals for borrowing costs and required returns. When a building's initial yield is close to the cost of debt, leverage stops adding return. That arithmetic is shown in the worked example below, and it explains why liquidity has concentrated in assets with the most dependable income.</p>
+
+  <h2>Two Markets: Where the Occupier Evidence Diverges From the Investment Evidence</h2>
+
+  <p>Savills observed in its early-2026 commentary that the occupational market has been more resilient than investment activity suggests, particularly in the regional cities, where it recorded no speculative new-build starts across the Big Six in 2026 and a 25 basis point inward move in the prime regional office yield to 6.50% in February. It also estimated preliminary first-quarter UK investment turnover at £9.8bn, 41% below the five-year average for a first quarter. (Source: <a href="https://www.savills.co.uk/research_articles/229130/390142-0" target="_blank" rel="noopener noreferrer">Savills, Market in Minutes: UK Commercial Investment</a>.)</p>
+
+  <p>Colliers counted the same period differently, putting first-quarter investment at £9.3bn, 16% below the first quarter of 2025, with offices accounting for 24% of transactions and office investment of £2.5bn, below the five-year average. (Source: <a href="https://www.colliers.com/en-gb/research/reif-q2-2026" target="_blank" rel="noopener noreferrer">Colliers UK Real Estate Investment Forecasts Q2 2026</a>.)</p>
+
+  <p>The two firms' totals differ because definitions, thresholds and reporting dates differ. That is not a flaw; it is a reminder that <strong>every market statistic has a methodology behind it</strong>, and a buyer should know which one before relying on a number. Likewise, Knight Frank's June 2026 yield guide reported an annualised total return of 6.33% for UK commercial property in April 2026. That figure is not comparable with CBRE's 2.5% for a six-month period, because one is annualised and the other is not. (Source: <a href="https://www.knightfrank.co.uk/site-assets/research/report-pdfs/yield-guide/kf-final-june-2026-prime-yield-guide.pdf" target="_blank" rel="noopener noreferrer">Knight Frank, UK Prime Yield Guide, June 2026</a>.)</p>
+
+  <h2>A Regulatory Variable Investors Cannot Ignore: Energy Efficiency</h2>
+
+  <p>On 18 June 2026 the government published an interim response on minimum energy efficiency standards for privately rented non-domestic buildings in England and Wales. It indicated that from 2031, buildings over 1,000 square metres would be expected to reach EPC B where cost-effective, that smaller buildings would remain subject to the current EPC E minimum, and that the previously consulted interim milestone for 2027 would not be taken forward. Law-firm commentary notes that this is a confirmed policy intention rather than enacted law. (Source: <a href="https://www.gov.uk/government/consultations/non-domestic-private-rented-sector-minimum-energy-efficiency-standards-epc-b-implementation/outcome/minimum-energy-efficiency-standards-mees-in-the-non-domestic-private-rented-sector-interim-response" target="_blank" rel="noopener noreferrer">GOV.UK interim response</a>.)</p>
+
+  <p>For a buyer, this converts a vague "ESG" discussion into a line item. A 1,500 square metre office with a weak EPC carries a potential capital expenditure requirement that should be priced before purchase, not discovered after it.</p>
+
+  <h2>The Murivest Capital Allocation Matrix</h2>
+
+  <p>The Matrix is a Murivest-developed analytical tool for comparing office assets and locations on a like-for-like basis. It is not an externally validated model, it does not produce a predictive score, and it does not rank markets. It organises the questions a disciplined investor should answer, so that two different buildings can be compared on the same six dimensions.</p>
+
+  <figure>
+    <img src="/research-images/uk-office-space-investment-outlook-2026.png" alt="Diagram of the Murivest Capital Allocation Matrix showing six dimensions of office investment analysis"  >
+    <figcaption>The Murivest Capital Allocation Matrix: six dimensions for comparing UK office investments</figcaption>
+  </figure>
+
+  <ol>
+    <li><strong>Income resilience.</strong> How dependable is the contracted rent? Assess weighted average unexpired lease term (WAULT, the average remaining lease length weighted by rent), tenant covenant strength, break clauses, rent-free periods still to run and the number of tenants. Request the tenancy schedule, leases, tenant accounts and arrears ledger.</li>
+    <li><strong>Entry-price discipline.</strong> Is the price supported by evidence? Compare the net initial yield with comparable transactions, reversionary potential and the replacement cost of the building. Request the valuation, comparable evidence and a purchaser's-costs calculation.</li>
+    <li><strong>Financing sensitivity.</strong> How exposed is the investment to a change in borrowing costs? Test interest cover and loan-to-value under higher rates, and the refinancing risk at maturity. Request indicative debt terms and a lender-style sensitivity analysis.</li>
+    <li><strong>Structural demand.</strong> Will occupiers want this specific building in ten years? Look at location, transport, specification, amenity, energy performance and the depth of local occupier demand and new supply. Request local take-up data and availability for competing buildings.</li>
+    <li><strong>Regulatory and execution risk.</strong> What could delay, restrict or add cost? Consider EPC rating and MEES exposure, planning status, change-of-use potential, building safety, and refurbishment complexity. Request the EPC, planning history, surveys and any consultant reports.</li>
+    <li><strong>Exit liquidity.</strong> Who buys it from you, and at what discount if conditions are poor? Consider lot size, the likely buyer universe, lease length at exit and the cost of any works needed to be saleable. Request advice on the realistic buyer pool.</li>
+  </ol>
+
+  <h3>Using the Matrix: Two Hypothetical Assets</h3>
+
+  <p>The comparison below is hypothetical and illustrative. It uses qualitative judgements and deliberately avoids numerical scores, because a score would imply a precision the inputs do not support.</p>
+
+  <table>
+    <thead>
+      <tr><th>Dimension</th><th>Asset A (hypothetical): refurbished, multi-let Central London office</th><th>Asset B (hypothetical): single-let office outside the M25 core, four years unexpired</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Income resilience</td><td>Diversified across tenants; individual voids are survivable</td><td>One tenant decision determines all income</td></tr>
+      <tr><td>Entry-price discipline</td><td>Likely priced for quality; test the yield against comparables</td><td>Higher yield, but test whether it compensates for re-letting risk</td></tr>
+      <tr><td>Financing sensitivity</td><td>Lower initial yield makes debt cost the key test</td><td>Lenders may price a short lease cautiously</td></tr>
+      <tr><td>Structural demand</td><td>Supported by constrained supply of quality space</td><td>Depends on the specific town and building quality</td></tr>
+      <tr><td>Regulatory and execution risk</td><td>Check EPC and any recent works</td><td>Check EPC; capital expenditure may be needed to re-let</td></tr>
+      <tr><td>Exit liquidity</td><td>Broader buyer pool</td><td>Narrower pool, especially as the lease shortens</td></tr>
+    </tbody>
+  </table>
+
+  <p>Neither profile is automatically better. Asset B may be the stronger investment if it is priced for its risks and a credible plan exists to extend or re-let. The Matrix does not make the decision; it shows where the decision actually sits.</p>
+
+  <h2>Testing the Matrix Against Five Scenarios</h2>
+
+  <table>
+    <thead>
+      <tr><th>Scenario</th><th>Dimensions most affected</th><th>What to test before buying</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Financing costs remain elevated</td><td>Financing sensitivity, entry price, exit liquidity</td><td>Interest cover at a higher rate; whether the investment still works with less debt</td></tr>
+      <tr><td>Financing costs ease</td><td>Entry price, exit liquidity</td><td>Whether the purchase relies on falling yields to generate returns, which would be speculation rather than income</td></tr>
+      <tr><td>Rental growth weakens</td><td>Income resilience, structural demand</td><td>Whether contracted rent is above market, and what happens at the next review or expiry</td></tr>
+      <tr><td>Capital expenditure exceeds expectations</td><td>Regulatory and execution risk, financing</td><td>An independent cost plan, EPC upgrade route and contingency</td></tr>
+      <tr><td>Sterling moves against the investor's home currency</td><td>Entry price, exit, overall return</td><td>Returns in the investor's own currency, and the cost and availability of hedging</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Worked Example: Why the Headline Yield Is Not the Return</h2>
+
+  <p>The following is a hypothetical illustration with stated assumptions. It is not a forecast and does not describe any Murivest opportunity.</p>
+
+  <p><strong>Assumptions:</strong> purchase price £10,000,000; net rent £700,000 a year; Stamp Duty Land Tax calculated on the non-residential rates (nil to £150,000, 2% from £150,001 to £250,000, 5% above that, per <a href="https://www.gov.uk/stamp-duty-land-tax/nonresidential-and-mixed-rates" target="_blank" rel="noopener noreferrer">GOV.UK</a>); agent fee 1%; legal fee 0.5%; VAT at 20% on those fees.</p>
+
+  <ul>
+    <li>SDLT: £2,000 + 5% of £9,750,000 = <strong>£489,500</strong></li>
+    <li>Agent £100,000, legal £50,000, VAT on fees £30,000</li>
+    <li>Total purchaser's costs: <strong>£669,500</strong> (about 6.7%); all-in cost <strong>£10,669,500</strong></li>
+    <li>Net initial yield = £700,000 ÷ £10,669,500 = <strong>6.56%</strong>, not the 7.00% a quick calculation on price alone would suggest</li>
+  </ul>
+
+  <p><strong>The leverage test.</strong> Assume £5,000,000 of interest-only debt, leaving equity of £5,669,500. At an interest rate of 6.0%, interest is £300,000, cash after interest is £400,000 and the cash yield on equity is about <strong>7.06%</strong>, above the 6.56% unlevered yield, so debt adds income. At 7.0%, interest is £350,000, cash after interest is £350,000 and the cash yield on equity is about <strong>6.17%</strong>, below the unlevered yield, so debt now dilutes income. The example ignores vacancy, capital expenditure, tax and amortisation, all of which would reduce the figures further.</p>
+
+  <p>The lesson is simple. Where the net initial yield and the cost of debt are close, a small rate move changes the character of the investment.</p>
+
+  <h2>Location Analysis: London, Manchester and Birmingham Through the Matrix</h2>
+
+  <p>The Matrix applies to locations as well as buildings, but a location is only a starting point. The notes below describe the questions each market raises, not a ranking or a recommendation.</p>
+
+  <p><strong>London.</strong> The largest and deepest buyer pool supports exit liquidity, and Central London values have held flat in the data cited above. The key questions concern entry-price discipline, because quality is widely recognised, and the difference between Central London, fringe and outer-London stock. Murivest's <a href="https://murivest.com/markets/london" target="_blank" rel="noopener noreferrer">London market page</a> sets out its advisory coverage.</p>
+
+  <p><strong>Manchester.</strong> Regional offices combine thin new supply with a smaller buyer pool than London. The key questions are specification, EPC, and how deep local occupier demand is for the particular building. See Murivest's <a href="https://murivest.com/markets/manchester" target="_blank" rel="noopener noreferrer">Manchester market page</a>.</p>
+
+  <p><strong>Birmingham.</strong> Another large regional centre with its own occupier base. The same discipline applies: building quality, lease profile and exit. See Murivest's <a href="https://murivest.com/markets/birmingham" target="_blank" rel="noopener noreferrer">Birmingham market page</a>.</p>
+
+  <h2>Representative Opportunities on the Murivest UK Platform</h2>
+
+  <p>Murivest's <a href="https://murivest.com/united-kingdom">UK platform</a> shows representative opportunities across its coverage. These illustrate the type of mandate Murivest works on. They are not offers, and the availability, price and terms of any asset must be confirmed in writing under mandate and NDA before any decision is made.</p>
+
+  <h3>REPRESENTATIVE: London Office</h3>
+  <p><strong>Location: London</strong></p>
+  <p><strong>Indicative size shown: £100m, 10-year WAULT</strong></p>
+  <p><strong>Status shown: Private / Off-market</strong></p>
+
+  <figure>
+    <img src="/p3/uk-london-office-representative.webp" alt="London office building representing a Murivest UK office investment mandate"  >
+    <figcaption>London office: a representative mandate type shown on Murivest UK</figcaption>
+  </figure>
+
+  <p>Applying the Matrix, a 10-year WAULT is a strong starting point for income resilience, but the investor should still ask who the tenants are, whether any break clauses sit within that term, and what the all-in net initial yield is after purchaser's costs. "Off-market" means the asset is not broadly marketed; it does not mean it carries less risk, and the same due diligence applies.</p>
+
+  <h3>ALSO REPRESENTATIVE: Manchester Industrial and Logistics</h3>
+  <p><strong>Location: Manchester</strong></p>
+  <p><strong>Indicative size shown: £100m, 8% net initial yield</strong></p>
+  <p><strong>Status shown: Public opportunity</strong></p>
+
+  <h3>ALSO REPRESENTATIVE: Birmingham Retail</h3>
+  <p><strong>Location: Birmingham</strong></p>
+  <p><strong>Indicative size shown: £100m, 8% passing yield</strong></p>
+  <p><strong>Status shown: Public opportunity</strong></p>
+
+  <p>The two quoted yields are not the same measure. A net initial yield deducts purchaser's costs from the return, whereas a passing yield is typically calculated on the rent currently payable relative to price. A buyer comparing the two must put them on the same basis first.</p>
+
+  <h2>Ten Questions to Settle Before Pursuing an Office Acquisition</h2>
+
+  <ol>
+    <li>What is the net initial yield after full purchaser's costs, and on what rent?</li>
+    <li>How much of the rent is contracted beyond the first break, and who are the tenants?</li>
+    <li>Is the passing rent above or below current market rent?</li>
+    <li>What is the EPC rating, and what would an upgrade to EPC B cost for this building?</li>
+    <li>What is competing supply in this location, and is it Grade A or secondary?</li>
+    <li>How does the investment perform at interest rates one to two percentage points higher?</li>
+    <li>What capital expenditure is needed in the first five years, and who has costed it?</li>
+    <li>Who is the likely buyer at exit, and what lease length will they want?</li>
+    <li>What is the return in your home currency, and what would hedging cost?</li>
+    <li>Which parts of this analysis rely on information you have not independently verified?</li>
+  </ol>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>Is UK office space a good investment in 2026?</h3>
+  <p>It depends on the asset. Published data show Central London office values holding flat while outer-London and regional offices repriced lower in the first half of 2026, so building selection matters more than the sector label. This is general information, not advice.</p>
+
+  <h3>What is a good yield for a UK office investment?</h3>
+  <p>There is no single good yield. Savills reported a prime regional office yield of 6.50% in February 2026, but a yield must be judged against tenant strength, lease length, capital expenditure needs and financing costs. Always compare net initial yields on a like-for-like basis.</p>
+
+  <h3>How do interest rates affect UK office values?</h3>
+  <p>Higher borrowing costs and government bond yields tend to push property yields outward, which reduces capital values. CBRE linked recent capital value falls to exactly this effect.</p>
+
+  <h3>What does EPC B by 2031 mean for office owners?</h3>
+  <p>The government has indicated that privately rented non-domestic buildings over 1,000 square metres would be expected to reach EPC B from 2031 where cost-effective. This is a policy intention, not yet law, so buyers should price potential upgrade costs and monitor legislation.</p>
+
+  <h3>Can overseas investors buy UK office buildings?</h3>
+  <p>Yes, subject to legal, tax and compliance requirements, including registration of overseas entities with Companies House before buying. Our companion guide, <a href="/research/buy-commercial-property-uk-overseas-investors-guide">How to Buy Commercial Property in the UK</a>, covers these in detail.</p>
+
+  <h2>Methodology and Limitations</h2>
+
+  <p>This note was prepared on 11 October 2026 using publicly available sources, each cited where used. Market data are drawn from CBRE, Savills, Colliers and Knight Frank publications covering the periods stated; Bank of England decisions are taken from the Bank's published summaries; tax rates are taken from GOV.UK. Different research houses measure investment volumes and returns differently, so figures are not directly comparable across sources and some totals disagree. Forecasts are not provided, and no scenario in this note is a prediction.</p>
+
+  <p>The Murivest Capital Allocation Matrix is an internally developed analytical framework. It has not been independently validated, is not industry-standard and does not generate a statistically predictive score. Worked examples are hypothetical. Murivest was established in 2025 and does not claim a track record in this market beyond what it can evidence. Search-interest context for this topic was informed by a 24-hour Google Trends sample (11 to 12 May 2026) in which "office space" was the most searched of seven related terms; that sample is a directional topic signal only and is not used as market evidence.</p>
+
+  <h2>Sources and Further Reading</h2>
+
+  <ul>
+    <li><a href="https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026" target="_blank" rel="noopener noreferrer">Bank of England, Monetary Policy Summary and Minutes, July 2026</a></li>
+    <li><a href="https://www.bankofengland.co.uk/monetary-policy-report/2026/july-2026" target="_blank" rel="noopener noreferrer">Bank of England, Monetary Policy Report, July 2026</a></li>
+    <li><a href="https://www.cbre.co.uk/insights/books/uk-real-estate-market-outlook-midyear-review-2026/capital-markets" target="_blank" rel="noopener noreferrer">CBRE, UK Real Estate Market Outlook: Midyear Review 2026</a></li>
+    <li><a href="https://www.cbre.co.uk/press-releases/uk-all-property-capital-values-declined-over-q3-2026-driven-by-outward-yield-movement" target="_blank" rel="noopener noreferrer">CBRE, UK Monthly Index release</a></li>
+    <li><a href="https://www.savills.co.uk/research_articles/229130/390142-0" target="_blank" rel="noopener noreferrer">Savills, Market in Minutes: UK Commercial Investment</a></li>
+    <li><a href="https://www.colliers.com/en-gb/research/reif-q2-2026" target="_blank" rel="noopener noreferrer">Colliers, UK Real Estate Investment Forecasts Q2 2026</a></li>
+    <li><a href="https://www.knightfrank.co.uk/site-assets/research/report-pdfs/yield-guide/kf-final-june-2026-prime-yield-guide.pdf" target="_blank" rel="noopener noreferrer">Knight Frank, UK Prime Yield Guide, June 2026</a></li>
+    <li><a href="https://www.gov.uk/stamp-duty-land-tax/nonresidential-and-mixed-rates" target="_blank" rel="noopener noreferrer">GOV.UK, SDLT rates for non-residential and mixed land and property</a></li>
+    <li><a href="https://www.gov.uk/government/consultations/non-domestic-private-rented-sector-minimum-energy-efficiency-standards-epc-b-implementation/outcome/minimum-energy-efficiency-standards-mees-in-the-non-domestic-private-rented-sector-interim-response" target="_blank" rel="noopener noreferrer">GOV.UK, MEES in the non-domestic private rented sector: interim response (June 2026)</a></li>
+  </ul>
+
+  <h2>Discuss a UK Office Acquisition Requirement</h2>
+
+  <p>If you are assessing UK office investments and want to test an opportunity against the Matrix, you can review Murivest's coverage on the <a href="https://murivest.com/united-kingdom">UK commercial real estate hub</a> or <a href="https://murivest.com/united-kingdom/contact">contact the Murivest private office</a> to discuss an acquisition requirement. Engagements are mandate-based and subject to KYC and AML verification. There is no obligation to proceed.</p>
+
+  <p>Regards,</p>
+
+  <p><strong>Murivest Research Desk</strong><br>
+  Murivest Group Ltd<br>
+  October 2026</p>
+
+  <p><strong>P.S.</strong> The most useful output of this note is the list of ten questions above. Take it to any office opportunity you are considering, whoever is offering it.</p>
+
+  <h2>Related Articles</h2>
+  <ul>
+    <li><a href="/research/buy-commercial-property-uk-overseas-investors-guide">How to Buy Commercial Property in the UK: A Seven-Gate Due-Diligence Framework for Overseas Investors</a></li>
+    <li><a href="/research/uk-flexible-office-serviced-office-rental-income-durability">UK Office Rental Income and Flexible Workspace: Assessing Income Durability Beyond Headline Yield</a></li>
+    <li><a href="https://murivest.com/united-kingdom">Murivest UK: Commercial Real Estate Investment and Capital Markets</a></li>
+  </ul>
+
+  <div class="disclaimer">
+    <p><em>Disclaimer: This article is for informational purposes only and does not constitute investment, legal, tax or financial advice. All commercial real estate acquisition decisions should be made with independent professional guidance. Murivest Group Ltd is an independent real estate advisory firm. We do not act as a licensed investment advisor and do not offer regulated financial products or collective investment schemes. We do not pool capital from multiple investors. All advisory engagements are mandate-based, subject to formal documentation, comprehensive KYC/AML verification, and explicit scope definition. Opportunities described as representative are illustrative of mandate types and are not offers. No investment decisions should be made based on information contained in our materials without independent verification, professional legal counsel, and comprehensive due diligence. Past advisory outcomes do not guarantee future results. All investments carry inherent risks, including potential capital loss.</em></p>
+  </div>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "UK Office Space Investment Outlook 2026: Where Capital Can Still Find Income as Prices Reset",
+  "description": "UK office investment is no longer one market but two. This research note examines Bank Rate, prime-versus-secondary pricing and occupier supply, then introduces the Murivest Capital Allocation Matrix.",
+  "author": {
+    "@type": "Person",
+    "name": "${getAuthor('investment')}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Murivest Group Ltd",
+    "url": "https://murivest.com"
+  },
+  "datePublished": "2026-10-11",
+  "dateModified": "2026-10-11",
+  "image": "/p3/uk-office-outlook-2026.webp",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://murivest.com/research/uk-office-space-investment-outlook-2026"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is UK office space a good investment in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the asset. Published data show Central London office values holding flat while outer-London and regional offices repriced lower in the first half of 2026, so building selection matters more than the sector label. This is general information, not advice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a good yield for a UK office investment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no single good yield. Savills reported a prime regional office yield of 6.50% in February 2026, but a yield must be judged against tenant strength, lease length, capital expenditure needs and financing costs. Always compare net initial yields on a like-for-like basis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do interest rates affect UK office values?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Higher borrowing costs and government bond yields tend to push property yields outward, which reduces capital values. CBRE linked recent UK commercial capital value falls to this effect."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does EPC B by 2031 mean for office owners?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The government has indicated that privately rented non-domestic buildings over 1,000 square metres would be expected to reach EPC B from 2031 where cost-effective. This is a policy intention, not yet law, so buyers should price potential upgrade costs and monitor legislation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can overseas investors buy UK office buildings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, subject to legal, tax and compliance requirements, including registration of overseas entities with Companies House before buying. Professional legal and tax advice is essential."
+      }
+    }
+  ]
+}
+</script>
+`
+},
+
+
+
   'the-crest-at-newquay-apart-hotel-investment-review': {
     title: 'The Crest at Newquay: Investment Case, Yield Arithmetic and Due-Diligence Questions for a UK Apart-Hotel',
     excerpt: 'A cash-purchase apart-hotel unit in Newquay is marketed with a projected net yield of up to 15% and no stamp duty. This research note tests the claims: what revenue the yield requires, how stamp duty classification works, the regulatory questions, and the seasonality risk.',
@@ -203,7 +522,7 @@ export const researchData: Record<string, researchPostData> = {
 
   <h2>Who Might Consider It, and Who Probably Should Not</h2>
 
-  <p>The profile that fits is an investor with cash available, comfortable with seasonal and variable income, wanting a managed asset in the leisure sector alongside other holdings, and willing to read the operator agreement in full. The profile that does not fit includes anyone who needs mortgage finance, who needs predictable monthly income, who has not taken legal and tax advice, or who would struggle if the unit earned materially less than projected. A non-UK investor should add sterling exposure and UK tax on income to the checklist. Our companion note for Nairobi-based investors, <a href="/research/kenyan-investors-uk-real-estate-ksh-3-5-million-cross-border">Kenyan Investors and UK Real Estate from KSh 3.5 Million</a>, sets out the currency and structure questions in detail.</p>
+  <p>The profile that fits is an investor with cash available, comfortable with seasonal and variable income, wanting a managed asset in the leisure sector alongside other holdings, and willing to read the operator agreement in full. The profile that does not fit includes anyone who needs mortgage finance, who needs predictable monthly income, who has not taken legal and tax advice, or who would struggle if the unit earned materially less than projected. A non-UK investor should add sterling exposure and UK tax on income to the checklist. Our companion note for Global investors, <a href="/research/kenyan-investors-uk-real-estate-ksh-3-5-million-cross-border">Kenyan Investors and UK Real Estate from KSh 3.5 Million</a>, sets out the currency and structure questions in detail.</p>
 
   <h2>The Reported Opportunity at a Glance</h2>
 
@@ -572,7 +891,7 @@ export const researchData: Record<string, researchPostData> = {
   "headline": "UK Property Investment Outlook 2026: Where Patient Capital Moves Next",
   "description": "UK property investment outlook 2026: the Murivest Capital Allocation Matrix assesses income resilience, entry discipline and exit liquidity across London, commuter and regional markets.",
   "author": { "@type": "Organization", "name": "Murivest Research Team" },
-  "publisher": { "@type": "Organization", "name": "Murivest Realty Group" },
+  "publisher": { "@type": "Organization", "name": "Murivest Group" },
   "datePublished": "2026-10-14",
   "dateModified": "2026-10-14",
   "image": "/p3/uk-outlook-2026.webp",
@@ -760,7 +1079,7 @@ export const researchData: Record<string, researchPostData> = {
   "headline": "How to Buy Property in the UK: The Seven-Gate Acquisition Test for Overseas Buyers",
   "description": "How to buy property in the UK as an overseas buyer: the Murivest Seven-Gate Acquisition Test covering legal title, tax, financing, AML compliance and a 30-day due diligence roadmap.",
   "author": { "@type": "Organization", "name": "Murivest Research Team" },
-  "publisher": { "@type": "Organization", "name": "Murivest Realty Group" },
+  "publisher": { "@type": "Organization", "name": "Murivest Group" },
   "datePublished": "2026-10-14",
   "dateModified": "2026-10-14",
   "image": "/p3/uk-due-diligence.webp",

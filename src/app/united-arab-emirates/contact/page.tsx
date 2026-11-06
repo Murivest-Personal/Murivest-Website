@@ -22,9 +22,9 @@ import InstitutionalContactForm from '@/app/united-arab-emirates/_components/Ins
 const PAGE_URL = 'https://murivest.com/united-arab-emirates/contact';
 
 const pageMeta = {
-  title: 'Contact Murivest UAE — Institutional Commercial Real Estate Advisory',
+  title: 'Contact Murivest UAE — Institutional commercial real estate services',
   description:
-    "Contact Murivest's UAE team for institutional commercial real estate advisory, investment opportunities and research access.",
+    "Contact Murivest's UAE team for institutional commercial real estate services, investment opportunities and research access.",
 };
 
 const faqs = [

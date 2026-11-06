@@ -4,9 +4,9 @@ import CTABanner from "../components/CTABanner";
 import { SITE } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Advisory — USA Commercial Real Estate Advisory | Murivest",
+  title: "Services — USA Commercial Real Estate Advisory | Murivest",
   description:
-    "Murivest provides commercial real estate advisory across acquisition, disposition, portfolio strategy, and valuation for institutional investors and private capital in the United States.",
+    "Murivest provides commercial real estate services across acquisition, disposition, portfolio strategy, and valuation for institutional investors and private capital in the United States.",
   alternates: { canonical: `https://${SITE.domain}/usa/advisory` },
 };
 
@@ -15,9 +15,9 @@ export default function AdvisoryPage() {
     <>
       <section className="bg-[#0F2E22] py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <Eyebrow className="text-gold-400">Advisory</Eyebrow>
+          <Eyebrow className="text-gold-400">Services</Eyebrow>
           <h1 className="mt-4 font-serif text-4xl font-semibold leading-tight text-white sm:text-5xl">
-            Commercial Real Estate Advisory
+            Commercial Real Estate Services
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[#C9A87C]">
             Murivest acts as an independent adviser across the commercial real
@@ -35,7 +35,7 @@ export default function AdvisoryPage() {
             className="group rounded-2xl border border-[#E8E6E1] bg-white p-8 transition-all hover:border-[#B8956B] hover:shadow-lg"
           >
             <h3 className="font-serif text-2xl font-semibold text-[#2C2C2C] group-hover:text-[#B8956B]">
-              Acquisition Advisory
+              Acquisition Services
             </h3>
             <p className="mt-3 text-[#8B8680]">
               End-to-end acquisition support — from mandate definition and
@@ -50,10 +50,10 @@ export default function AdvisoryPage() {
             className="group rounded-2xl border border-[#E8E6E1] bg-white p-8 transition-all hover:border-[#B8956B] hover:shadow-lg"
           >
             <h3 className="font-serif text-2xl font-semibold text-[#2C2C2C] group-hover:text-[#B8956B]">
-              Disposition Advisory
+              Disposition Services
             </h3>
             <p className="mt-3 text-[#8B8680]">
-              Strategic disposition advisory — positioning, buyer identification,
+              Strategic disposition services — positioning, buyer identification,
               marketing, and negotiation to maximize outcomes for sellers.
             </p>
             <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-[#B8956B]">
@@ -65,7 +65,7 @@ export default function AdvisoryPage() {
             className="group rounded-2xl border border-[#E8E6E1] bg-white p-8 transition-all hover:border-[#B8956B] hover:shadow-lg"
           >
             <h3 className="font-serif text-2xl font-semibold text-[#2C2C2C] group-hover:text-[#B8956B]">
-              Portfolio Advisory
+              Portfolio Services
             </h3>
             <p className="mt-3 text-[#8B8680]">
               Portfolio-level strategy — acquisition and disposition sequencing,

@@ -691,12 +691,12 @@ const SellProperty: React.FC = () => {
             <div className="w-8 h-[1px] bg-[#8B7355]" />
           </div>
           <h1 className="text-4xl md:text-5xl font-serif leading-[1.1] mb-4">Asset Divestment</h1>
-          <p className="text-[15px] text-[#5A5A5A] font-light">Institutional Capital Markets Advisory &middot; Murivest Realty</p>
+          <p className="text-[15px] text-[#5A5A5A] font-light">Institutional Capital Markets Advisory &middot; Murivest Group</p>
           <div className="mt-8 h-px bg-[#E5E2DC] max-w-md mx-auto" />
         </div>
 
         {/* Main Card */}
-        <div className="border border-[#E5E2DC] bg-white overflow-hidden">
+        <div id="form-section" className="border border-[#E5E2DC] bg-white overflow-hidden scroll-mt-6">
           <div className="border-b border-[#E5E2DC] p-8 md:p-12 bg-[#F8F7F4]">
             <ProgressBar currentStep={step} totalSteps={STEPS.length} />
           </div>
@@ -1166,7 +1166,7 @@ const SellProperty: React.FC = () => {
 
                   <div className="p-4 bg-white border border-[#E5E2DC]">
                     <p className="text-[12px] text-[#5A5A5A] font-light leading-relaxed">
-                      <span className="font-medium text-[#2C2C2C]">Disclaimer:</span> This submission does not constitute a formal listing agreement or advisory engagement. Murivest Realty's engagement is subject to internal qualification, execution of a formal Mandate Agreement, and mutual NDA. By submitting, you agree to Murivest's data handling and confidentiality policy. Contact:{' '}
+                      <span className="font-medium text-[#2C2C2C]">Disclaimer:</span> This submission does not constitute a formal listing agreement or advisory engagement. Murivest Group's engagement is subject to internal qualification, execution of a formal Mandate Agreement, and mutual NDA. By submitting, you agree to Murivest's data handling and confidentiality policy. Contact:{' '}
                       <a href="mailto:capital@murivest.co.ke" className="text-[#8B7355] hover:underline">capital@murivest.co.ke</a>
                     </p>
                   </div>
@@ -1184,16 +1184,51 @@ const SellProperty: React.FC = () => {
           {/* Navigation Footer */}
           {step < 7 && (
             <div className="border-t border-[#E5E2DC] px-8 md:px-12 py-6 flex items-center justify-between bg-[#F8F7F4]">
+
               {step > 1 ? (
-                <button type="button" onClick={() => setStep(s => s - 1)} className="flex items-center gap-2 text-[13px] text-[#5A5A5A] hover:text-[#2C2C2C] transition-colors font-light">
-                  <ChevronLeft className="w-4 h-4" strokeWidth={1} />Back
+                <button
+                  type="button"
+                  onClick={() => {
+                    setStep(s => s - 1);
+
+                    requestAnimationFrame(() => {
+                      document.getElementById('form-section')?.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                      });
+                    });
+                  }}
+                  className="flex items-center gap-2 text-[13px] text-[#5A5A5A] hover:text-[#2C2C2C] transition-colors font-light"
+                >
+                  <ChevronLeft className="w-4 h-4" strokeWidth={1} />
+                  Back
                 </button>
-              ) : <div />}
+              ) : (
+                <div />
+              )}
+
               <div className="flex items-center gap-4">
-                <span className="text-[11px] text-[#5A5A5A] tracking-wide">Step {step} of {STEPS.length}</span>
-                <button type="button" onClick={() => setStep(s => s + 1)} disabled={!canProceed()}
-                  className="flex items-center gap-2 bg-[#2C2C2C] text-[#F8F7F4] text-[12px] tracking-[0.15em] uppercase font-medium px-8 py-3 hover:bg-[#8B7355] transition-colors duration-500 disabled:opacity-40 disabled:cursor-not-allowed">
-                  Continue<ChevronRight className="w-4 h-4" strokeWidth={1} />
+                <span className="text-[11px] text-[#5A5A5A] tracking-wide">
+                  Step {step} of {STEPS.length}
+                </span>
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    setStep(s => s + 1);
+
+                    requestAnimationFrame(() => {
+                      document.getElementById('form-section')?.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                      });
+                    });
+                  }}
+                  disabled={!canProceed()}
+                  className="flex items-center gap-2 bg-[#2C2C2C] text-[#F8F7F4] text-[12px] tracking-[0.15em] uppercase font-medium px-8 py-3 hover:bg-[#8B7355] transition-colors duration-500 disabled:opacity-40 disabled:cursor-not-allowed"
+                >
+                  Continue
+                  <ChevronRight className="w-4 h-4" strokeWidth={1} />
                 </button>
               </div>
             </div>
@@ -1204,7 +1239,7 @@ const SellProperty: React.FC = () => {
         <div className="text-center mt-12 pb-8">
           <div className="h-px bg-[#E5E2DC] max-w-xs mx-auto mb-6" />
           <p className="text-[11px] text-[#5A5A5A] font-light tracking-wide">
-            &copy; 2026 Murivest Realty &middot; <a href="https://murivest.com" className="hover:text-[#8B7355] transition-colors">murivest.com</a>
+            &copy; 2026 Murivest Group &middot; <a href="https://murivest.com" className="hover:text-[#8B7355] transition-colors">murivest.com</a>
             {' &middot; '}<span className="text-[#8B7355]">Institutional Grade &middot; Confidential</span>
           </p>
         </div>

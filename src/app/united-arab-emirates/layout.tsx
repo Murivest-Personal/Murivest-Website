@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://murivest.com'),
 
   title: {
-    default: 'Murivest UAE | Institutional Commercial Real Estate Advisory',
+    default: 'Murivest UAE | Institutional commercial real estate services',
     template: '%s | Murivest UAE',
   },
 
   description:
-    'Murivest UAE delivers institutional‑grade commercial real estate advisory, investment sales, capital markets, and property intelligence across Dubai, Abu Dhabi and all seven emirates.',
+    'Murivest UAE delivers institutional‑grade commercial real estate services, investment sales, capital markets, and property intelligence across Dubai, Abu Dhabi and all seven emirates.',
 
   // Extended keyword cluster – highly local and intent‑matched for UAE
   keywords: [
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_AE',
     siteName: 'Murivest',
-    title: 'Murivest UAE | Institutional Commercial Real Estate Advisory',
+    title: 'Murivest UAE | Institutional commercial real estate services',
     description:
-      'Institutional commercial real estate advisory, investment opportunities and market intelligence across the United Arab Emirates.',
+      'Institutional commercial real estate services, investment opportunities and market intelligence across the United Arab Emirates.',
     images: [
       {
         url: '/united-arab-emirates/og-image.jpg',
@@ -61,9 +61,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@Murivest',             // replace with actual handle
     creator: '@Murivest',
-    title: 'Murivest UAE | Institutional Commercial Real Estate Advisory',
+    title: 'Murivest UAE | Institutional commercial real estate services',
     description:
-      'Institutional commercial real estate advisory and investment opportunities across the UAE.',
+      'Institutional commercial real estate services and investment opportunities across the UAE.',
     images: ['/united-arab-emirates/og-image.jpg'],
   },
 
@@ -164,7 +164,7 @@ const uaeOrganizationSchema = {
   ],
   foundingDate: '2015',            // adjust if known
   description:
-    'Murivest UAE provides institutional commercial real estate advisory, capital markets services, and property intelligence to investors, developers, and occupiers across the United Arab Emirates.',
+    'Murivest UAE provides institutional commercial real estate services, capital markets services, and property intelligence to investors, developers, and occupiers across the United Arab Emirates.',
 };
 
 // 2. LocalBusiness / RealEstateAgent – critical for Google Maps and local pack
@@ -219,9 +219,9 @@ const uaeWebPageSchema = {
   '@type': 'WebPage',
   '@id': 'https://murivest.com/united-arab-emirates/#webpage',
   url: 'https://murivest.com/united-arab-emirates',
-  name: 'Murivest UAE | Institutional Commercial Real Estate Advisory',
+  name: 'Murivest UAE | Institutional commercial real estate services',
   description:
-    'Institutional commercial real estate advisory, investment opportunities and market intelligence across the United Arab Emirates.',
+    'Institutional commercial real estate services, investment opportunities and market intelligence across the United Arab Emirates.',
   isPartOf: {
     '@type': 'WebSite',
     '@id': 'https://murivest.com/#website',

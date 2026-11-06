@@ -539,7 +539,7 @@ export default function MurivestatUW(): React.ReactElement {
       'Underwrite a commercial property acquisition and generate a non-binding Letter of Intent under Kenyan conditions of sale.',
     publisher: {
       '@type': 'Organization',
-      name: 'Murivest Realty Group',
+      name: 'Murivest Group',
       url: 'https://murivest.com',
     },
   };

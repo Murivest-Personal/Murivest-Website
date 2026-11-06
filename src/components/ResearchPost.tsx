@@ -98,7 +98,7 @@ const AUTHOR_PROFILES: Record<string, { role: string; bio: string; linkedin?: st
 
 const DEFAULT_AUTHOR = {
   role: 'Murivest Editorial',
-  bio: "Written by the Murivest team — analysts, advisors, and deal-doers based in Nairobi. We write from the field, not from a template.",
+  bio: "Written by the Murivest team — analysts, advisors, and deal-doers. We write from the field, not from a template.",
   email: ' capital@murivest.com',
 };
 

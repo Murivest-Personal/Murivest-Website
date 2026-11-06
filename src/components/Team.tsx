@@ -57,7 +57,7 @@ const Team = ({ members = [] }: TeamProps) => {
       id: '4',
       name: 'Julie Maina',
       title: 'Head of Marketing',
-      bio: 'MBA, BM. Former Marketing Director with deep network across East African commercial real estate markets.',
+      bio: 'MBA, BM. Former Marketing Director with deep network Global commercial real estate markets.',
       image: '/p2/profile-placeholder.webp',
       linkedin: '#',
       email: 'julie@murivest.com'
@@ -66,7 +66,7 @@ const Team = ({ members = [] }: TeamProps) => {
       id: '5',
       name: 'Sarah Wanjiku',
       title: 'Head of Origination',
-      bio: 'MBA, INSEAD. Former investment banker with deep network across East African commercial real estate markets.',
+      bio: 'MBA, INSEAD. Former investment banker with deep network Global commercial real estate markets.',
       image: '/p2/profile-placeholder.webp',
       linkedin: '#',
       email: 'sarah@murivest.com'

@@ -35,7 +35,7 @@ function generateLocalBusinessSchema() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     '@id': 'https://murivest.com/united-arab-emirates/dubai/business-bay#local-business',
-    name: 'Murivest Dubai – Business Bay Commercial Real Estate Advisory',
+    name: 'Murivest Dubai – Business Bay commercial real estate services',
     description:
       'Leading institutional commercial real estate advisor for Business Bay, Dubai. Specializing in Grade A office space, mixed-use developments, and investment opportunities across Dubai\'s largest commercial district.',
     url: 'https://murivest.com/united-arab-emirates/dubai/business-bay',
@@ -972,7 +972,7 @@ export default function BusinessBayPage() {
       <section className="py-20 md:py-32 lg:py-40 px-6 md:px-12 lg:px-20 bg-[#1B4332] text-white">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-[10px] uppercase tracking-[0.25em] text-white/60 mb-4">
-            Commercial Real Estate Advisory
+            commercial real estate services
           </p>
           <h2 className="font-display text-[34px] md:text-[48px] lg:text-[56px] leading-[1.05] mb-4 md:mb-6">
             Invest in Business Bay with Confidence

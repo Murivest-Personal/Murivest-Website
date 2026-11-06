@@ -5,7 +5,7 @@ import { PROPERTY_TYPES, SITE } from "../../lib/site";
 const type = PROPERTY_TYPES.find((p) => p.slug === "multifamily")!;
 
 export const metadata: Metadata = {
-  title: "Multifamily — USA Commercial Real Estate Advisory",
+  title: "Multifamily — USA commercial real estate services",
   description:
     "Murivest Group's U.S. multifamily real estate practice — investment sales for garden-style, mid-rise, and high-rise rental communities in supply-constrained and growth metros.",
   alternates: { canonical: `https://${SITE.domain}/usa/commercial-real-estate/multifamily` },

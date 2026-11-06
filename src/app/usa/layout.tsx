@@ -6,11 +6,11 @@ import { SITE, PROPERTY_TYPES } from "./lib/site";
 export const metadata: Metadata = {
   metadataBase: new URL("https://murivest.com"),
   title: {
-    default: "Murivest USA | Institutional Commercial Real Estate Advisory",
+    default: "Murivest USA | Institutional commercial real estate services",
     template: "%s | Murivest USA",
   },
   description:
-    "Murivest USA delivers institutional-grade commercial real estate advisory, investment sales, capital markets, and property intelligence across United States office, industrial, logistics, multifamily, retail, and data center markets.",
+    "Murivest USA delivers institutional-grade commercial real estate services, investment sales, capital markets, and property intelligence across United States office, industrial, logistics, multifamily, retail, and data center markets.",
   keywords: [
     "commercial real estate USA",
     "institutional real estate United States",
@@ -37,15 +37,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Murivest",
-    title: "Murivest USA | Institutional Commercial Real Estate Advisory",
+    title: "Murivest USA | Institutional commercial real estate services",
     description:
-      "Institutional commercial real estate advisory, investment opportunities and market intelligence across the United States.",
+      "Institutional commercial real estate services, investment opportunities and market intelligence across the United States.",
     images: [
       {
         url: "/usa/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Murivest USA – Commercial Real Estate Advisory",
+        alt: "Murivest USA – commercial real estate services",
       },
     ],
     countryName: "United States",
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Murivest",
     creator: "@Murivest",
-    title: "Murivest USA | Institutional Commercial Real Estate Advisory",
+    title: "Murivest USA | Institutional commercial real estate services",
     description:
-      "Institutional commercial real estate advisory and investment opportunities across the United States.",
+      "Institutional commercial real estate services and investment opportunities across the United States.",
     images: ["/usa/og-image.jpg"],
   },
   robots: {
@@ -129,7 +129,7 @@ const usaOrganizationSchema = {
     "Market Intelligence",
   ],
   description:
-    "Murivest USA provides institutional commercial real estate advisory, capital markets services, and property intelligence to investors, developers, and occupiers across the United States.",
+    "Murivest USA provides institutional commercial real estate services, capital markets services, and property intelligence to investors, developers, and occupiers across the United States.",
 };
 
 const usaLocalBusinessSchema = {
@@ -169,9 +169,9 @@ const usaWebPageSchema = {
   "@type": "WebPage",
   "@id": "https://murivest.com/usa/#webpage",
   url: "https://murivest.com/usa",
-  name: "Murivest USA | Institutional Commercial Real Estate Advisory",
+  name: "Murivest USA | Institutional commercial real estate services",
   description:
-    "Institutional commercial real estate advisory, investment opportunities and market intelligence across the United States.",
+    "Institutional commercial real estate services, investment opportunities and market intelligence across the United States.",
   isPartOf: {
     "@type": "WebSite",
     "@id": "https://murivest.com/#website",

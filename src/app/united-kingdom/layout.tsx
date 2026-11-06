@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://murivest.com'),
 
   title: {
-    default: 'Murivest UK | Institutional Commercial Real Estate Advisory & Capital Markets',
+    default: 'Murivest UK | Institutional commercial real estate services & Capital Markets',
     template: '%s | Murivest UK',
   },
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
   // Precision keyword cluster – institutional language
   keywords: [
-    'UK commercial real estate advisory',
+    'UK commercial real estate services',
     'institutional property acquisition UK',
     'prime London office investment',
     'UK commercial property capital markets',
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_GB',
     siteName: 'Murivest',
-    title: 'Murivest UK | Institutional Commercial Real Estate Advisory & Capital Markets',
+    title: 'Murivest UK | Institutional commercial real estate services & Capital Markets',
     description:
-      'Institutional commercial real estate advisory, acquisition, and capital markets across the United Kingdom.',
+      'Institutional commercial real estate services, acquisition, and capital markets across the United Kingdom.',
     images: [
       {
         url: '/united-kingdom/og-image.jpg',
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@Murivest',
     creator: '@Murivest',
-    title: 'Murivest UK | Institutional Commercial Real Estate Advisory & Capital Markets',
+    title: 'Murivest UK | Institutional commercial real estate services & Capital Markets',
     description:
-      'Institutional commercial real estate advisory and capital markets across the United Kingdom.',
+      'Institutional commercial real estate services and capital markets across the United Kingdom.',
     images: ['/united-kingdom/og-image.jpg'],
   },
 
@@ -157,7 +157,7 @@ const ukOrganizationSchema = {
     'Cross‑Border Capital Deployment',
   ],
   description:
-    'Murivest UK provides institutional commercial real estate advisory, acquisition and capital markets execution for investors, funds, and family offices across the United Kingdom.',
+    'Murivest UK provides institutional commercial real estate services, acquisition and capital markets execution for investors, funds, and family offices across the United Kingdom.',
 };
 
 const ukLocalBusinessSchema = {
@@ -209,9 +209,9 @@ const ukWebPageSchema = {
   '@type': 'WebPage',
   '@id': 'https://murivest.com/united-kingdom/#webpage',
   url: 'https://murivest.com/united-kingdom',
-  name: 'Murivest UK | Institutional Commercial Real Estate Advisory & Capital Markets',
+  name: 'Murivest UK | Institutional commercial real estate services & Capital Markets',
   description:
-    'Institutional commercial real estate advisory, acquisition, and capital markets across the United Kingdom.',
+    'Institutional commercial real estate services, acquisition, and capital markets across the United Kingdom.',
   isPartOf: {
     '@type': 'WebSite',
     '@id': 'https://murivest.com/#website',

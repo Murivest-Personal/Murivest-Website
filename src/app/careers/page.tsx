@@ -123,7 +123,7 @@ export default function CareersPage() {
             <div className="w-16 h-[1px] bg-[#E5E2DC] mb-8" />
 
             <p className="text-[15px] leading-[1.8] text-[#5A5A5A] font-light mb-10">
-              Murivest is building a modern commercial real estate advisory and
+              Murivest is building a modern commercial real estate services and
               investment platform focused on connecting property owners,
               businesses, investors, developers, family offices, diaspora
               capital and institutional stakeholders across Kenya.

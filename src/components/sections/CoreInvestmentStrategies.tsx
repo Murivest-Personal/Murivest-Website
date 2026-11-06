@@ -89,7 +89,7 @@ const CoreInvestmentStrategies = () => {
             <p className="text-[15px] leading-[1.9] text-[#5A5A5A] font-light border-l border-[#8B7355] pl-6">
               Murivest structures disciplined, mandate-based real estate strategies across three
               commercial asset classes — each selected for income durability, institutional
-              governance, and risk-adjusted return profiles across East African cycles.
+              governance, and risk-adjusted return profiles Global cycles.
             </p>
           </motion.div>
         </div>

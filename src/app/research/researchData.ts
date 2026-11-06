@@ -2963,7 +2963,7 @@ export const researchData: Record<string, researchPostData> = {
             legal, and tax advisors before making any investment decisions.
           </p>
 
-          <h3>About Murivest</h3>
+          <h3>Murivest Group</h3>
           <p>
             Murivest Group is a capital advisory firm specialising in East
             African commercial real estate. We serve family offices,

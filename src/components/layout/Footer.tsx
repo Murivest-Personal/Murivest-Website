@@ -80,14 +80,14 @@ const Footer: React.FC<FooterProps> = ({ copyrightYear }) => {
               Murivest Group Ltd
             </h3>
             <p className="text-[13px] text-[#D6C4AA]/80 font-light leading-relaxed mb-6 max-w-sm">
-              An independent commercial real estate advisory firm based in Nairobi. We originate and structure mandate-based engagements for institutional capital in East African commercial property markets.
+              An Institutional commercial real estate services firm. We originate and structure mandate-based engagements for institutional capital in East African commercial property markets.
             </p>
             
             {/* Credentials - Gold-accented */}
             <div className="space-y-3 border-l border-[#B8956B]/30 pl-5">
               {[{
                   icon: Landmark,
-                  text: "Nairobi-Based Advisory"
+                  text: "Global Advisory"
                 }, {
                   icon: Shield,
                   text: "Mandate & KYC Process"
@@ -144,7 +144,7 @@ const Footer: React.FC<FooterProps> = ({ copyrightYear }) => {
                     label: "Track Record"
                   }, {
                     to: "/about", 
-                    label: "About Murivest"
+                    label: "Murivest Group"
                   }, {
                     to: "/contact", 
                     label: "Contact Advisory"

@@ -53,34 +53,37 @@ const SecurityContext = createContext<SecurityContextType>({
 
 const navGroups = [
   {
-    group: "Portfolio",
+    group: "Workspace",
     items: [
       { href: '/portal', label: 'Overview', icon: Home, mobileLabel: 'Overview' },
-      { href: '/portal/dashboard', label: 'Dashboard', icon: BarChart3, mobileLabel: 'Dashboard' },
-      { href: '/portal/orders', label: 'Orders', icon: Lock, securityLevel: 'high', mobileLabel: 'Orders' },
+      { href: '/portal/discover', label: 'Discover', icon: Search, mobileLabel: 'Discover' },
+      { href: '/portal/studio', label: 'Studio', icon: BarChart3, mobileLabel: 'Studio' },
+      { href: '/portal/compare', label: 'Compare', icon: Briefcase, mobileLabel: 'Compare' },
     ]
   },
   {
-    group: "Insights",
+    group: "Investments",
     items: [
-      { href: '/portal/off-market', label: 'Off-market', icon: Briefcase, securityLevel: 'high', mobileLabel: 'Off-market' },
-      { href: '/portal/publications', label: 'Publications', icon: BookOpen, mobileLabel: 'Publications' },
-    ]
-  },
-  {
-    group: "Advisory",
-    items: [
-      { href: '/portal/criteria', label: 'Acquisition Criteria', icon: Target, mobileLabel: 'Criteria' },
-      { href: '/portal/enquiries', label: 'Enquiries', icon: MessageSquare, mobileLabel: 'Enquiries' },
+      { href: '/portal/briefs', label: 'Briefs', icon: FileText, mobileLabel: 'Briefs' },
+      { href: '/portal/investments', label: 'My Investments', icon: Lock, securityLevel: 'high', mobileLabel: 'Investments' },
+      { href: '/portal/mandates', label: 'Mandates', icon: Target, mobileLabel: 'Mandates' },
       { href: '/portal/documents', label: 'Documents', icon: FolderLock, securityLevel: 'high', mobileLabel: 'Documents' },
+    ]
+  },
+  {
+    group: "Intelligence",
+    items: [
+      { href: '/portal/intelligence', label: 'Market Intelligence', icon: BookOpen, mobileLabel: 'Intel' },
+      { href: '/portal/activity', label: 'Activity', icon: MessageSquare, mobileLabel: 'Activity' },
       { href: '/portal/notifications', label: 'Notifications', icon: Bell, mobileLabel: 'Alerts' },
     ]
   },
   {
-    group: "Settings",
+    group: "Account",
     items: [
-      { href: '/portal/payments', label: 'Payments', icon: CreditCard, mobileLabel: 'Payments' },
       { href: '/portal/profile', label: 'Profile', icon: User, mobileLabel: 'Profile' },
+      { href: '/portal/security', label: 'Security', icon: Shield, mobileLabel: 'Security' },
+      { href: '/portal/payments', label: 'Payments', icon: CreditCard, mobileLabel: 'Payments' },
     ]
   }
 ];

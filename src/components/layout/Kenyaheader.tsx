@@ -100,7 +100,7 @@ const KENYA_NAV: NavSection[] = [
     description: 'Firm profile and private office access',
     columns: [
       [
-        { label: 'About Murivest Kenya', href: '/kenya/about', sub: 'Heritage & philosophy' },
+        { label: 'Murivest Group Kenya', href: '/kenya/about', sub: 'Heritage & philosophy' },
         { label: 'Leadership', href: '/kenya/leadership', sub: 'Advisory team' },
         { label: 'Contact', href: '/kenya/contact', sub: 'Private office inquiry' },
         { label: 'Compliance', href: '/kenya/governance-compliance', sub: 'Governance & regulatory information' },

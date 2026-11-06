@@ -523,7 +523,7 @@ export const researchData: Record<string, researchPostData> = {
 
   <p>A defensible cross-border comparison starts with the investor, not the market. Establish what the investor can legally hold and for how long, normalise the income figures, set them against the local cost of capital, price the currency and the frictions, and only then ask whether the asset's income is secure. Each Murivest country article that follows applies this framework to a single market.</p>
 
-  <p>Murivest Group Ltd is a Nairobi-based commercial real estate advisory firm established in 2025 and operating on a mandate basis. Our primary ground data is in Kenya. Our research on the other seven markets is desk-based, drawn from official sources, regulators, law-firm guides and published market research, and it is labelled as such. We do not rank the eight markets, and nothing here is a recommendation to invest in any of them.</p>
+  <p>Murivest Group Ltd is a Global commercial real estate services firm established in 2025 and operating on a mandate basis. Our primary ground data is in Kenya. Our research on the other seven markets is desk-based, drawn from official sources, regulators, law-firm guides and published market research, and it is labelled as such. We do not rank the eight markets, and nothing here is a recommendation to invest in any of them.</p>
 
   <p>If you are assessing a commercial property requirement in Kenya or comparing it with other markets, you can <a href="https://murivest.com/contact">arrange a briefing with the Murivest advisory team</a> or write to <a href="mailto:capital@murivest.com">capital@murivest.com</a>. Murivest provides advisory services only, and does not pool capital.</p>
 
@@ -788,7 +788,7 @@ export const researchData: Record<string, researchPostData> = {
   <h2>8. Conclusion</h2>
   <p>Nairobi's office recovery is real but narrow, concentrated in modern stock, while headline yields have not risen to compensate for the cost of money. The practical conclusion for an investor is to underwrite the building, not the market: define the yield, adjust for acquisition costs and achieved rent, test the financing, confirm the tenure and tax position, and verify the tenancy schedule before committing capital.</p>
 
-  <p>Murivest Group Ltd is a Nairobi-based commercial real estate advisory firm, established in 2025, working on a mandate basis. If you are evaluating a Nairobi commercial property requirement, you can <a href="https://murivest.com/kenya/institutional-investors">request an institutional briefing</a>, review our <a href="https://murivest.com/kenya/process">advisory process</a>, or write to <a href="mailto:capital@murivest.com">capital@murivest.com</a>. We provide advisory services only and do not pool capital.</p>
+  <p>Murivest Group Ltd is a Global commercial real estate services firm, established in 2025, working on a mandate basis. If you are evaluating a Nairobi commercial property requirement, you can <a href="https://murivest.com/kenya/institutional-investors">request an institutional briefing</a>, review our <a href="https://murivest.com/kenya/process">advisory process</a>, or write to <a href="mailto:capital@murivest.com">capital@murivest.com</a>. We provide advisory services only and do not pool capital.</p>
 
   <h2>References</h2>
   <ul>

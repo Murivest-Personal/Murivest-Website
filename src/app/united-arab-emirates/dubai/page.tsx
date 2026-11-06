@@ -10,7 +10,7 @@
 //
 // export const metadata: Metadata = {
 //   title: 'Dubai Commercial Real Estate | Institutional Investment Advisory | Murivest',
-//   description: 'Private-mandate commercial real estate advisory for institutional and family-office capital in Dubai. DIFC, Business Bay, Downtown, Jebel Ali, Dubai South and Palm Jebel Ali.',
+//   description: 'Private-mandate commercial real estate services for institutional and family-office capital in Dubai. DIFC, Business Bay, Downtown, Jebel Ali, Dubai South and Palm Jebel Ali.',
 //   alternates: { canonical: 'https://murivest.com/united-arab-emirates/dubai' },
 //   openGraph: {
 //     title: 'Dubai Commercial Real Estate | Institutional Investment Advisory',

@@ -5,7 +5,7 @@ import { PROPERTY_TYPES, SITE } from "../../lib/site";
 const type = PROPERTY_TYPES.find((p) => p.slug === "retail")!;
 
 export const metadata: Metadata = {
-  title: "Retail — USA Commercial Real Estate Advisory",
+  title: "Retail — USA commercial real estate services",
   description:
     "Murivest Group's U.S. retail real estate practice — investment sales and leasing for neighborhood centers, power centers, street retail, and single-tenant net-lease properties.",
   alternates: { canonical: `https://${SITE.domain}/usa/commercial-real-estate/retail` },

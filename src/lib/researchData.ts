@@ -252,271 +252,1072 @@ export const researchData: Record<string, researchPostData> = {
 `
 },
 
-'uk-office-space-investment-outlook-2026': {
-    title: 'UK Office Space Investment Outlook 2026: Where Capital Can Still Find Income as Prices Reset',
-    excerpt: 'UK office investment is no longer one market but two. This research note examines Bank Rate, prime-versus-secondary pricing and occupier supply, then introduces the Murivest Capital Allocation Matrix for comparing office assets across London and the regional cities.',
-    author: getAuthor('investment'),
-    category: 'Investment',
-    image: '/research-images/uk-office-space-investment-outlook-2026.png',
-    date: '2026-10-11',
-    readTime: '17 min read',
-    featured: true,
-    content: `
-<article>
-  <h1>UK Office Space Investment Outlook 2026: Where Capital Can Still Find Income as Prices Reset</h1>
-  <p class="author-date">By ${getAuthor('investment')} | 2026-10-11 | 17 min read</p>
-  <figure class="featured-image">
-    <img src="/research-images/uk-office-space-investment-outlook-2026.png" alt="Grade A office buildings in the City of London at dusk representing UK office space investment"  >
-  </figure>
 
-  <p><em>A research note for private investors, family offices and cross-border capital on why the UK office market should be underwritten building by building, and a framework for doing it.</em></p>
+'grit-real-estate-kenya-portfolio-disposal-distressed-assets-2026':{
+  title: 'Grit Real Estate’s KSh20.5 Billion Kenya Portfolio: Debt Restructuring, Asset Disposals and Institutional Acquisition Opportunities',
+  excerpt: 'Grit Real Estate Income Group’s proposed disposal of its Kenyan property portfolio raises important questions for institutional capital. This research examines the company’s financial pressures, five Kenyan assets, secured lending structures, transaction risks and potential implications for Kenya’s commercial property market.',
+  author: getAuthor('investment'),
+  image: '/research-images/grit-kenya-real-estate-portfolio-2026.webp',
+  category: 'Market Intelligence',
+  date: '2026-11-05',
+  readTime: '18 min read',
+  featured: true,
+
+  content: `
+<article class="research-article">
+
+  <header class="article-header">
+    <p class="article-kicker">MURIVEST GROUP LTD / MARKET INTELLIGENCE / KENYA</p>
+
+    <h1>Grit Real Estate’s KSh20.5 Billion Kenya Portfolio: Debt Restructuring, Asset Disposals and Institutional Acquisition Opportunities</h1>
+
+    <p class="article-meta">
+      By \${getAuthor('investment')} |
+      5 November 2026 |
+      18 min read
+    </p>
+
+    <figure class="featured-image">
+      <img
+        src="/research-images/grit-kenya-real-estate-portfolio-2026.webp"
+        alt="Institutional commercial real estate assets in Nairobi representing Kenya's commercial property investment market"
+      />
+      <figcaption>
+        Kenya's commercial property market: assessing institutional assets,
+        ownership structures and portfolio transactions.
+      </figcaption>
+    </figure>
+
+    <p class="article-standfirst">
+      The proposed disposal of Grit Real Estate Income Group's
+      African property portfolio marks an important development
+      in the Kenyan commercial property market. With approximately
+      KSh20.5 billion in Kenyan income-producing assets last valued
+      in June 2025, the transaction could bring several established
+      commercial properties into a new ownership cycle.
+    </p>
+  </header>
+
+  <section>
+    <h2>Executive Summary</h2>
+
+    <p>
+      Grit Real Estate Income Group, a Mauritius-based pan-African
+      property investment company, is pursuing a broad disposal
+      programme covering its real estate holdings and development
+      interests. The process follows mounting financial pressure,
+      elevated financing costs, delayed financial reporting and
+      a suspension of trading in its ordinary shares.
+    </p>
+
+    <p>
+      The Kenyan portfolio was valued at approximately US$158.2
+      million, equivalent to KSh20.5 billion, as at June 2025.
+      This represented approximately 16 per cent of the group's
+      reported US$989 million global property portfolio at that
+      date.
+    </p>
+
+    <p>
+      Its Kenyan exposure includes Rosslyn Grove, Buffalo Mall,
+      Eneo at Tatu City, Orbit Africa and Imperial Distribution
+      Centre. These properties span diplomatic accommodation,
+      retail, commercial offices and logistics.
+    </p>
+
+    <p>
+      The disposal programme is not simply a property sale.
+      It is also a corporate restructuring exercise involving
+      secured lenders, subsidiary interests, existing financing
+      arrangements and potential regulatory approvals.
+    </p>
+
+    <p>
+      For institutional buyers, the central question is not
+      whether the assets are prominent. It is whether their
+      contractual income, ownership interests, financing
+      obligations and acquisition prices support an acceptable
+      risk-adjusted return.
+    </p>
+  </section>
+
+  <section>
+    <h2>1. The Transaction: Understanding Grit's Disposal Strategy</h2>
+
+    <p>
+      Grit's proposed exit reflects a wider effort to simplify
+      its corporate structure, reduce financial exposure and
+      realise value from its remaining property interests.
+    </p>
+
+    <p>
+      In its announcement of 26 October 2026, the company
+      confirmed that its board had accepted a conditional
+      binding offer concerning its interests in Gateway Real
+      Estate Africa (GREA) and Africa Property Development
+      Managers Limited (APDM), together with certain associated
+      assets and liabilities.
+    </p>
+
+    <p>
+      The proposed separation of these businesses forms one
+      component of a wider restructuring process. The company
+      has also been seeking offers for a substantial portion
+      of its remaining income-producing property portfolio.
+    </p>
+
+    <p>
+      Grit reported that the preferred proposal for the wider
+      portfolio had secured conditional support from senior
+      secured creditors. Those creditors also indicated their
+      willingness to continue providing working capital,
+      subject to agreed conditions, while the transaction
+      progresses.
+    </p>
+
+    <p>
+      These developments indicate creditor involvement in
+      the disposal process. They do not, however, establish
+      that every asset has been transferred or that all
+      transactions have reached financial close.
+    </p>
+
+    <p>
+      The company has also indicated that it will engage
+      regulators and shareholders regarding the future of
+      its publicly listed status.
+    </p>
+
+    <p>
+      <strong>Institutional interpretation:</strong>
+      Buyers should distinguish between an accepted offer,
+      an executed sale agreement, satisfaction of conditions
+      precedent and legal completion. Each represents a
+      different stage of transaction certainty.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Kenya's KSh20.5 Billion Property Exposure</h2>
+
+    <p>
+      Kenya represents a material component of Grit's
+      investment portfolio. Its properties occupy several
+      commercially relevant locations and serve different
+      categories of occupiers.
+    </p>
+
+    <p>
+      Grit's published portfolio information identifies
+      five Kenyan assets. Their investment characteristics
+      should be considered separately rather than treated
+      as one homogeneous property portfolio.
+    </p>
+
+    <h3>2.1 Rosslyn Grove — Diplomatic Accommodation</h3>
+
+    <p>
+      Rosslyn Grove is a residential accommodation estate
+      in Nairobi's Rosslyn area. The property serves the
+      diplomatic accommodation market and has been associated
+      with housing for United States Embassy personnel.
+    </p>
+
+    <p>
+      Its investment proposition differs from that of
+      conventional residential developments. The relevant
+      assessment includes the contractual lease structure,
+      tenant obligations, currency denomination, remaining
+      lease term, maintenance commitments and ownership
+      interests.
+    </p>
+
+    <p>
+      A buyer should establish whether rental income is
+      supported by enforceable contractual arrangements
+      and whether any existing security interests affect
+      the proposed transfer.
+    </p>
+
+    <h3>2.2 Buffalo Mall — Naivasha Retail</h3>
+
+    <p>
+      Buffalo Mall is a commercial retail centre serving
+      Naivasha and its surrounding catchment.
+    </p>
+
+    <p>
+      Retail property performance depends on more than
+      the physical quality of the building. Occupancy,
+      tenant concentration, rental collection, service
+      charge recovery, anchor tenant performance and
+      local consumer demand all influence its income
+      profile.
+    </p>
+
+    <p>
+      The acquisition analysis should examine the tenant
+      schedule, lease expiry profile, outstanding rent,
+      operating expenditure and any capital works required
+      to maintain the property's competitive position.
+    </p>
+
+    <h3>2.3 Eneo at Tatu City — Commercial Offices and BPO</h3>
+
+    <p>
+      Eneo at Tatu City represents exposure to the
+      commercial office and business process outsourcing
+      sectors.
+    </p>
+
+    <p>
+      Its location within Tatu City's special economic
+      zone provides a distinct commercial context.
+      The building's income profile should be assessed
+      against the strength of its anchor occupier,
+      contractual rental commitments, building
+      specification and future leasing requirements.
+    </p>
+
+    <p>
+      Institutional buyers should also examine the
+      implications of the property's special economic
+      zone status, applicable approvals and any
+      conditions attached to its existing operations.
+    </p>
+
+    <h3>2.4 Orbit Africa — Industrial and Logistics</h3>
+
+    <p>
+      Orbit Africa adds an industrial and logistics
+      component to Grit's Kenyan exposure.
+    </p>
+
+    <p>
+      Industrial property investment requires a different
+      underwriting approach from retail or residential
+      accommodation. Relevant considerations include
+      building configuration, loading capacity,
+      warehouse specifications, power infrastructure,
+      tenant requirements and the availability of
+      competing logistics facilities.
+    </p>
+
+    <p>
+      The property's income sustainability should be
+      considered alongside its physical adaptability
+      for future occupiers.
+    </p>
+
+    <h3>2.5 Imperial Distribution Centre — Pharmaceutical Logistics</h3>
+
+    <p>
+      Imperial Distribution Centre is a logistics and
+      distribution property associated with pharmaceutical
+      operations along the Mombasa Road corridor.
+    </p>
+
+    <p>
+      Its specialist use introduces additional diligence
+      requirements. Buyers should examine the building's
+      operational specifications, tenant obligations,
+      environmental compliance, power infrastructure
+      and suitability for alternative occupiers.
+    </p>
+
+    <p>
+      A specialist facility may offer a differentiated
+      income proposition, but its re-letting potential
+      should not be assumed without technical and
+      occupational evidence.
+    </p>
+  </section>
+
+  <section>
+    <h2>3. Portfolio Composition and Investment Characteristics</h2>
+
+    <p>
+      The five properties demonstrate the diversity of
+      Grit's Kenyan exposure. Their respective investment
+      risks are linked to different occupier markets,
+      contractual structures and operating requirements.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Location</th>
+          <th>Asset class</th>
+          <th>Principal diligence focus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rosslyn Grove</td>
+          <td>Nairobi</td>
+          <td>Diplomatic accommodation</td>
+          <td>Lease and ownership structure</td>
+        </tr>
+        <tr>
+          <td>Buffalo Mall</td>
+          <td>Naivasha</td>
+          <td>Retail</td>
+          <td>Occupancy and rental collection</td>
+        </tr>
+        <tr>
+          <td>Eneo at Tatu City</td>
+          <td>Tatu City</td>
+          <td>Office and BPO</td>
+          <td>Anchor tenant and lease commitments</td>
+        </tr>
+        <tr>
+          <td>Orbit Africa</td>
+          <td>Nairobi region</td>
+          <td>Industrial and logistics</td>
+          <td>Occupier demand and technical condition</td>
+        </tr>
+        <tr>
+          <td>Imperial Distribution Centre</td>
+          <td>Mombasa Road</td>
+          <td>Distribution and logistics</td>
+          <td>Specialist use and tenant covenant</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      The table describes asset categories and diligence
+      considerations. It is not a valuation schedule or
+      a statement of individual sale prices.
+    </p>
+
+    <p>
+      The approximately KSh20.5 billion valuation applies
+      to the reported Kenyan income-producing portfolio
+      as a whole. It should not be interpreted as a
+      confirmed asking price or a current independent
+      market valuation for each property.
+    </p>
+  </section>
+
+  <section>
+    <h2>4. The Financial Pressures Behind the Disposal</h2>
+
+    <p>
+      Real estate investment is capital intensive.
+      Property owners commonly use secured borrowing
+      to acquire, develop and operate assets. This
+      can improve equity returns when rental income
+      exceeds financing costs.
+    </p>
+
+    <p>
+      The same structure can become difficult to sustain
+      when borrowing costs increase, valuations decline
+      or refinancing becomes less accessible.
+    </p>
+
+    <p>
+      Grit has faced pressure from its financing
+      arrangements and the wider interest-rate
+      environment. Its publicly disclosed debt
+      exposure has been reported at approximately
+      US$500 million, equivalent to about KSh64.9
+      billion using the reported conversion.
+    </p>
+
+    <p>
+      The company has also experienced delays in
+      publishing audited financial statements for
+      the 18-month period ended 31 December 2025.
+      Its ordinary shares were suspended from trading
+      on the London and Mauritius exchanges in May 2026.
+    </p>
+
+    <p>
+      These developments have increased the importance
+      of creditor coordination and transaction execution.
+      Where assets secure existing borrowing, a purchaser
+      must understand how the relevant security will
+      be released or otherwise dealt with at completion.
+    </p>
+
+    <h3>4.1 Why Financing Costs Matter</h3>
+
+    <p>
+      Consider a hypothetical commercial property
+      generating KSh100 million in annual net operating
+      income.
+    </p>
+
+    <p>
+      If the property is financed using KSh1 billion
+      of debt at an annual interest rate of 10 per cent,
+      the annual interest obligation would be KSh100
+      million before principal repayments, tax and
+      other financing costs.
+    </p>
+
+    <p>
+      The property's entire net operating income would
+      therefore be absorbed by interest alone.
+    </p>
+
+    <p>
+      If the borrowing rate increased to 12 per cent,
+      annual interest would rise to KSh120 million.
+      The property would then experience a negative
+      cash position before considering other obligations.
+    </p>
+
+    <p>
+      This simplified illustration shows why debt
+      maturity, borrowing costs and rental income
+      must be examined together. It does not describe
+      Grit's actual financing on any individual Kenyan
+      asset.
+    </p>
+  </section>
+
+  <section>
+    <h2>5. The Institutional Acquisition Opportunity</h2>
+
+    <p>
+      The proposed disposals may create an opportunity
+      for institutional investors seeking established
+      income-producing properties in Kenya.
+    </p>
+
+    <p>
+      Unlike speculative development, the acquisition
+      of an operational property can provide access
+      to an existing building, established occupiers
+      and a documented rental history.
+    </p>
+
+    <p>
+      However, operational status alone does not
+      establish investment quality. Buyers must
+      determine whether the income is sustainable,
+      whether the asset is appropriately priced
+      and whether the transaction can be completed
+      without unresolved legal or financial exposure.
+    </p>
+
+    <h3>5.1 Potential Buyer Categories</h3>
+
+    <ul>
+      <li>
+        <strong>Institutional property investors:</strong>
+        Buyers seeking established commercial assets
+        with a long-term ownership horizon.
+      </li>
+      <li>
+        <strong>Private investment offices:</strong>
+        Family offices and high-net-worth investors
+        seeking direct exposure to income-producing
+        real estate.
+      </li>
+      <li>
+        <strong>Regional property operators:</strong>
+        Businesses with the operational capacity
+        to manage retail, office and logistics assets.
+      </li>
+      <li>
+        <strong>Private equity and special situations capital:</strong>
+        Investors capable of evaluating complex
+        ownership structures, financing obligations
+        and restructuring risks.
+      </li>
+      <li>
+        <strong>Real estate investment partnerships:</strong>
+        Qualified investors considering joint
+        acquisitions with experienced operating partners.
+      </li>
+    </ul>
+
+    <p>
+      These are potential buyer categories, not
+      confirmed bidders or participants in Grit's
+      disposal process.
+    </p>
+  </section>
+
+  <section>
+    <h2>6. The Murivest Institutional Acquisition Framework</h2>
+
+    <p>
+      Murivest applies a structured acquisition
+      assessment to commercial property opportunities.
+      The framework below identifies six areas that
+      should be addressed before capital is committed.
+    </p>
+
+    <h3>Gate 1: Ownership and Legal Verification</h3>
+
+    <p>
+      Establish the registered proprietor, beneficial
+      ownership, title position, subsidiary interests,
+      encumbrances, security arrangements and
+      restrictions affecting the proposed transfer.
+    </p>
+
+    <h3>Gate 2: Financial and Rental Verification</h3>
+
+    <p>
+      Review historical rent collection, contracted
+      income, arrears, operating costs, tenant
+      concentration, service charge accounts and
+      outstanding liabilities.
+    </p>
+
+    <h3>Gate 3: Independent Valuation</h3>
+
+    <p>
+      Obtain a current independent valuation.
+      Compare the proposed purchase consideration
+      against market transactions, replacement cost,
+      capital expenditure requirements and
+      sustainable income.
+    </p>
+
+    <h3>Gate 4: Financing and Security</h3>
+
+    <p>
+      Determine existing lender exposure, repayment
+      requirements, security releases, refinancing
+      options and the availability of clear completion
+      arrangements.
+    </p>
+
+    <h3>Gate 5: Physical and Operational Due Diligence</h3>
+
+    <p>
+      Commission appropriate structural, mechanical,
+      electrical, environmental and property condition
+      assessments. Review planning status, permits,
+      insurance and operational compliance.
+    </p>
+
+    <h3>Gate 6: Exit and Income Sustainability</h3>
+
+    <p>
+      Model rental performance, vacancy scenarios,
+      refinancing sensitivity, capital expenditure
+      and the potential buyer universe at exit.
+    </p>
+
+    <p>
+      This framework is a Murivest-developed analytical
+      approach. It is not an externally validated
+      scoring model or a guarantee of investment performance.
+    </p>
+  </section>
+
+  <section>
+    <h2>7. Distressed Sales Are Not Necessarily Discounted Sales</h2>
+
+    <p>
+      One of the most important distinctions in
+      distressed real estate transactions is the
+      difference between seller financial pressure
+      and the actual market value of the property.
+    </p>
+
+    <p>
+      A company facing liquidity constraints may
+      have an incentive to dispose of assets quickly.
+      However, the existence of debt distress does
+      not automatically mean that a buyer will
+      acquire the underlying property below market value.
+    </p>
+
+    <p>
+      The sale process may involve secured creditors,
+      competing offers, existing leases and restrictions
+      arising from financing agreements.
+    </p>
+
+    <p>
+      A transaction may also require the separation
+      of property-owning entities from development
+      or management businesses.
+    </p>
+
+    <p>
+      Buyers should therefore distinguish between:
+    </p>
+
+    <ul>
+      <li>Acquisition of the underlying real estate.</li>
+      <li>Acquisition of shares in a property-owning company.</li>
+      <li>Acquisition of a development or management subsidiary.</li>
+      <li>Acquisition of assets subject to existing security.</li>
+      <li>Acquisition through a lender-supported restructuring.</li>
+    </ul>
+
+    <p>
+      These structures carry different tax, legal,
+      operational and liability implications.
+      Independent legal and tax advice is essential
+      before selecting an acquisition route.
+    </p>
+  </section>
+
+  <section>
+    <h2>8. Implications for Kenya's Commercial Property Market</h2>
+
+    <p>
+      The proposed disposal has implications beyond
+      the ownership of five individual properties.
+      It highlights the relationship between
+      international capital, local lending institutions
+      and the financing of commercial real estate
+      in East Africa.
+    </p>
+
+    <p>
+      First, the process may introduce new ownership
+      into established commercial property markets.
+      This could change asset management priorities,
+      leasing strategies and future capital expenditure.
+    </p>
+
+    <p>
+      Second, the transaction demonstrates the
+      importance of currency and interest-rate
+      exposure in property investment. Assets may
+      generate stable rental income while their
+      owners face financing pressure at the corporate
+      level.
+    </p>
+
+    <p>
+      Third, it reinforces the importance of
+      transaction transparency. Institutional
+      purchasers require reliable information on
+      beneficial ownership, leases, debt, valuation
+      and completion conditions.
+    </p>
+
+    <p>
+      Finally, the proposed sales may attract
+      interest from domestic and international
+      capital seeking established commercial assets.
+      Whether this results in new investment,
+      refinancing or a change of ownership will
+      depend on the terms ultimately agreed.
+    </p>
+  </section>
+
+  <section>
+    <h2>9. Questions Institutional Buyers Should Ask</h2>
+
+    <ol>
+      <li>
+        Who holds legal and beneficial ownership of
+        each property?
+      </li>
+      <li>
+        What is the current independent market valuation
+        of each asset?
+      </li>
+      <li>
+        Which lenders hold registered charges or
+        other security interests?
+      </li>
+      <li>
+        What approvals and security releases are
+        required for completion?
+      </li>
+      <li>
+        Are rental receipts consistent with the
+        reported contracted income?
+      </li>
+      <li>
+        What is the remaining lease term for each
+        principal occupier?
+      </li>
+      <li>
+        What capital expenditure is required over
+        the next five years?
+      </li>
+      <li>
+        Are there unresolved tax, litigation or
+        regulatory matters?
+      </li>
+      <li>
+        Is the transaction structured as an asset
+        purchase or a share purchase?
+      </li>
+      <li>
+        What is the expected net return after
+        financing, tax, operating costs and
+        acquisition expenses?
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>10. Murivest's Market Perspective</h2>
+
+    <p>
+      The proposed Grit disposals provide a useful
+      case study in the relationship between
+      institutional property ownership, secured
+      financing and asset liquidity.
+    </p>
+
+    <p>
+      For Kenya, the significance lies in the
+      potential transition of established commercial
+      assets into new ownership structures.
+      Properties with functioning operations and
+      established occupiers may attract interest
+      from buyers seeking exposure to income-producing
+      real estate.
+    </p>
+
+    <p>
+      However, the acquisition decision should
+      remain asset-specific. A diplomatic housing
+      estate, a regional shopping centre and a
+      pharmaceutical distribution facility cannot
+      be assessed using the same rental assumptions,
+      operating model or exit strategy.
+    </p>
+
+    <p>
+      Murivest considers ownership verification,
+      sustainable rental income, financing structure
+      and independent valuation essential components
+      of institutional acquisition analysis.
+    </p>
+
+    <p>
+      The opportunity, if one emerges, will be
+      determined by the relationship between
+      verified income, acquisition price and
+      transaction risk rather than the headline
+      value of the portfolio.
+    </p>
+  </section>
+
+  <section>
+    <h2>Conclusion</h2>
+
+    <p>
+      Grit Real Estate's proposed portfolio disposals
+      represent a significant development in Kenya's
+      commercial real estate landscape.
+    </p>
+
+    <p>
+      The approximately KSh20.5 billion Kenyan
+      portfolio includes properties across
+      diplomatic accommodation, retail, offices
+      and logistics. Their potential transfer
+      presents questions for property owners,
+      lenders, institutional purchasers and
+      regional investment managers.
+    </p>
+
+    <p>
+      The eventual outcome will depend on
+      creditor arrangements, transaction
+      documentation, regulatory requirements
+      and the ability to complete the proposed
+      disposals.
+    </p>
+
+    <p>
+      For prospective purchasers, disciplined
+      underwriting remains essential. Financial
+      distress at the corporate level does not
+      remove the need for property-level due
+      diligence.
+    </p>
+
+    <p>
+      The next phase of the process may help
+      establish how international real estate
+      capital is repositioned within Kenya's
+      commercial property market.
+    </p>
+  </section>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>Why is Grit Real Estate selling its Kenyan properties?</h3>
+
+    <p>
+      Grit is pursuing a wider portfolio disposal
+      and deleveraging programme amid financial
+      pressure, higher financing costs and
+      restructuring requirements. The proposed
+      disposals form part of its broader corporate
+      strategy.
+    </p>
+
+    <h3>How much are Grit's Kenyan properties worth?</h3>
+
+    <p>
+      The Kenyan income-producing portfolio was
+      last reported at approximately US$158.2
+      million, equivalent to KSh20.5 billion,
+      as at June 2025. This is a historical
+      portfolio valuation, not a confirmed
+      current sale price.
+    </p>
+
+    <h3>Which Kenyan properties are included?</h3>
+
+    <p>
+      Grit's published portfolio identifies
+      Rosslyn Grove, Buffalo Mall, Eneo at Tatu
+      City, Orbit Africa and Imperial Distribution
+      Centre.
+    </p>
+
+    <h3>Have the properties already been sold?</h3>
+
+    <p>
+      The announced disposal process should not
+      be confused with completed transfers.
+      Grit has disclosed conditional transaction
+      arrangements, creditor support and continuing
+      disposal work. Completion remains subject
+      to applicable conditions and approvals.
+    </p>
+
+    <h3>Can institutional investors acquire these assets?</h3>
+
+    <p>
+      Potential acquisitions would depend on
+      the disposal structure, seller authority,
+      lender approvals, transaction terms and
+      access to an authorised sale process.
+      Interested buyers should seek independent
+      legal and financial advice.
+    </p>
+
+    <h3>Does financial distress guarantee a discounted purchase?</h3>
+
+    <p>
+      No. A distressed corporate seller does
+      not automatically imply that the underlying
+      property is undervalued. Buyers must
+      establish market value, liabilities,
+      rental performance and completion costs.
+    </p>
+
+  </section>
+
+  <section>
+    <h2>Methodology and Research Limitations</h2>
+
+    <p>
+      This research note was prepared on
+      5 November 2026 using publicly available
+      corporate disclosures and published
+      reporting.
+    </p>
+
+    <p>
+      The portfolio valuation cited in this
+      report relates to June 2025. It should
+      not be interpreted as a November 2026
+      independent valuation or confirmed
+      disposal consideration.
+    </p>
+
+    <p>
+      Transaction information reflects
+      announcements available at the date
+      of publication. The terms of proposed
+      transactions, creditor arrangements
+      and completion conditions may change.
+    </p>
+
+    <p>
+      Murivest's investment framework represents
+      internal analytical commentary. It does
+      not constitute an independent valuation,
+      transaction audit or investment recommendation.
+    </p>
+
+    <p>
+      Hypothetical financing calculations are
+      illustrative and do not represent Grit's
+      actual debt allocation to individual
+      properties.
+    </p>
+  </section>
+
+  <section class="references">
+    <h2>References and Further Reading</h2>
+
+    <ol>
+      <li>
+        Business Daily Africa (2026).
+        'Distressed developer to sell Sh20bn
+        prime Kenya assets'.
+        4 November 2026.
+        <a href="https://www.businessdailyafrica.com/bd/corporate/companies/distressed-developer-to-sell-sh20bn-prime-kenya-assets-5658604"
+           target="_blank" rel="noopener noreferrer">
+          Read publication
+        </a>.
+      </li>
+
+      <li>
+        Grit Real Estate Income Group (2026).
+        'Update on strategic transaction,
+        further portfolio disposal process
+        and continued lender support'.
+        26 October 2026.
+        <a href="https://www.londonstockexchange.com/en/news/article/GR1T/update-on-strategic-transaction-further-portfolio-disposal-process-and-continued-lender-support/867d-c2-3b-ce-e2-44a1ab"
+           target="_blank" rel="noopener noreferrer">
+          Corporate announcement
+        </a>.
+      </li>
+
+      <li>
+        Grit Real Estate Income Group (2026).
+        'Our Property Portfolio'.
+        Corporate portfolio disclosure.
+        <a href="https://grit.group/portfolio/"
+           target="_blank" rel="noopener noreferrer">
+          View portfolio
+        </a>.
+      </li>
+
+      <li>
+        Construction Kenya (2026).
+        'US Embassy Estate, Buffalo Mall for
+        Sale in Debt Crunch'.
+        5 November 2026.
+        <a href="https://www.constructionkenya.com/13558/grit-real-estate-debt-crunch/"
+           target="_blank" rel="noopener noreferrer">
+          Read publication
+        </a>.
+      </li>
+
+      <li>
+        Business Daily Africa (2026).
+        'Grit's Sh20.9bn Kenya property empire
+        under pressure'.
+        <a href="https://www.businessdailyafrica.com/bd/markets/real-estate/grit-s-sh20-9bn-kenya-property-empire-under-pressure-5569712"
+           target="_blank" rel="noopener noreferrer">
+          Read publication
+        </a>.
+      </li>
+    </ol>
+  </section>
+
+  <section class="related-links">
+    <h2>Explore Murivest</h2>
+
+    <p>
+      Explore our Kenyan commercial real estate
+      coverage, research and advisory services.
+    </p>
+
+    <div class="article-button-group">
+      <a href="/kenya/" class="article-button">
+        Kenya Real Estate
+      </a>
+
+      <a href="/kenya/properties" class="article-button">
+        View Properties
+      </a>
+
+      <a href="/kenya/research" class="article-button">
+        Market Research
+      </a>
+
+      <a href="/kenya/about" class="article-button">
+        About Murivest
+      </a>
+
+      <a href="/kenya/contact" class="article-button">
+        Contact Advisory
+      </a>
+
+      <a href="/kenya/portal" class="article-button">
+        Investor Portal
+      </a>
+    </div>
+  </section>
+
+  <footer class="article-footer">
+    <p><strong>Murivest Research Desk</strong></p>
+    <p>Murivest Group Ltd</p>
+    <p>Nairobi, Kenya | 5 November 2026</p>
+
+    <div class="disclaimer">
+      <p>
+        <em>
+          Disclaimer: This publication is intended
+          for general informational and educational
+          purposes. It does not constitute investment,
+          financial, legal, tax or valuation advice,
+          nor an offer or solicitation to acquire
+          any property or financial instrument.
+          All transaction information is subject
+          to independent verification. Asset
+          availability, ownership, pricing and
+          disposal conditions must be confirmed
+          through authorised parties. Readers
+          should obtain independent professional
+          advice before undertaking any transaction.
+          Murivest Group Ltd does not guarantee
+          investment performance or future returns.
+        </em>
+      </p>
+    </div>
+  </footer>
 
-  <h2>Executive Summary</h2>
-
-  <p>The UK office market in late 2026 is best understood as two markets sharing one label. Bank Rate has stayed at 3.75% through every Monetary Policy Committee decision since March, and a growing minority of members have voted to raise it. Investment volumes have been subdued, and capital values have drifted lower since the start of the year. Yet the picture beneath the average is uneven: Central London values have been broadly flat while outer-London and wider regional offices have repriced downward, and new regional supply is thin.</p>
-
-  <p>For investors, the implication is that "office" is not a sufficient investment thesis. This note introduces the Murivest Capital Allocation Matrix, a six-dimension tool for comparing assets, tests it against five economic scenarios, and closes with the questions to settle before committing capital. It is analysis, not advice, and every figure is attributed and dated.</p>
-
-  <h2>The Argument: The Sector Call Matters Less Than the Selection Call</h2>
-
-  <p>Commentary on UK offices tends to swing between two stories: structural decline driven by hybrid working, or a quality-led recovery. The evidence supports neither as a blanket statement. It supports a narrower and more useful claim: <strong>dispersion between assets has become the dominant source of risk and opportunity</strong>.</p>
-
-  <p>Consider what the published data show. CBRE's mid-year review reported that UK commercial real estate investment reached £23bn in the first half of 2026, down 8% on the same period of 2025, with the living and office sectors each up 7% year on year. The same review recorded values for Outer London and M25 offices falling 4.8% over the half, while Central London values held flat. Its UK Monthly Index also showed an all-property total return of 2.5% for the half, of which income contributed 2.8%, meaning capital values were a drag. (Sources: <a href="https://www.cbre.co.uk/insights/books/uk-real-estate-market-outlook-midyear-review-2026/capital-markets" target="_blank" rel="noopener noreferrer">CBRE UK Real Estate Market Outlook, Midyear 2026</a>.)</p>
-
-  <p>The most recent CBRE index release points the same way. UK commercial capital values fell 0.9% over the latest quarter as yields moved outward, rental values rose 0.5%, and office capital values fell 1.1% while Central London office values were flat and office rental values rose 0.7%. CBRE attributed the weakness to higher government bond yields and borrowing costs. (Source: <a href="https://www.cbre.co.uk/press-releases/uk-all-property-capital-values-declined-over-q3-2026-driven-by-outward-yield-movement" target="_blank" rel="noopener noreferrer">CBRE UK Monthly Index release</a>.)</p>
-  <!-- VERIFY BEFORE PUBLICATION: the CBRE release headline refers to Q3 2026 while its snapshot table is labelled Q2 2026. Confirm the reference period against the published index before quoting as "latest quarter". -->
-
-  <blockquote>
-    <p><strong>Reading the data:</strong> Income is doing the work and capital is not. An office investor in this environment is being paid to wait, and the quality of the income decides whether waiting is rewarded.</p>
-  </blockquote>
-
-  <h2>Why Rates Still Dominate the Office Conversation</h2>
-
-  <p>The Bank of England's Monetary Policy Committee held Bank Rate at 3.75% in March (unanimously), April (8 to 1), June (7 to 2) and July 2026 (6 to 3), with the dissenting members each preferring a rise to 4%. The July Monetary Policy Report said the path of Bank Rate would depend on how higher energy prices feed through to inflation. (Sources: <a href="https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026" target="_blank" rel="noopener noreferrer">March</a>, <a href="https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026" target="_blank" rel="noopener noreferrer">April</a>, <a href="https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026" target="_blank" rel="noopener noreferrer">June</a> and <a href="https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026" target="_blank" rel="noopener noreferrer">July 2026</a> Bank of England summaries.) Secondary reporting indicates a further 6 to 3 hold on 17 September, with the next decision due on 5 November 2026.</p>
-  <!-- VERIFY BEFORE PUBLICATION: confirm the 17 September 2026 decision and vote split, and the 5 November date, on the Bank of England website. -->
-
-  <p>For property, the relevant point is not the policy rate itself but what it signals for borrowing costs and required returns. When a building's initial yield is close to the cost of debt, leverage stops adding return. That arithmetic is shown in the worked example below, and it explains why liquidity has concentrated in assets with the most dependable income.</p>
-
-  <h2>Two Markets: Where the Occupier Evidence Diverges From the Investment Evidence</h2>
-
-  <p>Savills observed in its early-2026 commentary that the occupational market has been more resilient than investment activity suggests, particularly in the regional cities, where it recorded no speculative new-build starts across the Big Six in 2026 and a 25 basis point inward move in the prime regional office yield to 6.50% in February. It also estimated preliminary first-quarter UK investment turnover at £9.8bn, 41% below the five-year average for a first quarter. (Source: <a href="https://www.savills.co.uk/research_articles/229130/390142-0" target="_blank" rel="noopener noreferrer">Savills, Market in Minutes: UK Commercial Investment</a>.)</p>
-
-  <p>Colliers counted the same period differently, putting first-quarter investment at £9.3bn, 16% below the first quarter of 2025, with offices accounting for 24% of transactions and office investment of £2.5bn, below the five-year average. (Source: <a href="https://www.colliers.com/en-gb/research/reif-q2-2026" target="_blank" rel="noopener noreferrer">Colliers UK Real Estate Investment Forecasts Q2 2026</a>.)</p>
-
-  <p>The two firms' totals differ because definitions, thresholds and reporting dates differ. That is not a flaw; it is a reminder that <strong>every market statistic has a methodology behind it</strong>, and a buyer should know which one before relying on a number. Likewise, Knight Frank's June 2026 yield guide reported an annualised total return of 6.33% for UK commercial property in April 2026. That figure is not comparable with CBRE's 2.5% for a six-month period, because one is annualised and the other is not. (Source: <a href="https://www.knightfrank.co.uk/site-assets/research/report-pdfs/yield-guide/kf-final-june-2026-prime-yield-guide.pdf" target="_blank" rel="noopener noreferrer">Knight Frank, UK Prime Yield Guide, June 2026</a>.)</p>
-
-  <h2>A Regulatory Variable Investors Cannot Ignore: Energy Efficiency</h2>
-
-  <p>On 18 June 2026 the government published an interim response on minimum energy efficiency standards for privately rented non-domestic buildings in England and Wales. It indicated that from 2031, buildings over 1,000 square metres would be expected to reach EPC B where cost-effective, that smaller buildings would remain subject to the current EPC E minimum, and that the previously consulted interim milestone for 2027 would not be taken forward. Law-firm commentary notes that this is a confirmed policy intention rather than enacted law. (Source: <a href="https://www.gov.uk/government/consultations/non-domestic-private-rented-sector-minimum-energy-efficiency-standards-epc-b-implementation/outcome/minimum-energy-efficiency-standards-mees-in-the-non-domestic-private-rented-sector-interim-response" target="_blank" rel="noopener noreferrer">GOV.UK interim response</a>.)</p>
-
-  <p>For a buyer, this converts a vague "ESG" discussion into a line item. A 1,500 square metre office with a weak EPC carries a potential capital expenditure requirement that should be priced before purchase, not discovered after it.</p>
-
-  <h2>The Murivest Capital Allocation Matrix</h2>
-
-  <p>The Matrix is a Murivest-developed analytical tool for comparing office assets and locations on a like-for-like basis. It is not an externally validated model, it does not produce a predictive score, and it does not rank markets. It organises the questions a disciplined investor should answer, so that two different buildings can be compared on the same six dimensions.</p>
-
-  <figure>
-    <img src="/research-images/uk-office-space-investment-outlook-2026.png" alt="Diagram of the Murivest Capital Allocation Matrix showing six dimensions of office investment analysis"  >
-    <figcaption>The Murivest Capital Allocation Matrix: six dimensions for comparing UK office investments</figcaption>
-  </figure>
-
-  <ol>
-    <li><strong>Income resilience.</strong> How dependable is the contracted rent? Assess weighted average unexpired lease term (WAULT, the average remaining lease length weighted by rent), tenant covenant strength, break clauses, rent-free periods still to run and the number of tenants. Request the tenancy schedule, leases, tenant accounts and arrears ledger.</li>
-    <li><strong>Entry-price discipline.</strong> Is the price supported by evidence? Compare the net initial yield with comparable transactions, reversionary potential and the replacement cost of the building. Request the valuation, comparable evidence and a purchaser's-costs calculation.</li>
-    <li><strong>Financing sensitivity.</strong> How exposed is the investment to a change in borrowing costs? Test interest cover and loan-to-value under higher rates, and the refinancing risk at maturity. Request indicative debt terms and a lender-style sensitivity analysis.</li>
-    <li><strong>Structural demand.</strong> Will occupiers want this specific building in ten years? Look at location, transport, specification, amenity, energy performance and the depth of local occupier demand and new supply. Request local take-up data and availability for competing buildings.</li>
-    <li><strong>Regulatory and execution risk.</strong> What could delay, restrict or add cost? Consider EPC rating and MEES exposure, planning status, change-of-use potential, building safety, and refurbishment complexity. Request the EPC, planning history, surveys and any consultant reports.</li>
-    <li><strong>Exit liquidity.</strong> Who buys it from you, and at what discount if conditions are poor? Consider lot size, the likely buyer universe, lease length at exit and the cost of any works needed to be saleable. Request advice on the realistic buyer pool.</li>
-  </ol>
-
-  <h3>Using the Matrix: Two Hypothetical Assets</h3>
-
-  <p>The comparison below is hypothetical and illustrative. It uses qualitative judgements and deliberately avoids numerical scores, because a score would imply a precision the inputs do not support.</p>
-
-  <table>
-    <thead>
-      <tr><th>Dimension</th><th>Asset A (hypothetical): refurbished, multi-let Central London office</th><th>Asset B (hypothetical): single-let office outside the M25 core, four years unexpired</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Income resilience</td><td>Diversified across tenants; individual voids are survivable</td><td>One tenant decision determines all income</td></tr>
-      <tr><td>Entry-price discipline</td><td>Likely priced for quality; test the yield against comparables</td><td>Higher yield, but test whether it compensates for re-letting risk</td></tr>
-      <tr><td>Financing sensitivity</td><td>Lower initial yield makes debt cost the key test</td><td>Lenders may price a short lease cautiously</td></tr>
-      <tr><td>Structural demand</td><td>Supported by constrained supply of quality space</td><td>Depends on the specific town and building quality</td></tr>
-      <tr><td>Regulatory and execution risk</td><td>Check EPC and any recent works</td><td>Check EPC; capital expenditure may be needed to re-let</td></tr>
-      <tr><td>Exit liquidity</td><td>Broader buyer pool</td><td>Narrower pool, especially as the lease shortens</td></tr>
-    </tbody>
-  </table>
-
-  <p>Neither profile is automatically better. Asset B may be the stronger investment if it is priced for its risks and a credible plan exists to extend or re-let. The Matrix does not make the decision; it shows where the decision actually sits.</p>
-
-  <h2>Testing the Matrix Against Five Scenarios</h2>
-
-  <table>
-    <thead>
-      <tr><th>Scenario</th><th>Dimensions most affected</th><th>What to test before buying</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Financing costs remain elevated</td><td>Financing sensitivity, entry price, exit liquidity</td><td>Interest cover at a higher rate; whether the investment still works with less debt</td></tr>
-      <tr><td>Financing costs ease</td><td>Entry price, exit liquidity</td><td>Whether the purchase relies on falling yields to generate returns, which would be speculation rather than income</td></tr>
-      <tr><td>Rental growth weakens</td><td>Income resilience, structural demand</td><td>Whether contracted rent is above market, and what happens at the next review or expiry</td></tr>
-      <tr><td>Capital expenditure exceeds expectations</td><td>Regulatory and execution risk, financing</td><td>An independent cost plan, EPC upgrade route and contingency</td></tr>
-      <tr><td>Sterling moves against the investor's home currency</td><td>Entry price, exit, overall return</td><td>Returns in the investor's own currency, and the cost and availability of hedging</td></tr>
-    </tbody>
-  </table>
-
-  <h2>Worked Example: Why the Headline Yield Is Not the Return</h2>
-
-  <p>The following is a hypothetical illustration with stated assumptions. It is not a forecast and does not describe any Murivest opportunity.</p>
-
-  <p><strong>Assumptions:</strong> purchase price £10,000,000; net rent £700,000 a year; Stamp Duty Land Tax calculated on the non-residential rates (nil to £150,000, 2% from £150,001 to £250,000, 5% above that, per <a href="https://www.gov.uk/stamp-duty-land-tax/nonresidential-and-mixed-rates" target="_blank" rel="noopener noreferrer">GOV.UK</a>); agent fee 1%; legal fee 0.5%; VAT at 20% on those fees.</p>
-
-  <ul>
-    <li>SDLT: £2,000 + 5% of £9,750,000 = <strong>£489,500</strong></li>
-    <li>Agent £100,000, legal £50,000, VAT on fees £30,000</li>
-    <li>Total purchaser's costs: <strong>£669,500</strong> (about 6.7%); all-in cost <strong>£10,669,500</strong></li>
-    <li>Net initial yield = £700,000 ÷ £10,669,500 = <strong>6.56%</strong>, not the 7.00% a quick calculation on price alone would suggest</li>
-  </ul>
-
-  <p><strong>The leverage test.</strong> Assume £5,000,000 of interest-only debt, leaving equity of £5,669,500. At an interest rate of 6.0%, interest is £300,000, cash after interest is £400,000 and the cash yield on equity is about <strong>7.06%</strong>, above the 6.56% unlevered yield, so debt adds income. At 7.0%, interest is £350,000, cash after interest is £350,000 and the cash yield on equity is about <strong>6.17%</strong>, below the unlevered yield, so debt now dilutes income. The example ignores vacancy, capital expenditure, tax and amortisation, all of which would reduce the figures further.</p>
-
-  <p>The lesson is simple. Where the net initial yield and the cost of debt are close, a small rate move changes the character of the investment.</p>
-
-  <h2>Location Analysis: London, Manchester and Birmingham Through the Matrix</h2>
-
-  <p>The Matrix applies to locations as well as buildings, but a location is only a starting point. The notes below describe the questions each market raises, not a ranking or a recommendation.</p>
-
-  <p><strong>London.</strong> The largest and deepest buyer pool supports exit liquidity, and Central London values have held flat in the data cited above. The key questions concern entry-price discipline, because quality is widely recognised, and the difference between Central London, fringe and outer-London stock. Murivest's <a href="https://murivest.com/markets/london" target="_blank" rel="noopener noreferrer">London market page</a> sets out its advisory coverage.</p>
-
-  <p><strong>Manchester.</strong> Regional offices combine thin new supply with a smaller buyer pool than London. The key questions are specification, EPC, and how deep local occupier demand is for the particular building. See Murivest's <a href="https://murivest.com/markets/manchester" target="_blank" rel="noopener noreferrer">Manchester market page</a>.</p>
-
-  <p><strong>Birmingham.</strong> Another large regional centre with its own occupier base. The same discipline applies: building quality, lease profile and exit. See Murivest's <a href="https://murivest.com/markets/birmingham" target="_blank" rel="noopener noreferrer">Birmingham market page</a>.</p>
-
-  <h2>Representative Opportunities on the Murivest UK Platform</h2>
-
-  <p>Murivest's <a href="https://murivest.com/united-kingdom">UK platform</a> shows representative opportunities across its coverage. These illustrate the type of mandate Murivest works on. They are not offers, and the availability, price and terms of any asset must be confirmed in writing under mandate and NDA before any decision is made.</p>
-
-  <h3>REPRESENTATIVE: London Office</h3>
-  <p><strong>Location: London</strong></p>
-  <p><strong>Indicative size shown: £100m, 10-year WAULT</strong></p>
-  <p><strong>Status shown: Private / Off-market</strong></p>
-
-  <figure>
-    <img src="/p3/uk-london-office-representative.webp" alt="London office building representing a Murivest UK office investment mandate"  >
-    <figcaption>London office: a representative mandate type shown on Murivest UK</figcaption>
-  </figure>
-
-  <p>Applying the Matrix, a 10-year WAULT is a strong starting point for income resilience, but the investor should still ask who the tenants are, whether any break clauses sit within that term, and what the all-in net initial yield is after purchaser's costs. "Off-market" means the asset is not broadly marketed; it does not mean it carries less risk, and the same due diligence applies.</p>
-
-  <h3>ALSO REPRESENTATIVE: Manchester Industrial and Logistics</h3>
-  <p><strong>Location: Manchester</strong></p>
-  <p><strong>Indicative size shown: £100m, 8% net initial yield</strong></p>
-  <p><strong>Status shown: Public opportunity</strong></p>
-
-  <h3>ALSO REPRESENTATIVE: Birmingham Retail</h3>
-  <p><strong>Location: Birmingham</strong></p>
-  <p><strong>Indicative size shown: £100m, 8% passing yield</strong></p>
-  <p><strong>Status shown: Public opportunity</strong></p>
-
-  <p>The two quoted yields are not the same measure. A net initial yield deducts purchaser's costs from the return, whereas a passing yield is typically calculated on the rent currently payable relative to price. A buyer comparing the two must put them on the same basis first.</p>
-
-  <h2>Ten Questions to Settle Before Pursuing an Office Acquisition</h2>
-
-  <ol>
-    <li>What is the net initial yield after full purchaser's costs, and on what rent?</li>
-    <li>How much of the rent is contracted beyond the first break, and who are the tenants?</li>
-    <li>Is the passing rent above or below current market rent?</li>
-    <li>What is the EPC rating, and what would an upgrade to EPC B cost for this building?</li>
-    <li>What is competing supply in this location, and is it Grade A or secondary?</li>
-    <li>How does the investment perform at interest rates one to two percentage points higher?</li>
-    <li>What capital expenditure is needed in the first five years, and who has costed it?</li>
-    <li>Who is the likely buyer at exit, and what lease length will they want?</li>
-    <li>What is the return in your home currency, and what would hedging cost?</li>
-    <li>Which parts of this analysis rely on information you have not independently verified?</li>
-  </ol>
-
-  <h2>Frequently Asked Questions</h2>
-
-  <h3>Is UK office space a good investment in 2026?</h3>
-  <p>It depends on the asset. Published data show Central London office values holding flat while outer-London and regional offices repriced lower in the first half of 2026, so building selection matters more than the sector label. This is general information, not advice.</p>
-
-  <h3>What is a good yield for a UK office investment?</h3>
-  <p>There is no single good yield. Savills reported a prime regional office yield of 6.50% in February 2026, but a yield must be judged against tenant strength, lease length, capital expenditure needs and financing costs. Always compare net initial yields on a like-for-like basis.</p>
-
-  <h3>How do interest rates affect UK office values?</h3>
-  <p>Higher borrowing costs and government bond yields tend to push property yields outward, which reduces capital values. CBRE linked recent capital value falls to exactly this effect.</p>
-
-  <h3>What does EPC B by 2031 mean for office owners?</h3>
-  <p>The government has indicated that privately rented non-domestic buildings over 1,000 square metres would be expected to reach EPC B from 2031 where cost-effective. This is a policy intention, not yet law, so buyers should price potential upgrade costs and monitor legislation.</p>
-
-  <h3>Can overseas investors buy UK office buildings?</h3>
-  <p>Yes, subject to legal, tax and compliance requirements, including registration of overseas entities with Companies House before buying. Our companion guide, <a href="/research/buy-commercial-property-uk-overseas-investors-guide">How to Buy Commercial Property in the UK</a>, covers these in detail.</p>
-
-  <h2>Methodology and Limitations</h2>
-
-  <p>This note was prepared on 11 October 2026 using publicly available sources, each cited where used. Market data are drawn from CBRE, Savills, Colliers and Knight Frank publications covering the periods stated; Bank of England decisions are taken from the Bank's published summaries; tax rates are taken from GOV.UK. Different research houses measure investment volumes and returns differently, so figures are not directly comparable across sources and some totals disagree. Forecasts are not provided, and no scenario in this note is a prediction.</p>
-
-  <p>The Murivest Capital Allocation Matrix is an internally developed analytical framework. It has not been independently validated, is not industry-standard and does not generate a statistically predictive score. Worked examples are hypothetical. Murivest was established in 2025 and does not claim a track record in this market beyond what it can evidence. Search-interest context for this topic was informed by a 24-hour Google Trends sample (11 to 12 May 2026) in which "office space" was the most searched of seven related terms; that sample is a directional topic signal only and is not used as market evidence.</p>
-
-  <h2>Sources and Further Reading</h2>
-
-  <ul>
-    <li><a href="https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026" target="_blank" rel="noopener noreferrer">Bank of England, Monetary Policy Summary and Minutes, July 2026</a></li>
-    <li><a href="https://www.bankofengland.co.uk/monetary-policy-report/2026/july-2026" target="_blank" rel="noopener noreferrer">Bank of England, Monetary Policy Report, July 2026</a></li>
-    <li><a href="https://www.cbre.co.uk/insights/books/uk-real-estate-market-outlook-midyear-review-2026/capital-markets" target="_blank" rel="noopener noreferrer">CBRE, UK Real Estate Market Outlook: Midyear Review 2026</a></li>
-    <li><a href="https://www.cbre.co.uk/press-releases/uk-all-property-capital-values-declined-over-q3-2026-driven-by-outward-yield-movement" target="_blank" rel="noopener noreferrer">CBRE, UK Monthly Index release</a></li>
-    <li><a href="https://www.savills.co.uk/research_articles/229130/390142-0" target="_blank" rel="noopener noreferrer">Savills, Market in Minutes: UK Commercial Investment</a></li>
-    <li><a href="https://www.colliers.com/en-gb/research/reif-q2-2026" target="_blank" rel="noopener noreferrer">Colliers, UK Real Estate Investment Forecasts Q2 2026</a></li>
-    <li><a href="https://www.knightfrank.co.uk/site-assets/research/report-pdfs/yield-guide/kf-final-june-2026-prime-yield-guide.pdf" target="_blank" rel="noopener noreferrer">Knight Frank, UK Prime Yield Guide, June 2026</a></li>
-    <li><a href="https://www.gov.uk/stamp-duty-land-tax/nonresidential-and-mixed-rates" target="_blank" rel="noopener noreferrer">GOV.UK, SDLT rates for non-residential and mixed land and property</a></li>
-    <li><a href="https://www.gov.uk/government/consultations/non-domestic-private-rented-sector-minimum-energy-efficiency-standards-epc-b-implementation/outcome/minimum-energy-efficiency-standards-mees-in-the-non-domestic-private-rented-sector-interim-response" target="_blank" rel="noopener noreferrer">GOV.UK, MEES in the non-domestic private rented sector: interim response (June 2026)</a></li>
-  </ul>
-
-  <h2>Discuss a UK Office Acquisition Requirement</h2>
-
-  <p>If you are assessing UK office investments and want to test an opportunity against the Matrix, you can review Murivest's coverage on the <a href="https://murivest.com/united-kingdom">UK commercial real estate hub</a> or <a href="https://murivest.com/united-kingdom/contact">contact the Murivest private office</a> to discuss an acquisition requirement. Engagements are mandate-based and subject to KYC and AML verification. There is no obligation to proceed.</p>
-
-  <p>Regards,</p>
-
-  <p><strong>Murivest Research Desk</strong><br>
-  Murivest Group Ltd<br>
-  October 2026</p>
-
-  <p><strong>P.S.</strong> The most useful output of this note is the list of ten questions above. Take it to any office opportunity you are considering, whoever is offering it.</p>
-
-  <h2>Related Articles</h2>
-  <ul>
-    <li><a href="/research/buy-commercial-property-uk-overseas-investors-guide">How to Buy Commercial Property in the UK: A Seven-Gate Due-Diligence Framework for Overseas Investors</a></li>
-    <li><a href="/research/uk-flexible-office-serviced-office-rental-income-durability">UK Office Rental Income and Flexible Workspace: Assessing Income Durability Beyond Headline Yield</a></li>
-    <li><a href="https://murivest.com/united-kingdom">Murivest UK: Commercial Real Estate Investment and Capital Markets</a></li>
-  </ul>
-
-  <div class="disclaimer">
-    <p><em>Disclaimer: This article is for informational purposes only and does not constitute investment, legal, tax or financial advice. All commercial real estate acquisition decisions should be made with independent professional guidance. Murivest Group Ltd is an independent real estate advisory firm. We do not act as a licensed investment advisor and do not offer regulated financial products or collective investment schemes. We do not pool capital from multiple investors. All advisory engagements are mandate-based, subject to formal documentation, comprehensive KYC/AML verification, and explicit scope definition. Opportunities described as representative are illustrative of mandate types and are not offers. No investment decisions should be made based on information contained in our materials without independent verification, professional legal counsel, and comprehensive due diligence. Past advisory outcomes do not guarantee future results. All investments carry inherent risks, including potential capital loss.</em></p>
-  </div>
 </article>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "UK Office Space Investment Outlook 2026: Where Capital Can Still Find Income as Prices Reset",
-  "description": "UK office investment is no longer one market but two. This research note examines Bank Rate, prime-versus-secondary pricing and occupier supply, then introduces the Murivest Capital Allocation Matrix.",
+  "headline": "Grit Real Estate's KSh20.5 Billion Kenya Portfolio: Debt Restructuring, Asset Disposals and Institutional Acquisition Opportunities",
+  "description": "An institutional analysis of Grit Real Estate's proposed Kenyan property portfolio disposals, secured lending exposure and potential implications for commercial real estate investment in Kenya.",
   "author": {
     "@type": "Person",
-    "name": "${getAuthor('investment')}"
+    "name": "\${getAuthor('investment')}"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Murivest Group Ltd",
-    "url": "https://murivest.com"
+    "url": "https://murivest.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://murivest.com/logo.png"
+    }
   },
-  "datePublished": "2026-10-11",
-  "dateModified": "2026-10-11",
-  "image": "/p3/uk-office-outlook-2026.webp",
+  "datePublished": "2026-11-05",
+  "dateModified": "2026-11-05",
+  "image": "https://murivest.com/research-images/grit-kenya-real-estate-portfolio-2026.webp",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://murivest.com/research/uk-office-space-investment-outlook-2026"
-  }
+    "@id": "https://murivest.com/kenya/research/grit-real-estate-kenya-portfolio-disposal-distressed-assets-2026"
+  },
+  "articleSection": "Market Intelligence",
+  "keywords": [
+    "Grit Real Estate Kenya",
+    "Kenya distressed commercial property",
+    "Kenya commercial real estate investment",
+    "Rosslyn Grove",
+    "Buffalo Mall Naivasha",
+    "Eneo Tatu City",
+    "Kenya institutional property investment",
+    "commercial property acquisitions Kenya"
+  ]
 }
 </script>
 
@@ -527,42 +1328,42 @@ export const researchData: Record<string, researchPostData> = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is UK office space a good investment in 2026?",
+      "name": "Why is Grit Real Estate selling its Kenyan properties?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on the asset. Published data show Central London office values holding flat while outer-London and regional offices repriced lower in the first half of 2026, so building selection matters more than the sector label. This is general information, not advice."
+        "text": "Grit is pursuing a wider portfolio disposal and deleveraging programme amid financial pressure, higher financing costs and restructuring requirements."
       }
     },
     {
       "@type": "Question",
-      "name": "What is a good yield for a UK office investment?",
+      "name": "How much are Grit's Kenyan properties worth?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "There is no single good yield. Savills reported a prime regional office yield of 6.50% in February 2026, but a yield must be judged against tenant strength, lease length, capital expenditure needs and financing costs. Always compare net initial yields on a like-for-like basis."
+        "text": "The Kenyan income-producing portfolio was last reported at approximately US$158.2 million, equivalent to KSh20.5 billion, as at June 2025. This is a historical portfolio valuation."
       }
     },
     {
       "@type": "Question",
-      "name": "How do interest rates affect UK office values?",
+      "name": "Which Kenyan properties are included?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Higher borrowing costs and government bond yields tend to push property yields outward, which reduces capital values. CBRE linked recent UK commercial capital value falls to this effect."
+        "text": "Grit's published portfolio identifies Rosslyn Grove, Buffalo Mall, Eneo at Tatu City, Orbit Africa and Imperial Distribution Centre."
       }
     },
     {
       "@type": "Question",
-      "name": "What does EPC B by 2031 mean for office owners?",
+      "name": "Have the properties already been sold?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The government has indicated that privately rented non-domestic buildings over 1,000 square metres would be expected to reach EPC B from 2031 where cost-effective. This is a policy intention, not yet law, so buyers should price potential upgrade costs and monitor legislation."
+        "text": "The announced disposal process should not be confused with completed transfers. Transaction completion remains subject to applicable conditions and approvals."
       }
     },
     {
       "@type": "Question",
-      "name": "Can overseas investors buy UK office buildings?",
+      "name": "Does financial distress guarantee a discounted purchase?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, subject to legal, tax and compliance requirements, including registration of overseas entities with Companies House before buying. Professional legal and tax advice is essential."
+        "text": "No. A distressed corporate seller does not automatically imply that the underlying property is undervalued. Buyers must establish market value, liabilities, rental performance and completion costs."
       }
     }
   ]
@@ -570,6 +1371,8 @@ export const researchData: Record<string, researchPostData> = {
 </script>
 `
 },
+
+
 'buy-commercial-property-uk-overseas-investors-guide': {
     title: 'How to Buy Commercial Property in the UK: A Seven-Gate Due-Diligence Framework for Overseas Investors',
     excerpt: 'Overseas buyers rarely lose money on the headline price. They lose it on tax friction, title, lease terms, capital expenditure and exit. This guide sets out the Murivest Seven-Gate Acquisition Test, verified GOV.UK tax and compliance points, and a practical 30-day due-diligence roadmap.',
@@ -1253,10 +2056,10 @@ export const researchData: Record<string, researchPostData> = {
   <p>The Kenyan franchise of the South African brand, with a broad residential and commercial footprint and particular strength in the premium and lifestyle segments.</p>
 
   <p><strong>3. Murivest Group Ltd</strong></p>
-  <p>A mandate-based investment-led advisory focused on income-producing commercial assets, acquisitions and dispositions, leasing-related engagements, investment analysis and selected cross-border opportunities through relevant partners. Its positioning emphasises the investment fundamentals behind each opportunity — rental income, occupancy, operating costs, tenant quality and potential capital appreciation — before any transaction is discussed. This editorial guide places Murivest at number three, reflecting its intended focus on investment-led commercial real estate advisory for UHNWI, family offices and institutional capital.</p>
+  <p>A mandate-based investment-led advisory focused on income-producing commercial assets, acquisitions and dispositions, leasing-related engagements, investment analysis and selected cross-border opportunities through relevant partners. Its positioning emphasises the investment fundamentals behind each opportunity — rental income, occupancy, operating costs, tenant quality and potential capital appreciation — before any transaction is discussed. This editorial guide places Murivest at number three, reflecting its intended focus on investment-led commercial real estate services for UHNWI, family offices and institutional capital.</p>
 
   <figure>
-    <img src="/p3/kenya-agencies.webp" alt="Murivest Group Ltd — mandate-based commercial real estate advisory, Nairobi" >
+    <img src="/p3/kenya-agencies.webp" alt="Murivest Group Ltd — mandate-based commercial real estate services, Nairobi" >
     <figcaption>Murivest Group Ltd — investment-led commercial advisory, positioned at number three in this editorial guide</figcaption>
   </figure>
 
@@ -1294,7 +2097,7 @@ export const researchData: Record<string, researchPostData> = {
   <p>An international property consultancy with Kenyan engagement on valuation and advisory assignments.</p>
 
   <p><strong>15. Ark Consultants</strong></p>
-  <p>A Nairobi-based consultancy serving corporate real estate clients across agency and advisory functions.</p>
+  <p>A Global consultancy serving corporate real estate clients across agency and advisory functions.</p>
 
   <p><strong>16. Amalgamated Properties</strong></p>
   <p>A Kenyan firm active across commercial agency and property management.</p>
@@ -1559,7 +2362,7 @@ export const researchData: Record<string, researchPostData> = {
 
 'kenyan-investors-uk-real-estate-ksh-3-5-million-cross-border': {
     title: 'Kenyan Investors Gain Access to UK Real Estate from KSh 3.5M Through Murivest Group Ltd as Cross-Border Investment Opportunities Expand',
-    excerpt: 'Kenyan investors are exploring new ways to diversify their wealth internationally. Through its stated partnership with a lead agency, Murivest Group Ltd is providing a Nairobi-based point of contact for eligible investors seeking to explore selected United Kingdom property investment opportunities from approximately KSh 3.5 million.',
+    excerpt: 'Kenyan investors are exploring new ways to diversify their wealth internationally. Through its stated partnership with a lead agency, Murivest Group Ltd is providing a Global point of contact for eligible investors seeking to explore selected United Kingdom property investment opportunities from approximately KSh 3.5 million.',
     author: getAuthor('investment'),
     category: 'Investment',
     image: '/research-images/kenya-uk-real-estate-ksh-3-5-million.webp',
@@ -1574,7 +2377,7 @@ export const researchData: Record<string, researchPostData> = {
     <img src="/research-images/kenya-uk-real-estate-ksh-3-5-million.webp" alt="Nairobi skyline and Birmingham apartment buildings representing cross-border UK property investment for Kenyan investors"  >
   </figure>
 
-  <p><em>A research note for Nairobi-based professional and high-net-worth investors on how cross-border UK property exposure works, what an entry point of roughly KSh 3.5 million really represents, and the questions to settle before committing capital. To request information on UK opportunities, use the <a href="/united-kingdom/investor-enquiry?ref=kenya-uk-real-estate">Murivest UK investor enquiry form</a>.</em></p>
+  <p><em>A research note for Global professional and high-net-worth investors on how cross-border UK property exposure works, what an entry point of roughly KSh 3.5 million really represents, and the questions to settle before committing capital. To request information on UK opportunities, use the <a href="/united-kingdom/investor-enquiry?ref=kenya-uk-real-estate">Murivest UK investor enquiry form</a>.</em></p>
 
   <h2>Executive Summary</h2>
 
@@ -4833,7 +5636,7 @@ content: `
   <h2>Beyond Conventional Real Estate Brokerage</h2>
 
   <p>
-    Murivest Group Ltd operates as an independent commercial real estate advisory and acquisition platform focused on strategic opportunities across emerging and institutional markets.
+    Murivest Group Ltd operates as an Institutional commercial real estate services and acquisition platform focused on strategic opportunities across emerging and institutional markets.
   </p>
 
   <p>
@@ -4946,7 +5749,7 @@ content: `
     "name": "What makes Murivest different from traditional brokerage firms?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Murivest Group Ltd operates as an independent commercial real estate advisory platform focused on strategic acquisition, institutional-grade due diligence, market intelligence, and long-term wealth preservation principles."
+      "text": "Murivest Group Ltd operates as an Institutional commercial real estate services platform focused on strategic acquisition, institutional-grade due diligence, market intelligence, and long-term wealth preservation principles."
     }
   }]
 }
@@ -14266,7 +15069,7 @@ content: `
          
       >
       <figcaption>
-        Logistics efficiency and infrastructure positioning are becoming increasingly important across East African industrial property markets.
+        Logistics efficiency and infrastructure positioning are becoming increasingly important Global industrial property markets.
       </figcaption>
     </figure>
 

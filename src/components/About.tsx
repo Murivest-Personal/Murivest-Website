@@ -252,7 +252,7 @@ export default function About() {
               }}
             >
               Building Institutional<br />
-              Discipline in East<br />
+              Discipline in <br />
               <em style={{ fontStyle: 'italic', fontWeight: 300 }}>African Commercial</em><br />
               Real Estate.
             </h1>
@@ -358,7 +358,7 @@ export default function About() {
             borderTop: '1px solid #C4B49A', paddingTop: '3rem',
           }}>
             <div className="prose-block">
-              <p>Murivest Group Ltd was founded in Nairobi in 2024 with a single purpose: to build the institutional infrastructure that East African commercial real estate has historically lacked — structured underwriting, disciplined capital allocation, and fiduciary standards aligned with international investor expectations.</p>
+              <p>Murivest Group Ltd was founded in 2025 with a single purpose: to build the institutional infrastructure that East African commercial real estate has historically lacked — structured underwriting, disciplined capital allocation, and fiduciary standards aligned with international investor expectations.</p>
               <p>We are an early-stage platform. We do not pretend otherwise. What we bring is not a fabricated track record — it is a framework, a network, and a commitment to executing the first mandate with the same rigour we intend to apply to the hundredth.</p>
             </div>
             <div className="prose-block">

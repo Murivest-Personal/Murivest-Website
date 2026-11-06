@@ -317,7 +317,7 @@ export default async function PropertyPage({
                 Murivest Group Ltd
               </p>
               <p className="text-xs text-[#6B6B6B] mt-1">
-                Institutional Commercial Real Estate Advisory
+                Institutional commercial real estate services
               </p>
             </div>
           </aside>

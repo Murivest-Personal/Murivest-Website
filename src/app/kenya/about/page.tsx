@@ -8,15 +8,15 @@ import {
 } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'About Murivest Group Ltd - Independent Advisory Firm Kenya',
+  title: 'Murivest Group Group Ltd - Independent Advisory Firm Kenya',
   description:
-    'Murivest Group Ltd is an independent institutional commercial real estate advisory firm headquartered in Nairobi. Founded in 2015, we provide acquisition advisory, capital markets, and development strategy across East African markets to sovereign wealth funds, pension funds, and family offices. All engagements are mandate-based with full KYC/AML compliance.',
+    'Murivest Group Ltd is an independent institutional commercial real estate services firm headquartered in Nairobi. Founded in 2025, we provide acquisition advisory, capital markets, and development strategy Global markets to sovereign wealth funds, pension funds, and family offices. All engagements are mandate-based with full KYC/AML compliance.',
   keywords:
     'Murivest Group Ltd, independent real estate advisory Kenya, commercial property advisory Nairobi, institutional real estate standards, mandate-based advisory East Africa, real estate consulting Africa, property investment advisory Kenya',
   openGraph: {
-    title: 'About Murivest Group Ltd - Institutional Advisory',
+    title: 'Murivest Group Group Ltd - Institutional Advisory',
     description:
-      'Independent commercial real estate advisory firm serving institutional investors across East Africa since 2015. Acquisition advisory, capital markets, and development strategy with full compliance standards.',
+      'Institutional commercial real estate services firm serving institutional investors across East Africa since 2015. Acquisition advisory, capital markets, and development strategy with full compliance standards.',
     images: ['/image.webp'],
   },
 }
@@ -25,7 +25,7 @@ const aboutSchema = professionalServiceSchema({
   '@id': 'https://murivest.com/#organization',
   name: 'Murivest Group Ltd',
   description:
-    'Independent institutional commercial real estate advisory firm headquartered in Nairobi, providing acquisition advisory, capital markets, and development strategy.',
+    'Independent institutional commercial real estate services firm headquartered in Nairobi, providing acquisition advisory, capital markets, and development strategy.',
   foundingDate: '2015',
   numberOfEmployees: {
     '@type': 'QuantitativeValue',
@@ -33,7 +33,7 @@ const aboutSchema = professionalServiceSchema({
     unitText: 'professionals',
   },
   knowsAbout: [
-    'Commercial Real Estate Advisory',
+    'commercial real estate services',
     'Capital Markets',
     'Investment Sales',
     'Tenant Representation',

@@ -1392,7 +1392,7 @@ export function CountryPageClient({
                 lineHeight: 1.8,
               }}
             >
-              Institutional commercial real estate advisory and deal origination
+              Institutional commercial real estate services and deal origination
               across {countryLabel}'s primary and secondary investment markets.
             </p>
           </motion.div>

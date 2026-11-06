@@ -2,6 +2,19 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import InteractiveButton from "@/components/InteractiveButton";
+import { Cinzel, Jost } from 'next/font/google';
+
+const cinzel = Cinzel({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+});
+
+const jost = Jost({
+  subsets: ['latin'],
+  weight: ['300', '400'],
+  display: 'swap',
+});
 
 // ─── Colour Tokens (Genesis Palette) ───────────────────────────
 const STYLE_BLOCK = `
@@ -146,7 +159,7 @@ function SchemaOrg() {
     logo: "https://murivest.co.uk/logo.png",
     sameAs: ["https://www.linkedin.com/company/murivest"],
     description:
-      "Institutional commercial real estate advisory and capital markets firm directing strategic capital acquisition across the United Kingdom.",
+      "Institutional commercial real estate services and capital markets firm directing strategic capital acquisition across the United Kingdom.",
     address: {
       "@type": "PostalAddress",
       streetAddress: "1 Royal Exchange Avenue",
@@ -162,7 +175,7 @@ function SchemaOrg() {
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Commercial Real Estate Advisory",
+      name: "commercial real estate services",
       itemListElement: [
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Acquisition Advisory" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Capital Markets" } },
@@ -317,49 +330,61 @@ export default function MurivestUKHomepage() {
         {/* ═════════════════════════════════════════════════════════
             1. HERO
         ═════════════════════════════════════════════════════════ */}
-        <section className="relative bg-[#0B3D2E] overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <Image
-              src="/images/hero-london-skyline.jpg"
-              alt="Grade A Prime Commercial Real Estate City of London skyline at dusk"
-              fill
-              priority
-              className="object-cover opacity-[0.12]"
-              sizes="100vw"
-            />
-            <div className="absolute inset-0 bg-[#0B3D2E]/90" />
-          </div>
+            <section className="relative flex min-h-[100svh] w-full items-center justify-center overflow-hidden bg-[#17251D]">
+      {/* Background video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+          aria-label="Murivest luxury architectural background video"
+        >
+          <source src="/images/herouk.mp4" type="video/mp4" />
+          
+        </video>
 
-          <div
-            className="absolute inset-0 z-0 opacity-[0.3] bg-no-repeat bg-center bg-cover"
-            style={{
-              backgroundImage: `url("https://media.istockphoto.com/id/2158963864/photo/aerial-view-of-finance-district-in-london.jpg?s=612x612&w=0&k=20&c=rci0quMZuxaVrS9qp0DZ3w2AtxPC2TCdqWjAocdjYW0=")`,
-            }}
-          />
+      {/* Very light overlay, just enough for legibility */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/5 to-black/20" />
 
-          <div className="relative z-10 max-w-[1280px] mx-auto px-8 py-32 md:py-44">
-            <div className="max-w-[800px]">
-              <span className="eyebrow">United Kingdom Capital Markets</span>
-              <h1 className="font-serif text-[clamp(2.5rem,5.5vw,4.5rem)] font-normal leading-[1.08] text-[#F8F7F4] mb-8 tracking-tight">
-                Commercial Real Estate<br />
-                Investment & <em className="text-[#8B7355] not-italic">Capital Markets.</em>
-              </h1>
-              <p className="font-sans text-lg leading-relaxed text-[rgba(248,247,244,0.8)] font-light max-w-[640px] mb-12">
-                Institutional-grade advisory for investors acquiring, repositioning and disposing of
-                income-producing commercial real estate across the United Kingdom.
-              </p>
-              <div className="flex flex-wrap gap-5">
-                <InteractiveButton href="/invest/submit-mandate" variant="primary">
-                  Submit an Acquisition Mandate
-                </InteractiveButton>
-                <InteractiveButton href="/invest/opportunities" variant="secondary">
-                  View Investment Opportunities
-                </InteractiveButton>
-              </div>
-            </div>
-          </div>
-        </section>
+      {/* Content, sits slightly below centre like the reference */}
+      <div className="relative z-10 flex w-full flex-col items-center px-6 pt-[10svh] text-center text-white">
+        {/* Wordmark */}
+        <div className="hero-reveal inline-flex flex-col items-center drop-shadow-[0_1px_8px_rgba(0,0,0,0.25)]">
+          <h1
+            className={`${cinzel.className} pl-[0.1em] text-[1.9rem] font-normal uppercase leading-none tracking-[0.1em] sm:text-4xl md:text-5xl lg:text-[3.5rem]`}
+          >
+            Murivest
+          </h1>
 
+          {/* Underline matches wordmark width */}
+          <div className="mt-2 h-px w-full bg-white/90" />
+
+          <p
+            className={`${jost.className} mt-2 pl-[0.5em] text-[9px] font-light uppercase tracking-[0.5em] sm:text-[10px] md:text-xs`}
+          >
+            Group
+          </p>
+        </div>
+
+        {/* Presents / Country */}
+        <div className="hero-reveal-delayed mt-20 sm:mt-24 md:mt-28 drop-shadow-[0_1px_6px_rgba(0,0,0,0.25)]">
+          <p
+            className={`${jost.className} pl-[0.9em] text-sm font-light uppercase tracking-[0.9em] text-white/90 sm:text-base md:text-lg`}
+          >
+            Presents
+          </p>
+          <p
+            className={`${jost.className} mt-4 pl-[0.5em] text-xs font-normal uppercase tracking-[0.5em] sm:text-sm md:text-base`}
+          >
+            United Kingdom
+          </p>
+        </div>
+      </div>
+
+
+    </section>
         {/* ═════════════════════════════════════════════════════════
             2. TRUST / POSITIONING STRIP
         ═════════════════════════════════════════════════════════ */}
@@ -812,7 +837,7 @@ export default function MurivestUKHomepage() {
               <div className="col-span-2 md:col-span-1">
                 <p className="font-serif text-[1.25rem] text-[#F8F7F4] mb-4 tracking-[0.15em] uppercase">Murivest</p>
                 <p className="font-sans text-[0.8rem] leading-[1.7] font-light">
-                  Institutional commercial real estate advisory and capital markets.
+                  Institutional commercial real estate services and capital markets.
                   Operating across UK commercial real estate markets.
                 </p>
               </div>

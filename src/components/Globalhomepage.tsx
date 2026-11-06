@@ -1,16 +1,16 @@
 'use client'
-
+import { Cinzel, Jost } from 'next/font/google';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import CEOInstitutionalProfile from '@/components/CEOInstitutionalProfile';
 
 export const metadata: Metadata = {
-  title: 'Commercial Real Estate Advisory Kenya | Office, Industrial & Investment | Murivest - Est. 2025',
+  title: 'Murivest Group Ltd | Global Commercial Real Estate Services',
   description:
-    'Murivest Group Ltd is a Nairobi-based commercial real estate advisory founded in 2025 by Mark Muriithi. Mandate-based advisory for office, industrial, and investment across Kenya and East Africa.',
+    'Murivest Group is the global leader in commercial real estate services and investment advisory specializing in institutional-grade opportunities. Mandate-based advisory for office, industrial, and investment Globally.',
   keywords: [
-    'commercial real estate advisory Kenya',
+    'commercial real estate services Kenya',
     'Nairobi commercial property',
     'office space Nairobi',
     'industrial property Kenya',
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     'exit strategy advisory',
   ],
   openGraph: {
-    title: 'Murivest Group Ltd | Commercial Real Estate Advisory Kenya',
+    title: 'Murivest Group Ltd | Global Commercial Real Estate Services',
     description:
-      'Nairobi-based commercial real estate advisory founded in 2025 by Mark Muriithi. Mandate-based advisory for office, industrial, and investment across Kenya and East Africa.',
+      'Murivest Group is the global leader in commercial real estate services and investment advisory specializing in institutional-grade opportunities. Mandate-based advisory for office, industrial, and investment Globally.',
     url: 'https://murivest.com',
     siteName: 'Murivest Group Ltd',
     locale: 'en_KE',
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Murivest Group Ltd | Commercial Real Estate Advisory Kenya',
+    title: 'Murivest Group Ltd | Global Commercial Real Estate Services',
     description:
-      'Nairobi-based commercial real estate advisory founded in 2025 by Mark Muriithi.',
+      'Murivest Group is the global leader in commercial real estate services and investment advisory specializing in institutional-grade opportunities.',
   },
   alternates: { canonical: 'https://murivest.com' },
   robots: {
@@ -128,12 +128,12 @@ const FAQS = [
   {
     question: 'Who are Murivest\'s typical clients?',
     answer:
-      'We advise private capital, family offices, and institutional-minded investors on commercial property acquisitions, dispositions, and strategy across Kenya and East Africa. Our relationships are mandate-based, confidential, and typically initiated through direct referral.',
+      'We advise private capital, family offices, and institutional-minded investors on commercial property acquisitions, dispositions, and strategy Globally. Our relationships are mandate-based, confidential, and typically initiated through direct referral.',
   },
   {
     question: 'What asset classes does Murivest cover?',
     answer:
-      'Our advisory spans Grade A office, industrial and logistics, retail and mixed-use, and hospitality across Kenya and East Africa. We maintain specialist knowledge for each sector rather than broad, shallow coverage.',
+      'Our advisory spans Grade A office, industrial and logistics, retail and mixed-use, and hospitality Globally. We maintain specialist knowledge for each sector rather than broad, shallow coverage.',
   },
   {
     question: 'How does Murivest verify counterparty compliance?',
@@ -149,7 +149,7 @@ const FAQS = [
 
 const ABOUT_PARAGRAPHS = [
   `Murivest Group Ltd was founded in 2025 in Nairobi, Kenya by Mark Muriithi to address a structural gap in East African commercial real estate markets. Institutional-grade advisory—disciplined underwriting, title risk mitigation, exit planning, and off-market execution—remains scarce in frontier markets. Most operators function as brokers or developers, leaving investors without the rigorous mandate architecture expected in mature markets.`,
-  `Murivest bridges this divide by combining structured advisory, disciplined underwriting, and off-market execution for commercial real estate across Kenya and East Africa. Every mandate is advisory-only. We do not pool capital or operate collective investment schemes. Our model is built on transparency, verifiable ground data, and alignment with institutional expectations—governance, reporting, and risk engineering that withstands scrutiny from private capital, family offices, and institutional-minded investors.`,
+  `Murivest bridges this divide by combining structured advisory, disciplined underwriting, and off-market execution for commercial real estate Globally. Every mandate is advisory-only. We do not pool capital or operate collective investment schemes. Our model is built on transparency, verifiable ground data, and alignment with institutional expectations—governance, reporting, and risk engineering that withstands scrutiny from private capital, family offices, and institutional-minded investors.`,
 ];
 
 const TRUST_METRICS = [
@@ -170,6 +170,19 @@ const TRUST_METRICS = [
     label: 'Coverage',
   },
 ];
+
+
+const cinzel = Cinzel({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+});
+
+const jost = Jost({
+  subsets: ['latin'],
+  weight: ['300', '400'],
+  display: 'swap',
+});
 
 /* ─── MAIN PAGE ───────────────────────────────────────────────── */
 
@@ -211,7 +224,7 @@ export default function GlobalHomePage() {
                   },
                 },
                 description:
-                  'Nairobi-based commercial real estate advisory firm founded in 2025 by Mark Muriithi. Mandate-based advisory for office, industrial, and investment across Kenya and East Africa.',
+                  'Global commercial real estate services firm founded in 2025 by Mark Muriithi. Mandate-based advisory for office, industrial, and investment Globally.',
                 contactPoint: {
                   '@type': 'ContactPoint',
                   contactType: 'Advisory Enquiries',
@@ -234,61 +247,65 @@ export default function GlobalHomePage() {
         }}
       />
 
-      {/* ═══════════════════════════════════════════════════════════
-          HERO
-      ═══════════════════════════════════════════════════════════ */}
-      <section className="relative min-h-[92vh] flex items-end overflow-hidden bg-[#0B3D2E]">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/hero.jpeg"
-            alt="Murivest Institutional Advisory — Nairobi skyline"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#2C2C2C] via-[#2C2C2C]/70 to-[#2C2C2C]/25" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#2C2C2C]/80 to-transparent" />
-        </div>
 
-        <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 pb-24 md:pb-32 pt-40">
-          <div className="max-w-3xl">
-            <div className="flex items-center gap-3 mb-8 animate-fade-up">
-              <span className="w-8 h-[1px] bg-[#8B7355]" />
-              <p className="text-[10px] md:text-[11px] tracking-[0.35em] uppercase text-[#8B7355] font-medium">
-                Mandate-Based Commercial Real Estate Advisory
-              </p>
-            </div>
 
-            <h1 className="font-serif text-[2.8rem] md:text-[4rem] lg:text-[5.5rem] text-[#F8F7F4] leading-[1.02] mb-8 animate-fade-up delay-100">
-              Institutional Real Estate <span className="italic font-light text-[#8B7355]">Advisory</span>
-            </h1>
+{/* GLOBAL HOMEPAGE HERO */}
+<section className="relative flex min-h-[100svh] w-full items-center justify-center overflow-hidden bg-[#17251D]">
 
-            <div className="w-16 h-[1px] bg-[#F8F7F4]/20 mb-8 animate-fade-up delay-200" />
+  {/* Background image */}
+  <Image
+    src="/images/hero.jpg"
+    alt="Luxury architectural setting representing Murivest's global presence"
+    fill
+    priority
+    quality={85}
+    sizes="100vw"
+    className="object-cover object-center"
+  />
 
-            <p className="text-[15px] md:text-[17px] text-[#F8F7F4]/65 leading-[1.7] font-light max-w-xl mb-12 animate-fade-up delay-200">
-              Murivest Group is an independent commercial real estate advisory firm based in Nairobi. We originate and advise on institutional-grade mandates across Kenya and East Africa—confidential, mandate-based engagements for private capital, family offices, and institutional-minded investors.
-            </p>
+  {/* Light overlay */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/5 to-black/20" />
 
-            <div className="flex flex-wrap gap-4 animate-fade-up delay-300">
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-3 px-8 py-4 bg-[#F8F7F4] text-[#2C2C2C] text-[11px] tracking-[0.2em] uppercase font-medium hover:bg-[#8B7355] hover:text-[#F8F7F4] transition-colors duration-500"
-              >
-                Arrange a Briefing
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <path d="M7 17L17 7M17 7H7M17 7V17" />
-                </svg>
-              </Link>
-              <Link
-                href="/research"
-                className="inline-flex items-center gap-2 px-8 py-4 border border-[#F8F7F4]/25 text-[#F8F7F4]/85 text-[11px] tracking-[0.2em] uppercase font-medium hover:border-[#8B7355] hover:text-[#F8F7F4] transition-all duration-500"
-              >
-                View Research
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+  {/* Central presentation */}
+  <div className="relative z-10 flex w-full flex-col items-center px-6 pt-[10svh] text-center text-white">
+
+    {/* Murivest wordmark */}
+    <div className="hero-reveal inline-flex flex-col items-center drop-shadow-[0_1px_8px_rgba(0,0,0,0.25)]">
+
+      <h1
+        className={`${cinzel.className} pl-[0.1em] text-[1.9rem] font-normal uppercase leading-none tracking-[0.1em] sm:text-4xl md:text-5xl lg:text-[3.5rem]`}
+      >
+        Murivest
+      </h1>
+
+      {/* Wordmark underline */}
+      <div className="mt-2 h-px w-full bg-white/90" />
+
+      <p
+        className={`${jost.className} mt-2 pl-[0.5em] text-[9px] font-light uppercase tracking-[0.5em] sm:text-[10px] md:text-xs`}
+      >
+        Group
+      </p>
+    </div>
+
+    {/* Presents / Global designation */}
+    <div className="hero-reveal-delayed mt-20 drop-shadow-[0_1px_6px_rgba(0,0,0,0.25)] sm:mt-24 md:mt-28">
+
+      <p
+        className={`${jost.className} pl-[0.9em] text-sm font-light uppercase tracking-[0.9em] text-white/90 sm:text-base md:text-lg`}
+      >
+        Presents
+      </p>
+
+      <p
+        className={`${jost.className} mt-4 pl-[0.5em] text-xs font-normal uppercase tracking-[0.5em] sm:text-sm md:text-base`}
+      >
+        Global Commercial Real Estate Services
+      </p>
+    </div>
+  </div>
+</section>
+
 
       {/* ═══════════════════════════════════════════════════════════
           TRUST / POSITIONING STRIP

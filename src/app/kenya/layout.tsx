@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 
   // Title template – applied to all child pages under /kenya
   title: {
-    default: 'Murivest Kenya | Institutional Commercial Real Estate Advisory',
+    default: 'Murivest Kenya | Institutional Commercial Real Estate Services',
     template: '%s | Murivest Kenya',
   },
 
   description:
-    'Murivest Kenya delivers institutional‑grade commercial real estate advisory, investment sales, capital markets, and property intelligence. Serving Nairobi and the wider Kenyan market with data‑backed insights and execution.',
+    'Murivest Group provides commercial real estate advisory and transaction services that drive value for our clients across Africa and the Middle East.',
 
   // Extended keyword cluster – highly local and intent‑matched
   keywords: [
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_KE',
     siteName: 'Murivest',
-    title: 'Murivest Kenya | Institutional Commercial Real Estate Advisory',
+    title: 'Murivest Kenya | Institutional Commercial Real Estate Services',
     description:
-      'Institutional commercial real estate advisory, investment opportunities, and market intelligence across Kenya.',
+      'Institutional commercial real estate services, investment opportunities, and market intelligence across Kenya.',
     images: [
       {
         url: '/kenya/og-image.jpg', // relative to metadataBase
@@ -64,9 +64,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@Murivest',               // replace with your actual Twitter handle
     creator: '@Murivest',
-    title: 'Murivest Kenya | Institutional Commercial Real Estate Advisory',
+    title: 'Murivest Kenya | Institutional Commercial Real Estate Services',
     description:
-      'Institutional commercial real estate advisory and investment opportunities across Kenya.',
+      'Institutional commercial real estate services and investment opportunities across Kenya.',
     images: ['/kenya/og-image.jpg'],
   },
 
@@ -164,9 +164,9 @@ const kenyaOrganizationSchema = {
     'Real Estate Advisory',
     'Market Intelligence',
   ],
-  foundingDate: '2015',            // adjust if known
+  foundingDate: '2025',            // adjust if known
   description:
-    'Murivest Kenya provides institutional commercial real estate advisory, capital markets services, and property intelligence to investors, developers, and occupiers across Kenya.',
+    'Murivest Kenya provides institutional commercial real estate services, capital markets services, and property intelligence to investors, developers, and occupiers across Kenya.',
 };
 
 // 2. LocalBusiness / RealEstateAgent – critical for Google Maps and local pack

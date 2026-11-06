@@ -1,308 +1,687 @@
-﻿import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowRight, Landmark, Handshake, Scale, ShieldCheck } from "lucide-react";
-import { Section, SectionHeading, Eyebrow } from "../components/Section";
-import CTABanner from "../components/CTABanner";
-import { SITE } from "../lib/site";
+﻿import { Cinzel, Jost } from 'next/font/google';
+import type { Metadata } from 'next';
+import Link from 'next/link';
+
+/* ─── SEO ─────────────────────────────────────────────────────── */
+const BASE = 'https://murivest.com';
+const PATH = '/usa/capital';
+const URL = `${BASE}${PATH}`;
+const ORG_ID = `${BASE}/#organization`;
+const WEBSITE_ID = `${BASE}/#website`;
+const LAST_REVIEWED = '2026-11-03';
+
+const TITLE = 'US Commercial Real Estate Capital Advisory: Equity, Debt, Recapitalization | Murivest';
+const DESCRIPTION =
+  'Independent capital structure advisory for US commercial real estate and multifamily: equity, debt, capital introduction and recapitalization, coordinated with licensed lenders and placement professionals.';
 
 export const metadata: Metadata = {
-  title: "Capital — U.S. Commercial Real Estate Capital Markets",
-  description:
-    "Murivest's capital markets advisory for U.S. commercial real estate — equity, debt, capital introduction, and recapitalization connecting sponsors with qualified institutional and private capital.",
-  alternates: { canonical: `https://${SITE.domain}/usa/capital` },
+  title: TITLE,
+  description: DESCRIPTION,
+  keywords: [
+    'commercial real estate capital advisory',
+    'multifamily financing advisory',
+    'capital stack real estate',
+    'joint venture equity real estate',
+    'real estate recapitalization',
+    'Murivest Group Ltd',
+  ],
+  alternates: { canonical: URL },
   openGraph: {
-    title: "Capital — U.S. Commercial Real Estate Capital Markets",
-    description:
-      "Equity, debt, capital introduction, and recapitalization advisory for U.S. commercial real estate.",
-    url: `https://${SITE.domain}/usa/capital`,
+    title: TITLE,
+    description: DESCRIPTION,
+    url: URL,
+    siteName: 'Murivest Group Ltd',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION },
+  robots: {
+    index: true,
+    follow: true,
+    'max-snippet': -1,
+    'max-image-preview': 'large',
   },
 };
 
-const SERVICES = [
+/* ─── DATA ────────────────────────────────────────────────────── */
+type Item = { title: string; desc: string; href?: string };
+
+const CRUMBS = [
+  { name: 'Home', path: '/' },
+  { name: 'United States', path: '/usa' },
+  { name: 'Capital', path: PATH },
+];
+
+const SERVICES: Item[] = [
   {
-    title: "Capital Advisory",
-    description:
-      "Independent structuring advice on the optimal capital stack — evaluating equity, debt, and hybrid solutions against the asset business plan and sponsor objectives.",
-    href: "/usa/capital/capital-advisory",
+    title: 'Capital Advisory',
+    desc: 'Independent advice on the right capital stack, weighing equity, debt and hybrid structures against the business plan and your objectives.',
+    href: '/usa/capital/capital-advisory',
   },
   {
-    title: "Capital Introduction",
-    description:
-      "Targeted connections between sponsors and a curated universe of qualified equity and debt providers — relationship-led, not a broad blast.",
-    href: "/usa/capital/capital-introduction",
+    title: 'Capital Introduction',
+    desc: 'Introductions to a curated set of equity and debt providers matched to the mandate, made through appropriately licensed professionals where the law requires.',
+    href: '/usa/capital/capital-introduction',
   },
   {
-    title: "Equity Financing",
-    description:
-      "Joint-venture and preferred-equity structuring for acquisitions, development, and recapitalizations across the risk spectrum.",
-    href: "/usa/capital/equity",
+    title: 'Equity Financing',
+    desc: 'Joint-venture and preferred-equity strategy for acquisitions, development and recapitalizations across the risk spectrum.',
+    href: '/usa/capital/equity',
   },
   {
-    title: "Debt Financing",
-    description:
-      "Senior, mezzanine, and structured debt placement matched to the asset, the business plan, and the sponsor's return profile.",
-    href: "/usa/capital/debt",
+    title: 'Debt Financing',
+    desc: 'Agency, bank, bridge and structured debt strategy, matched to the asset, the business plan and the return profile. Placement is coordinated with licensed lenders and mortgage professionals.',
+    href: '/usa/capital/debt',
   },
   {
-    title: "Recapitalization",
-    description:
-      "Restructuring the ownership and capital stack to unlock value, manage maturity, or reposition an asset for its next phase.",
-    href: "/usa/capital/recapitalization",
+    title: 'Recapitalization',
+    desc: 'Restructuring ownership and the capital stack to unlock value, manage a maturity or reposition an asset for its next phase.',
+    href: '/usa/capital/recapitalization',
   },
 ];
 
-const PRINCIPLES = [
+const STACK: Item[] = [
   {
-    icon: Scale,
-    title: "Independent Structure Advice",
-    description:
-      "We advise on the optimal stack without a balance sheet to push. The recommendation is dictated by the asset and your objectives, not our product menu.",
+    title: 'Senior Debt',
+    desc: 'First-lien financing secured by the property. It carries the lowest cost of capital and the strictest covenants. For stabilised apartments, agency lenders are often the deepest source.',
   },
   {
-    icon: Handshake,
-    title: "Relationship-Led Introduction",
-    description:
-      "We connect sponsors to capital sources we know — qualified providers matched to the mandate rather than a generic list.",
+    title: 'Mezzanine & Preferred Equity',
+    desc: 'Capital that sits behind senior debt and ahead of common equity. It raises leverage at a higher cost and brings its own intercreditor and control terms.',
   },
   {
-    icon: Landmark,
-    title: "Institutional Diligence Readiness",
-    description:
-      "Materials, model, and narrative are prepared to the standard institutional capital expects, shortening the path from introduction to close.",
+    title: 'Joint-Venture Equity',
+    desc: 'A partner funds most of the equity and shares returns with the sponsor, typically with a promote above a preferred return. Alignment and control rights decide the outcome.',
   },
   {
-    icon: ShieldCheck,
-    title: "Aligned, Conflict-Free",
-    description:
-      "We do not lend our own capital or carry proprietary positions. Our role is to represent your interests in the capital conversation.",
+    title: 'Sponsor Equity',
+    desc: 'The first-loss capital of the operator or owner. Lenders and partners read its size and structure as the clearest signal of conviction.',
   },
 ];
 
-export default function CapitalPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: "U.S. Commercial Real Estate Capital Markets Advisory",
-    serviceType: "Capital markets advisory",
-    provider: {
-      "@type": "Organization",
-      name: SITE.name,
-      url: `https://${SITE.domain}/usa`,
+const PRINCIPLES: Item[] = [
+  {
+    title: 'Independent Structure Advice',
+    desc: 'We have no balance sheet to deploy and no product menu. The recommendation follows the asset and your objectives.',
+  },
+  {
+    title: 'Mandate-Matched Introductions',
+    desc: 'Providers are selected for fit with the mandate, not drawn from a generic distribution list.',
+  },
+  {
+    title: 'Diligence Readiness',
+    desc: 'Model, materials and narrative are prepared to the standard institutional capital expects, shortening the path from introduction to close.',
+  },
+  {
+    title: 'Aligned and Conflict-Free',
+    desc: 'We do not lend, invest or carry proprietary positions. Our role is to represent your interests in the capital conversation.',
+  },
+];
+
+const AUDIENCE: Item[] = [
+  {
+    title: 'Operating Partners & Sponsors',
+    desc: 'Operators and developers seeking joint-venture equity, preferred equity or debt for acquisitions, development and recapitalizations.',
+  },
+  {
+    title: 'Institutional Investors',
+    desc: 'Allocators weighing co-investment, joint-venture or direct positions who want independent structuring support.',
+  },
+  {
+    title: 'Owners & Family Offices',
+    desc: 'Direct owners exploring recapitalization or structured capital to unlock value without a full sale.',
+  },
+];
+
+const LIFECYCLE = [
+  {
+    title: 'Acquisition Advisory',
+    desc: 'Fund the entry with the right structure.',
+    href: '/usa/acquire',
+  },
+  {
+    title: 'Sell & Disposition',
+    desc: 'Exit on terms the capital structure supports.',
+    href: '/usa/sell',
+  },
+];
+
+const FAQS = [
+  {
+    question: 'What is a capital stack in real estate?',
+    answer:
+      'The capital stack is the combination of financing used to fund a property, ordered by priority of repayment: senior debt first, then mezzanine debt or preferred equity, then joint-venture and sponsor common equity. Lower layers cost less but carry stricter covenants. Higher layers cost more and absorb losses first.',
+  },
+  {
+    question: 'Does Murivest lend or invest its own capital?',
+    answer:
+      'No. Murivest does not lend, invest, pool capital or carry proprietary positions. It advises on structure and coordinates with qualified capital providers, which keeps its advice independent of any product.',
+  },
+  {
+    question: 'Is Murivest a placement agent, mortgage broker or broker-dealer?',
+    answer:
+      'No. Where a debt placement or a securities offering is involved, appropriately licensed lenders, mortgage professionals or broker-dealers perform the regulated function alongside Murivest.',
+  },
+  {
+    question: 'What financing is available for US multifamily acquisitions?',
+    answer:
+      'Stabilised apartment communities can often be financed through agency lenders such as Fannie Mae and Freddie Mac, banks and life companies. Transitional or value-add assets typically use bridge or other structured debt. The right structure depends on the business plan, leverage target and hold period.',
+  },
+  {
+    question: 'When does recapitalization make sense?',
+    answer:
+      'Typically when a loan is approaching maturity, when an owner wants to release equity without selling, when a business plan needs fresh capital, or when partners need to be realigned. Each case is assessed against the asset’s underwriting.',
+  },
+];
+
+const RELATED = [
+  { label: 'Acquisition Advisory', href: '/usa/acquire' },
+  { label: '1031 Exchange into Multifamily', href: '/usa/1031-exchange' },
+  { label: 'Commercial Real Estate Sectors', href: '/usa/commercial-real-estate' },
+  { label: 'About Murivest USA', href: '/usa/about' },
+];
+
+const TOC = [
+  { id: 'services', label: 'Services' },
+  { id: 'stack', label: 'Capital Stack' },
+  { id: 'principles', label: 'Principles' },
+  { id: 'audience', label: 'Who We Advise' },
+  { id: 'faq', label: 'FAQ' },
+];
+
+/* ─── FONTS ───────────────────────────────────────────────────── */
+const cinzel = Cinzel({ subsets: ['latin'], weight: ['400'], display: 'swap' });
+const jost = Jost({ subsets: ['latin'], weight: ['300', '400'], display: 'swap' });
+
+/* ─── SHARED STYLES ───────────────────────────────────────────── */
+const H2 = 'font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-[#2C2C2C] leading-[1.1]';
+const H2_DARK = 'font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-[#F8F7F4] leading-[1.1]';
+const BODY = 'text-[14px] leading-[1.9] text-[#5A5A5A] font-light';
+const SECTION_PAD = 'max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 py-24 lg:py-36';
+const FOCUS =
+  'focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8B7355] focus-visible:ring-offset-2';
+const BTN_DARK = `inline-flex items-center justify-center px-8 py-4 bg-[#F8F7F4] text-[#0B3D2E] text-[11px] tracking-[0.2em] uppercase font-medium hover:bg-[#C9A87C] transition-colors duration-500 ${FOCUS} focus-visible:ring-offset-[#17251D]`;
+const BTN_GHOST = `inline-flex items-center justify-center px-8 py-4 border border-white/40 text-[#F8F7F4] text-[11px] tracking-[0.2em] uppercase font-medium hover:border-[#C9A87C] hover:text-[#C9A87C] transition-colors duration-500 ${FOCUS} focus-visible:ring-offset-[#17251D]`;
+
+/* ─── LOCAL PRIMITIVES ────────────────────────────────────────── */
+function Eyebrow({ children, dark = false }: { children: React.ReactNode; dark?: boolean }) {
+  return (
+    <div className="flex items-center gap-3 mb-6">
+      <span className={`w-8 h-[1px] ${dark ? 'bg-[#C9A87C]' : 'bg-[#8B7355]'}`} />
+      <p
+        className={`text-[10px] tracking-[0.35em] uppercase font-medium ${
+          dark ? 'text-[#C9A87C]' : 'text-[#8B7355]'
+        }`}
+      >
+        {children}
+      </p>
+    </div>
+  );
+}
+
+function TextLink({
+  href,
+  children,
+  dark = false,
+}: {
+  href: string;
+  children: React.ReactNode;
+  dark?: boolean;
+}) {
+  return (
+    <Link
+      href={href}
+      className={`group inline-flex items-center gap-3 text-[11px] tracking-[0.2em] uppercase font-medium transition-colors duration-300 ${
+        dark ? 'text-[#C9A87C] hover:text-white' : 'text-[#8B7355] hover:text-[#2C2C2C]'
+      }`}
+    >
+      <span>{children}</span>
+      <span className="w-6 h-[1px] bg-current group-hover:w-10 transition-all duration-300" />
+    </Link>
+  );
+}
+
+function SectionHead({
+  eyebrow,
+  title,
+  intro,
+  dark = false,
+}: {
+  eyebrow: string;
+  title: string;
+  intro: string;
+  dark?: boolean;
+}) {
+  return (
+    <div className="grid lg:grid-cols-12 gap-12 lg:gap-24 mb-16">
+      <div className="lg:col-span-7">
+        <Eyebrow dark={dark}>{eyebrow}</Eyebrow>
+        <h2 className={dark ? H2_DARK : H2}>{title}</h2>
+      </div>
+      <div className="lg:col-span-5 lg:self-end">
+        <p className={dark ? 'text-[14px] leading-[1.9] text-white/70 font-light' : BODY}>{intro}</p>
+      </div>
+    </div>
+  );
+}
+
+const GRID_COLS = {
+  '3': 'sm:grid-cols-2 lg:grid-cols-3',
+  '4': 'sm:grid-cols-2 lg:grid-cols-4',
+} as const;
+
+function Cards({
+  items,
+  cols,
+  surface = 'white',
+}: {
+  items: Item[];
+  cols: keyof typeof GRID_COLS;
+  surface?: 'white' | 'cream';
+}) {
+  const cell = surface === 'cream' ? 'bg-[#F8F7F4] hover:bg-white' : 'bg-white hover:bg-[#F8F7F4]';
+  return (
+    <div className={`grid gap-px bg-[#E5E2DC] border border-[#E5E2DC] ${GRID_COLS[cols]}`}>
+      {items.map((it, i) => (
+        <article key={it.title} className={`group p-8 lg:p-10 transition-colors duration-500 ${cell}`}>
+          <p className="text-[11px] tracking-[0.2em] text-[#8B7355] font-medium mb-4">
+            {String(i + 1).padStart(2, '0')}
+          </p>
+          <h3 className="text-[15px] font-semibold tracking-wide text-[#2C2C2C] mb-3 group-hover:text-[#8B7355] transition-colors duration-300">
+            {it.title}
+          </h3>
+          <p className="text-[13px] leading-[1.75] text-[#5A5A5A] font-light">{it.desc}</p>
+          {it.href && (
+            <div className="mt-6">
+              <TextLink href={it.href}>Learn More</TextLink>
+            </div>
+          )}
+        </article>
+      ))}
+    </div>
+  );
+}
+
+/* ─── STRUCTURED DATA ─────────────────────────────────────────── */
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': ['Organization', 'ProfessionalService'],
+      '@id': ORG_ID,
+      name: 'Murivest Group Ltd',
+      alternateName: ['Murivest', 'Murivest USA'],
+      url: BASE,
+      logo: `${BASE}/logo.png`,
+      foundingDate: '2025',
+      address: { '@type': 'PostalAddress', addressLocality: 'Nairobi', addressCountry: 'KE' },
+      founder: { '@type': 'Person', name: 'Mark Muriithi', jobTitle: 'Founder and Chief Executive Officer' },
+      areaServed: { '@type': 'Country', name: 'United States' },
     },
-    areaServed: "US",
-    description:
-      "Capital advisory, capital introduction, equity and debt financing, and recapitalization for U.S. commercial real estate sponsors and investors.",
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Capital services",
-      itemListElement: SERVICES.map((s) => ({
-        "@type": "Offer",
-        itemOffered: { "@type": "Service", name: s.title },
+    {
+      '@type': 'WebSite',
+      '@id': WEBSITE_ID,
+      url: BASE,
+      name: 'Murivest Group Ltd',
+      publisher: { '@id': ORG_ID },
+      inLanguage: 'en-US',
+    },
+    {
+      '@type': 'WebPage',
+      '@id': `${URL}#webpage`,
+      url: URL,
+      name: TITLE,
+      description: DESCRIPTION,
+      inLanguage: 'en-US',
+      dateModified: LAST_REVIEWED,
+      isPartOf: { '@id': WEBSITE_ID },
+      publisher: { '@id': ORG_ID },
+      breadcrumb: { '@id': `${URL}#breadcrumb` },
+      about: { '@id': `${URL}#service` },
+      mainEntity: { '@id': `${URL}#service` },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${URL}#breadcrumb`,
+      itemListElement: CRUMBS.map((c, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: c.name,
+        item: `${BASE}${c.path === '/' ? '' : c.path}`,
       })),
     },
-  };
+    {
+      '@type': 'Service',
+      '@id': `${URL}#service`,
+      name: 'US Commercial Real Estate Capital Advisory',
+      serviceType: 'Capital markets advisory',
+      description: DESCRIPTION,
+      provider: { '@id': ORG_ID },
+      areaServed: { '@type': 'Country', name: 'United States' },
+      audience: {
+        '@type': 'Audience',
+        audienceType: 'Sponsors, institutional investors, family offices and ultra-high-net-worth individuals',
+      },
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Capital advisory services',
+        itemListElement: SERVICES.map((s) => ({
+          '@type': 'Offer',
+          itemOffered: { '@type': 'Service', name: s.title, description: s.desc },
+        })),
+      },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${URL}#faq`,
+      mainEntity: FAQS.map((f) => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: { '@type': 'Answer', text: f.answer },
+      })),
+    },
+  ],
+};
 
+/* ─── MAIN PAGE ───────────────────────────────────────────────── */
+export default function USACapitalPage() {
   return (
-    <>
+    <main className="bg-[#F8F7F4] text-[#2C2C2C] antialiased selection:bg-[#8B7355]/20">
+      {/* SCHEMA.ORG */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }}
       />
 
-      <section className="relative overflow-hidden bg-[#1B4332] py-24">
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-navy-950 via-ink-950 to-ink-900" />
+      {/* ═══════════════════════════════════════════════════════════
+          HERO
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="relative w-full overflow-hidden bg-[#17251D] text-white">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-gradient-to-b from-[#0B3D2E]/40 via-transparent to-black/30"
+        />
+        <div className="relative max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 pt-16 pb-24 lg:pt-24 lg:pb-32">
+          <nav aria-label="Breadcrumb" className="mb-16 lg:mb-24">
+            <ol className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] tracking-[0.25em] uppercase">
+              {CRUMBS.map((c, i) => {
+                const last = i === CRUMBS.length - 1;
+                return (
+                  <li key={c.path} className="flex items-center gap-3">
+                    {last ? (
+                      <span aria-current="page" className="text-white">{c.name}</span>
+                    ) : (
+                      <>
+                        <Link href={c.path} className="text-[#C9A87C] hover:text-white transition-colors duration-300">
+                          {c.name}
+                        </Link>
+                        <span aria-hidden="true" className="text-white/30">/</span>
+                      </>
+                    )}
+                  </li>
+                );
+              })}
+            </ol>
+          </nav>
+
+          <p className={`${cinzel.className} text-sm sm:text-base uppercase tracking-[0.3em] text-[#C9A87C]`}>
+            Murivest
+            <span className={`${jost.className} ml-4 text-[10px] font-light tracking-[0.5em]`}>
+              United States
+            </span>
+          </p>
+          <div className="mt-3 h-px w-16 bg-[#C9A87C]/60" />
+
+          <h1 className="mt-10 max-w-4xl font-serif text-4xl sm:text-5xl lg:text-[4rem] leading-[1.08] text-[#F8F7F4]">
+            The right capital, on the right terms, in the right order.
+          </h1>
+          <p className="mt-8 max-w-2xl text-[15px] sm:text-[16px] leading-[1.9] text-white/80 font-light">
+            Murivest advises sponsors, owners and investors on the capital behind US commercial
+            real estate and multifamily: structuring the stack, coordinating equity and debt
+            providers, and recapitalizing assets for their next phase. Independent advice.
+            Licensed execution.
+          </p>
+
+          <div className="mt-12 flex flex-col sm:flex-row gap-4">
+            <Link href="/usa/contact" className={BTN_DARK}>Discuss a Capital Mandate</Link>
+            <Link href="/usa/acquire" className={BTN_GHOST}>Pair with Acquisition</Link>
+          </div>
         </div>
-        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <Eyebrow className="text-gold-400">
-              Capital · The Concierge of Capital
-            </Eyebrow>
-            <h1 className="mt-4 font-serif text-4xl font-semibold leading-tight text-white sm:text-5xl text-balance">
-              Capital markets advisory that connects sponsors with the right capital — on the right terms
-            </h1>
-            <p className="mt-6 text-lg leading-relaxed text-white">
-              Murivest advises sponsors, owners, and investors on the capital
-              underpinning U.S. commercial real estate — structuring the optimal
-              stack, introducing qualified equity and debt, and recapitalizing
-              assets for their next phase. Independent advice, relationship-led
-              sourcing, institutional-grade execution.
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
+          ON THIS PAGE
+      ═══════════════════════════════════════════════════════════ */}
+      <nav aria-label="On this page" className="bg-white border-b border-[#E5E2DC]">
+        <div className="max-w-[1400px] mx-auto overflow-x-auto px-6 md:px-12 lg:px-16">
+          <ul className="flex gap-8 py-5 whitespace-nowrap">
+            {TOC.map((t) => (
+              <li key={t.id}>
+                <a
+                  href={`#${t.id}`}
+                  className="text-[11px] tracking-[0.2em] uppercase text-[#5A5A5A] hover:text-[#8B7355] transition-colors duration-300"
+                >
+                  {t.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+
+      {/* ═══════════════════════════════════════════════════════════
+          SERVICES
+      ═══════════════════════════════════════════════════════════ */}
+      <section id="services" className="scroll-mt-24 bg-[#F8F7F4]">
+        <div className={SECTION_PAD}>
+          <SectionHead
+            eyebrow="Capital Services"
+            title="One conversation across the full capital stack."
+            intro="Capital is not a single product. We organize each mandate around the structure that fits the asset and the sponsor, from pure advice to introduction, equity, debt and recapitalization."
+          />
+          <Cards items={SERVICES} cols="3" />
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
+          THE CAPITAL STACK
+      ═══════════════════════════════════════════════════════════ */}
+      <section id="stack" className="scroll-mt-24 bg-white border-t border-[#E5E2DC]">
+        <div className={SECTION_PAD}>
+          <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 mb-16">
+            <div className="lg:col-span-4">
+              <Eyebrow>The Capital Stack</Eyebrow>
+              <h2 className={H2}>Four layers. Four different risks.</h2>
+              <div className="w-16 h-[1px] bg-[#E5E2DC] mt-8 hidden lg:block" />
+            </div>
+            <div className="lg:col-span-8 lg:border-l lg:border-[#E5E2DC] lg:pl-16">
+              <p className="text-[16px] leading-[1.9] text-[#2C2C2C] font-light mb-6">
+                Every real estate transaction is financed by a stack of capital ordered by
+                repayment priority. Choosing the wrong layer, or the wrong proportion, can turn a
+                sound asset into a poor investment.
+              </p>
+              <p className={BODY}>
+                We test the stack against the underwriting. Leverage is sized to the asset&rsquo;s
+                cash flow and the downside case, not to the maximum a lender will offer.
+              </p>
+            </div>
+          </div>
+          <Cards items={STACK} cols="4" surface="cream" />
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
+          MID-PAGE CTA
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="bg-[#17251D] text-white">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 py-16 lg:py-20 flex flex-col md:flex-row md:items-center justify-between gap-8">
+          <p className="max-w-2xl font-serif text-2xl md:text-3xl leading-[1.3] text-[#F8F7F4]">
+            Structure decided late is structure decided by the lender.{' '}
+            <span className="text-[#C9A87C]">Decide it first.</span>
+          </p>
+          <Link href="/usa/contact" className={`${BTN_DARK} shrink-0`}>
+            Discuss a Capital Mandate
+          </Link>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
+          PRINCIPLES
+      ═══════════════════════════════════════════════════════════ */}
+      <section id="principles" className="scroll-mt-24 bg-[#F8F7F4]">
+        <div className={SECTION_PAD}>
+          <SectionHead
+            eyebrow="Our Principles"
+            title="Capital advice without a balance sheet to push."
+            intro="Because we do not lend or invest our own capital, our only incentive is the quality of the structure and the fit of the source."
+          />
+          <Cards items={PRINCIPLES} cols="4" />
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
+          WHO WE ADVISE
+      ═══════════════════════════════════════════════════════════ */}
+      <section id="audience" className="scroll-mt-24 bg-white border-t border-[#E5E2DC]">
+        <div className={SECTION_PAD}>
+          <SectionHead
+            eyebrow="Who We Advise"
+            title="Sponsors and investors across the capital spectrum."
+            intro="We advise both those seeking capital and those deploying it, so that the structure serves the underlying real estate strategy."
+          />
+          <Cards items={AUDIENCE} cols="3" surface="cream" />
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
+          CONNECTED ADVISORY
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="bg-[#17251D] text-white">
+        <div className={SECTION_PAD}>
+          <SectionHead
+            dark
+            eyebrow="Connected Advisory"
+            title="Capital is the bridge between acquisition and disposition."
+            intro="Every capital decision shapes the return on both sides of a transaction. We keep acquisition and exit advice aligned so the structure is built with the full lifecycle in view."
+          />
+          <div className="grid md:grid-cols-2 gap-px bg-white/10 border border-white/10">
+            {LIFECYCLE.map((l) => (
               <Link
-                href="/usa/contact"
-                className="group flex items-center justify-center gap-2 rounded-lg bg-gold-400 px-6 py-3 text-sm font-semibold text-[#0F2E22] transition-all hover:bg-[#C9A87C]"
+                key={l.href}
+                href={l.href}
+                className="group flex items-center justify-between gap-6 bg-[#17251D] p-8 lg:p-10 hover:bg-[#0B3D2E]/60 transition-colors duration-500"
               >
-                Discuss a Capital Mandate
-                <ArrowRight
-                  size={16}
-                  className="transition-transform group-hover:translate-x-0.5"
-                />
+                <div>
+                  <h3 className="font-serif text-2xl text-[#F8F7F4]">{l.title}</h3>
+                  <p className="mt-2 text-[13px] text-white/70 font-light">{l.desc}</p>
+                </div>
+                <span className="w-6 h-[1px] shrink-0 bg-[#C9A87C] group-hover:w-10 transition-all duration-300" />
               </Link>
-              <Link
-                href="/usa/acquire"
-                className="flex items-center justify-center rounded-lg border border-[#C9A87C] px-6 py-3 text-sm font-semibold text-white transition-all hover:border-ink-400 hover:bg-[#2D5A45]"
-              >
-                Pair with Acquisition
-              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
+          FAQ
+      ═══════════════════════════════════════════════════════════ */}
+      <section id="faq" className="scroll-mt-24 bg-white">
+        <div className={SECTION_PAD}>
+          <div className="grid lg:grid-cols-12 gap-12 lg:gap-24">
+            <div className="lg:col-span-4">
+              <Eyebrow>Institutional Enquiries</Eyebrow>
+              <h2 className="font-serif text-3xl md:text-4xl text-[#2C2C2C] leading-[1.1] mb-6">
+                Capital Advisory: Frequently Asked Questions
+              </h2>
+              <p className="text-[14px] leading-[1.8] text-[#5A5A5A] font-light">
+                Direct answers on structure, financing and what we do not do.
+              </p>
+            </div>
+            <div className="lg:col-span-8">
+              {FAQS.map((faq) => (
+                <details key={faq.question} className="group border-b border-[#E5E2DC] py-6">
+                  <summary
+                    className={`list-none flex cursor-pointer items-start justify-between gap-4 [&::-webkit-details-marker]:hidden ${FOCUS}`}
+                  >
+                    <span className="text-[14px] md:text-[15px] text-[#2C2C2C] font-medium leading-relaxed group-hover:text-[#8B7355] transition-colors duration-300">
+                      {faq.question}
+                    </span>
+                    <span
+                      aria-hidden="true"
+                      className="text-[#8B7355] text-lg leading-none mt-0.5 font-light group-open:rotate-45 transition-transform duration-300"
+                    >
+                      +
+                    </span>
+                  </summary>
+                  <p className="text-[14px] leading-[1.8] text-[#5A5A5A] font-light mt-4 max-w-2xl">
+                    {faq.answer}
+                  </p>
+                </details>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      <Section className="py-20">
-        <SectionHeading
-          eyebrow="Capital Services"
-          title="One conversation, the full capital stack"
-          description="Capital is not a single product. We organize capital mandates around the structure that fits the asset and the sponsor — from pure advisory through introduction, equity, debt, and recapitalization."
-        />
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {SERVICES.map((service) => (
-            <Link
-              key={service.href}
-              href={service.href}
-              className="group flex flex-col rounded-xl border border-[#E8E6E1] bg-white p-6 transition-all hover:border-[#B8956B] hover:shadow-lg hover:shadow-ink-900/5"
-            >
-              <h3 className="font-serif text-xl font-semibold text-[#2C2C2C] group-hover:text-[#B8956B] transition-colors">
-                {service.title}
-              </h3>
-              <p className="mt-2 flex-1 text-sm leading-relaxed text-[#8B8680]">
-                {service.description}
+      {/* ═══════════════════════════════════════════════════════════
+          RELATED & NOTICE
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="bg-[#F8F7F4] border-t border-[#E5E2DC]">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 py-16 lg:py-24">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-24">
+            <div>
+              <p className="text-[10px] tracking-[0.35em] uppercase text-[#8B7355] font-medium mb-6">
+                Continue Reading
               </p>
-              <span className="mt-4 flex items-center gap-1.5 text-sm font-medium text-[#B8956B] transition-colors group-hover:text-[#C9A87C]">
-                Explore service
-                <ArrowRight
-                  size={16}
-                  className="transition-transform group-hover:translate-x-1"
-                />
-              </span>
-            </Link>
-          ))}
-        </div>
-      </Section>
-
-      <Section className="py-20 bg-[#FAF9F6]">
-        <SectionHeading
-          eyebrow="Our Principles"
-          title="Capital advice without a balance sheet to push"
-          description="Because we do not lend or invest our own capital, our only incentive is the quality of the structure and the fit of the source. That independence is the foundation of the mandate."
-        />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {PRINCIPLES.map((item) => (
-            <div
-              key={item.title}
-              className="rounded-xl border border-[#E8E6E1] bg-white p-6"
-            >
-              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#1B4332] text-gold-400">
-                <item.icon size={22} />
-              </div>
-              <h3 className="mt-4 font-serif text-lg font-semibold text-[#2C2C2C]">
-                {item.title}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-[#8B8680]">
-                {item.description}
+              <ul className="space-y-4">
+                {RELATED.map((r) => (
+                  <li key={r.href}><TextLink href={r.href}>{r.label}</TextLink></li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="text-[10px] tracking-[0.35em] uppercase text-[#8B7355] font-medium mb-6">
+                Important Notice
+              </p>
+              <p className="text-[12px] leading-[1.8] text-[#5A5A5A] font-light">
+                Murivest provides advisory services and is not a tax adviser, securities broker,
+                broker-dealer, placement agent, mortgage broker, lender or licensed US real estate
+                broker. It does not lend, invest or pool capital. Regulated activities are
+                performed by appropriately licensed professionals. This page is general
+                information and not tax, legal, financial or investment advice, and nothing here is
+                an offer or solicitation of any security or loan.
+              </p>
+              <p className="text-[11px] text-[#5A5A5A]/70 mt-4 italic">
+                Last reviewed <time dateTime={LAST_REVIEWED}>3 November 2026</time>.
               </p>
             </div>
-          ))}
+          </div>
         </div>
-      </Section>
+      </section>
 
-      <Section className="py-20">
-        <SectionHeading
-          eyebrow="Who We Capitalize"
-          title="Sponsors and investors across the capital spectrum"
-          description="We advise both those seeking capital and those deploying it — ensuring the structure serves the underlying real estate strategy."
-        />
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {[
-            {
-              title: "Operating Partners & Sponsors",
-              description:
-                "Developers and operators seeking JV equity, preferred equity, or debt for acquisitions, development, and recapitalizations.",
-            },
-            {
-              title: "Institutional Investors",
-              description:
-                "Allocators evaluating co-investment, JV, or direct positions seeking independent structuring and sourcing support.",
-            },
-            {
-              title: "Owners & Family Offices",
-              description:
-                "Direct holders exploring recapitalization or structured capital to unlock value without a full sale.",
-            },
-          ].map((item) => (
-            <div
-              key={item.title}
-              className="rounded-xl border border-[#E8E6E1] bg-white p-6"
-            >
-              <h3 className="font-serif text-xl font-semibold text-[#2C2C2C]">
-                {item.title}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-[#8B8680]">
-                {item.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      </Section>
-
-      <Section className="py-20 bg-[#0F2E22]">
-        <div className="max-w-3xl">
-          <Eyebrow className="text-gold-400">Connected Advisory</Eyebrow>
-          <h2 className="mt-3 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl">
-            Capital is the bridge between acquisition and disposition
+      {/* ═══════════════════════════════════════════════════════════
+          CLOSING CTA
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="bg-[#17251D] text-white">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 py-24 lg:py-32 text-center">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="w-8 h-[1px] bg-[#C9A87C]" />
+            <p className="text-[10px] tracking-[0.35em] uppercase text-[#C9A87C] font-medium">Engage Murivest</p>
+            <span className="w-8 h-[1px] bg-[#C9A87C]" />
+          </div>
+          <h2 className="mx-auto max-w-3xl font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-[#F8F7F4] leading-[1.15]">
+            Good assets are lost to bad structures. Start with the structure.
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-[#C9A87C]">
-            Every capital decision shapes the return on both sides of a
-            transaction. We maintain aligned advisory across acquisition and sell
-            so the capital structure is built with the full lifecycle in view.
+          <p className="mx-auto mt-8 max-w-2xl text-[14px] leading-[1.9] text-white/70 font-light">
+            Tell us the asset, the business plan and the outcome you need. We will advise on the
+            structure and define the scope in writing before any work begins.
           </p>
+          <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link href="/usa/contact" className={BTN_DARK}>Discuss a Capital Mandate</Link>
+            <Link href="/usa/capital/equity" className={BTN_GHOST}>Explore Equity Financing</Link>
+          </div>
         </div>
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
-          <Link
-            href="/usa/acquire"
-            className="group flex items-center justify-between rounded-xl border border-navy-700 bg-[#1B4332]/50 p-6 transition-all hover:border-gold-400"
-          >
-            <div>
-              <h3 className="font-serif text-xl font-semibold text-white">
-                Acquisition Advisory
-              </h3>
-              <p className="mt-1 text-sm text-[#C9A87C]">
-                Fund the entry with the right structure.
-              </p>
-            </div>
-            <ArrowRight
-              size={18}
-              className="text-gold-400 transition-transform group-hover:translate-x-1"
-            />
-          </Link>
-          <Link
-            href="/usa/sell"
-            className="group flex items-center justify-between rounded-xl border border-navy-700 bg-[#1B4332]/50 p-6 transition-all hover:border-gold-400"
-          >
-            <div>
-              <h3 className="font-serif text-xl font-semibold text-white">
-                Sell & Disposition
-              </h3>
-              <p className="mt-1 text-sm text-[#C9A87C]">
-                Exit on terms the capital structure supports.
-              </p>
-            </div>
-            <ArrowRight
-              size={18}
-              className="text-gold-400 transition-transform group-hover:translate-x-1"
-            />
-          </Link>
-        </div>
-      </Section>
-
-      <CTABanner
-        title="Structure and source your capital with Murivest"
-        description="Tell us the asset, the business plan, and the outcome you need. We will advise on the structure and introduce the right capital."
-        primaryLabel="Discuss a Capital Mandate"
-        secondaryLabel="Explore Equity Financing"
-        secondaryHref="/usa/capital/equity"
-      />
-    </>
+      </section>
+    </main>
   );
 }

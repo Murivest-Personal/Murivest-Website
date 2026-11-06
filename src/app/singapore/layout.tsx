@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 
   // Title template – applied to all child pages under /singapore
   title: {
-    default: 'Murivest Singapore | Institutional Commercial Real Estate Advisory',
+    default: 'Murivest Singapore | Institutional commercial real estate services',
     template: '%s | Murivest Singapore',
   },
 
   description:
-    'Murivest Singapore delivers institutional-grade commercial real estate advisory, investment sales, capital markets, and property intelligence across Singapore. Serving UHNWI, family offices, and sovereign wealth funds with data-driven market insights.',
+    'Murivest Singapore delivers institutional-grade commercial real estate services, investment sales, capital markets, and property intelligence across Singapore. Serving UHNWI, family offices, and sovereign wealth funds with data-driven market insights.',
 
   // Extended keyword cluster – highly local and intent-matched
   keywords: [
@@ -46,9 +46,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_SG',
     siteName: 'Murivest',
-    title: 'Murivest Singapore | Institutional Commercial Real Estate Advisory',
+    title: 'Murivest Singapore | Institutional commercial real estate services',
     description:
-      'Institutional commercial real estate advisory, investment opportunities, and market intelligence across Singapore.',
+      'Institutional commercial real estate services, investment opportunities, and market intelligence across Singapore.',
     images: [
       {
         url: '/og-singapore.jpg',
@@ -65,9 +65,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@Murivest',
     creator: '@Murivest',
-    title: 'Murivest Singapore | Institutional Commercial Real Estate Advisory',
+    title: 'Murivest Singapore | Institutional commercial real estate services',
     description:
-      'Institutional commercial real estate advisory and investment opportunities across Singapore.',
+      'Institutional commercial real estate services and investment opportunities across Singapore.',
     images: ['/og-singapore.jpg'],
   },
 
@@ -162,7 +162,7 @@ const singaporeOrganizationSchema = {
   ],
   foundingDate: '2025',
   description:
-    'Murivest Singapore provides institutional commercial real estate advisory, capital markets services, and property intelligence to investors, developers, and occupiers across Singapore.',
+    'Murivest Singapore provides institutional commercial real estate services, capital markets services, and property intelligence to investors, developers, and occupiers across Singapore.',
 };
 
 const singaporeRealEstateAgentSchema = {
@@ -221,9 +221,9 @@ const singaporeWebPageSchema = {
   '@type': 'WebPage',
   '@id': 'https://murivest.com/singapore/#webpage',
   url: 'https://murivest.com/singapore',
-  name: 'Murivest Singapore | Institutional Commercial Real Estate Advisory',
+  name: 'Murivest Singapore | Institutional commercial real estate services',
   description:
-    'Institutional commercial real estate advisory, investment opportunities, and market intelligence across Singapore.',
+    'Institutional commercial real estate services, investment opportunities, and market intelligence across Singapore.',
   isPartOf: {
     '@type': 'WebSite',
     '@id': 'https://murivest.com/#website',

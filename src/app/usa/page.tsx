@@ -22,18 +22,32 @@ import { SITE, PROPERTY_TYPES } from "./lib/site";
 import { supabase } from "./lib/supabase";
 import type { PropertyListing, InsightArticle } from "./lib/types";
 import PropertyCard from "./components/PropertyCard";
+import Image from 'next/image';
+import { Cinzel, Jost } from 'next/font/google';
+
+const cinzel = Cinzel({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+});
+
+const jost = Jost({
+  subsets: ['latin'],
+  weight: ['300', '400'],
+  display: 'swap',
+});
 
 const HERO_IMAGE =
   "https://images.pexels.com/photos/12589487/pexels-photo-12589487.jpeg?auto=compress&cs=tinysrgb&w=1920";
 
 export const metadata: Metadata = {
-  title: "U.S. Commercial Real Estate Advisory | Murivest Group",
+  title: "U.S. commercial real estate services | Murivest Group",
   description:
-    "Independent, mandate-led commercial real estate advisory across selected U.S. markets. Acquisition, disposition, leasing, capital markets and market intelligence for principals, family offices and institutional investors.",
+    "Independent, mandate-led commercial real estate services across selected U.S. markets. Acquisition, disposition, leasing, capital markets and market intelligence for principals, family offices and institutional investors.",
   alternates: { canonical: `https://${SITE.domain}/usa` },
   openGraph: {
     type: "website",
-    title: "U.S. Commercial Real Estate Advisory | Murivest Group",
+    title: "U.S. commercial real estate services | Murivest Group",
     description:
       "Independent, mandate-led advisory for U.S. commercial real estate acquisitions, dispositions, leasing, capital requirements and market intelligence.",
     url: `https://${SITE.domain}/usa`,
@@ -41,7 +55,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "U.S. Commercial Real Estate Advisory | Murivest Group",
+    title: "U.S. commercial real estate services | Murivest Group",
     description:
       "Independent, mandate-led advisory for U.S. commercial real estate acquisitions, dispositions, leasing, capital requirements and market intelligence.",
     images: [HERO_IMAGE],
@@ -218,50 +232,67 @@ export default async function USAPage() {
       />
 
       {/* Hero */}
-      <section className="relative min-h-[92vh] flex items-end overflow-hidden bg-[#0B3D2E]">
-        <div className="absolute inset-0">
-          <img
-            src={HERO_IMAGE}
-            alt="U.S. city skyline with commercial real estate towers"
-            className="h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#2C2C2C] via-[#2C2C2C]/70 to-[#2C2C2C]/25" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#2C2C2C]/80 to-transparent" />
+          <section className="relative flex min-h-[100svh] w-full items-center justify-center overflow-hidden bg-[#17251D]">
+      {/* Background video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+          aria-label="Murivest luxury architectural background video"
+        >
+          <source src="/images/herous.mp4" type="video/mp4" />
+          
+        </video>
+
+      {/* Very light overlay, just enough for legibility */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/5 to-black/20" />
+
+      {/* Content, sits slightly below centre like the reference */}
+      <div className="relative z-10 flex w-full flex-col items-center px-6 pt-[10svh] text-center text-white">
+        {/* Wordmark */}
+        <div className="hero-reveal inline-flex flex-col items-center drop-shadow-[0_1px_8px_rgba(0,0,0,0.25)]">
+          <h1
+            className={`${cinzel.className} pl-[0.1em] text-[1.9rem] font-normal uppercase leading-none tracking-[0.1em] sm:text-4xl md:text-5xl lg:text-[3.5rem]`}
+          >
+            Murivest
+          </h1>
+
+          {/* Underline matches wordmark width */}
+          <div className="mt-2 h-px w-full bg-white/90" />
+
+          <p
+            className={`${jost.className} mt-2 pl-[0.5em] text-[9px] font-light uppercase tracking-[0.5em] sm:text-[10px] md:text-xs`}
+          >
+            Group
+          </p>
         </div>
-        <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 pb-24 md:pb-32 pt-40">
-          <div className="max-w-3xl">
-            <Eyebrow>USA Commercial Real Estate Platform</Eyebrow>
-            <h1 className="mt-8 font-serif text-[2.6rem] md:text-[3.6rem] lg:text-[4.4rem] text-[#F8F7F4] leading-[1.02]">
-              Institutional Commercial Real Estate Advisory in the United States
-            </h1>
-            <div className="w-16 h-[1px] bg-[#F8F7F4]/20 mt-8 mb-8" />
-            <p className="max-w-xl text-[15px] md:text-[17px] leading-[1.7] text-[#F8F7F4]/65 font-light">
-              Independent, mandate-led advisory for principals, family offices,
-              institutional investors, and operating partners evaluating U.S.
-              commercial real estate acquisitions, dispositions, leasing, and
-              capital requirements.
-            </p>
-            <div className="mt-12 flex flex-wrap gap-4">
-              <Link
-                href="/usa/contact"
-                className="inline-flex items-center gap-3 px-8 py-4 bg-[#F8F7F4] text-[#2C2C2C] text-[11px] tracking-[0.2em] uppercase font-medium hover:bg-[#8B7355] hover:text-[#F8F7F4] transition-colors duration-500"
-              >
-                Request a Mandate
-                <ArrowRight
-                  size={14}
-                  className="transition-transform group-hover:translate-x-0.5"
-                />
-              </Link>
-              <Link
-                href="/usa/investment-sales"
-                className="inline-flex items-center gap-2 px-8 py-4 border border-[#F8F7F4]/25 text-[#F8F7F4]/85 text-[11px] tracking-[0.2em] uppercase font-medium hover:border-[#8B7355] hover:text-[#F8F7F4] transition-all duration-500"
-              >
-                Explore Investment Sales
-              </Link>
-            </div>
-          </div>
+
+        {/* Presents / Country */}
+        <div className="hero-reveal-delayed mt-20 sm:mt-24 md:mt-28 drop-shadow-[0_1px_6px_rgba(0,0,0,0.25)]">
+          <p
+            className={`${jost.className} pl-[0.9em] text-sm font-light uppercase tracking-[0.9em] text-white/90 sm:text-base md:text-lg`}
+          >
+            Presents
+          </p>
+          <p
+            className={`${jost.className} mt-4 pl-[0.5em] text-xs font-normal uppercase tracking-[0.5em] sm:text-sm md:text-base`}
+          >
+            USA
+          </p>
         </div>
-      </section>
+      </div>
+      {/* Tagline */}
+      <div className="absolute bottom-8 left-0 right-0 z-10 text-center">
+        <p
+          className={`${jost.className} pl-[0.35em] text-[10px] font-light uppercase tracking-[0.35em] text-white/70`}
+        >
+          The Concierge of Capital
+        </p>
+      </div>
+    </section>
 
       {/* Trust bar */}
       <section className="bg-[#F8F7F4] text-[#2C2C2C] border-b border-[#E5E2DC]">
@@ -297,7 +328,7 @@ export default async function USAPage() {
             </h2>
             <div className="mt-8 space-y-5 text-[14px] leading-[1.9] text-[#5A5A5A] font-light">
               <p>
-                Murivest Group provides commercial real estate advisory for
+                Murivest Group provides commercial real estate services for
                 principals, private capital, and institutional investors
                 evaluating U.S. property opportunities and transactions.
               </p>

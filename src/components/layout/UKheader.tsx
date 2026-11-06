@@ -74,7 +74,7 @@ const UK_NAV: NavSection[] = [
     description: 'Firm profile and private office access',
     columns: [
       [
-        { label: 'About Murivest UK', href: '/united-kingdom/about', sub: 'Heritage & philosophy' },
+        { label: 'Murivest Group UK', href: '/united-kingdom/about', sub: 'Heritage & philosophy' },
         { label: 'Leadership', href: '/leadership', sub: 'Executive leadership' },
         { label: 'Contact', href: '/united-kingdom/contact', sub: 'Private office inquiry' },
         { label: 'Compliance', href: '/compliance', sub: 'Regulatory information' },

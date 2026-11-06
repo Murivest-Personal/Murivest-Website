@@ -120,7 +120,7 @@ const UAE_NAV: NavSection[] = [
     description: 'Firm profile and private office access',
     columns: [
       [
-        { label: 'About Murivest', href: '/about', sub: 'Firm profile' },
+        { label: 'Murivest Group', href: '/about', sub: 'Firm profile' },
         { label: 'Leadership', href: '/leadership', sub: 'Executive leadership' },
         { label: 'Contact', href: '/united-arab-emirates/contact', sub: 'Private office inquiry' },
         { label: 'Compliance', href: '/compliance', sub: 'Regulatory information' },

@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import AboutClient from "./Aboutclient";
 
 export const metadata: Metadata = {
-  title: "About Murivest | Independent Commercial Real Estate Advisory",
+  title: "Murivest Group | Institutional commercial real estate services",
   description:
-    "Murivest is an independent, Nairobi-founded commercial real estate advisory practice helping owners, investors and occupiers navigate commercial property mandates across selected gateway markets.",
+    "Murivest is an independent, Global commercial real estate services practice helping owners, investors and tenants navigate commercial property mandates across selected gateway markets.",
   alternates: { canonical: "https://murivest.com/about" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "About Murivest | Independent Commercial Real Estate Advisory",
+    title: "Murivest Group | Institutional commercial real estate services",
     description:
-      "Independent commercial real estate advisory across East Africa, the Gulf, Western Europe and Southeast Asia. Founded in 2025.",
+      "Murivest Group is the global leader in commercial real estate services and investment specializing in institutional-grade opportunities.",
     url: "https://murivest.com/about",
     siteName: "Murivest",
     locale: "en_KE",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Murivest",
+    title: "Murivest",
     description:
-      "Independent commercial real estate advisory. Local intelligence. Institutional discipline.",
+      "Murivest Group is the global leader in commercial real estate services and investment specializing in institutional-grade opportunities.",
   },
 };
 
@@ -28,10 +28,10 @@ export default function AboutPage() {
   const aboutSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    name: "About Murivest",
+    name: "Murivest Group",
     url: "https://murivest.com/about",
     description:
-      "Independent commercial real estate advisory practice founded in 2025.",
+      "Institutional commercial real estate services practice founded in 2025.",
     mainEntity: {
       "@type": "Organization",
       name: "Murivest Group Ltd",

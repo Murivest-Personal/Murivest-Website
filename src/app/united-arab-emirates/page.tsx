@@ -17,6 +17,20 @@ import {
   Plus,
   Mail,
 } from 'lucide-react'
+import Image from 'next/image';
+import { Cinzel, Jost } from 'next/font/google';
+
+const cinzel = Cinzel({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+});
+
+const jost = Jost({
+  subsets: ['latin'],
+  weight: ['300', '400'],
+  display: 'swap',
+});
 
 /* ═══════════════════════════════════════════════════════════════
    ANIMATION VARIANTS
@@ -44,133 +58,80 @@ const staggerContainer = {
 
 function Hero() {
   return (
-    <section className="relative min-h-screen bg-[#0B3D2E] overflow-hidden">
-      {/* Atmospheric layers — no photo wash, architectural suggestion */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(184,149,80,0.08),transparent_60%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(0,0,0,0.5),transparent_55%)]" />
-      <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cream-paper.png')] opacity-[0.03]" />
-
-      <div className="relative z-10 max-w-[1440px] mx-auto px-6 lg:px-12">
-        {/* Masthead */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          className="flex items-center justify-between border-b border-[#8B7355]/15 py-6 mt-8"
+        <section className="relative flex min-h-[100svh] w-full items-center justify-center overflow-hidden bg-[#17251D]">
+      {/* Background video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          poster="/images/hero.jpeg"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+          aria-label="Murivest luxury architectural background video"
         >
-          <div className="flex items-center gap-3">
-            <span className="text-[#8B7355]/80 text-[10px] tracking-[0.35em] uppercase font-medium">
-              Murivest Private Office
-            </span>
-            <span className="text-[rgba(248,247,244,0.4)] text-[10px]">/</span>
-            <span className="text-[rgba(248,247,244,0.55)] text-[10px] tracking-[0.35em] uppercase">
-              Dubai · Abu Dhabi
-            </span>
-          </div>
-          <span className="hidden sm:block text-[rgba(248,247,244,0.4)] text-[10px] tracking-[0.3em] uppercase">
-            By Appointment Only
-          </span>
-        </motion.div>
+          <source src="/images/herouae.mp4" type="video/mp4" />
+          
+        </video>
 
-        {/* Main grid */}
-        <div className="grid lg:grid-cols-12 gap-y-16 lg:gap-x-12 pt-20 pb-28 lg:pt-28 lg:pb-32">
-          {/* Headline */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:col-span-7"
+      {/* Very light overlay, just enough for legibility */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/5 to-black/20" />
+
+      {/* Content, sits slightly below centre like the reference */}
+      <div className="relative z-10 flex w-full flex-col items-center px-6 pt-[10svh] text-center text-white">
+        {/* Wordmark */}
+        <div className="hero-reveal inline-flex flex-col items-center drop-shadow-[0_1px_8px_rgba(0,0,0,0.25)]">
+          <h1
+            className={`${cinzel.className} pl-[0.1em] text-[1.9rem] font-normal uppercase leading-none tracking-[0.1em] sm:text-4xl md:text-5xl lg:text-[3.5rem]`}
           >
-            <span className="block text-[#8B7355]/90 text-[11px] tracking-[0.3em] uppercase font-medium mb-8">
-              Institutional Real Estate Advisory — Gulf &amp; Levant
-            </span>
+            Murivest
+          </h1>
 
-            <h1 className="font-serif text-[#F8F7F4] text-4xl sm:text-5xl lg:text-6xl xl:text-[4.5rem] leading-[1.12] tracking-tight">
-              Capital is not deployed.
-              <br />
-              It is <span className="italic text-[#8B7355]">stewarded</span>
-              <br />
-              across generations.
-            </h1>
+          {/* Underline matches wordmark width */}
+          <div className="mt-2 h-px w-full bg-white/90" />
 
-            <div className="mt-10 max-w-xl border-l border-[#8B7355]/25 pl-6">
-              <p className="text-[rgba(248,247,244,0.65)] text-[15px] lg:text-base leading-[1.85] font-sans">
-                Murivest advises dynastic families, sovereign-adjacent pools,
-                and private equity principals on commercial real estate
-                allocation across the United Arab Emirates. We do not market
-                properties. We structure mandates.
-              </p>
-            </div>
-
-            <div className="flex flex-wrap items-center gap-8 mt-14">
-              <a
-                href="#contact"
-                className="group inline-flex items-center gap-3 border border-[#8B7355]/40 text-[#F5F4F0] px-8 py-4 text-[11px] tracking-[0.2em] uppercase font-medium hover:border-[#8B7355] hover:text-[#8B7355] transition-colors duration-500"
-              >
-                Arrange a Private Briefing
-                <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform duration-500" />
-              </a>
-              <a
-                href="#research"
-                className="group inline-flex items-center gap-2 text-[rgba(248,247,244,0.55)] hover:text-[rgba(248,247,244,0.85)] px-1 py-4 text-[11px] tracking-[0.2em] uppercase font-medium transition-colors duration-500"
-              >
-                Explore the UAE Platform
-                <ArrowUpRight size={13} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-500" />
-              </a>
-            </div>
-          </motion.div>
-
-          {/* Plate — captioned architectural study */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            className="lg:col-span-5 lg:pt-2"
+          <p
+            className={`${jost.className} mt-2 pl-[0.5em] text-[9px] font-light uppercase tracking-[0.5em] sm:text-[10px] md:text-xs`}
           >
-            <figure className="border border-[#8B7355]/15">
-              <div className="relative aspect-[4/5] overflow-hidden">
-                <div
-                  className="absolute inset-0 bg-cover bg-center grayscale-[25%] contrast-[1.05]"
-                  style={{ backgroundImage: "url('/images/uae-hero-architecture.webp')" }}
-                />
-                <div className="absolute inset-0 bg-[#0B3D2E]/20" />
-                <div className="absolute inset-0 ring-1 ring-inset ring-[#8B7355]/10" />
-                {/* Gold corner accents */}
-                <div className="absolute top-4 left-4 w-8 h-8 border-t border-l border-[#8B7355]/30" />
-                <div className="absolute bottom-4 right-4 w-8 h-8 border-b border-r border-[#8B7355]/30" />
-              </div>
-              <figcaption className="flex items-center justify-between px-5 py-4 border-t border-[#8B7355]/15">
-                <span className="text-[rgba(248,247,244,0.55)] text-[10px] tracking-[0.15em] uppercase">
-                  Fig. 01 — DIFC Gate District, Dubai
-                </span>
-                <span className="text-[rgba(248,247,244,0.4)] text-[10px] tracking-[0.15em]">
-                  2026
-                </span>
-              </figcaption>
-            </figure>
+            Group
+          </p>
+        </div>
 
-            <div className="flex items-center justify-between mt-8 pt-6 border-t border-[#8B7355]/10">
-              <div>
-                <div className="text-[#E5E2DC] text-sm font-serif tracking-tight">
-                  RERA · DLD Regulated
-                </div>
-                <div className="text-[rgba(248,247,244,0.4)] text-[10px] tracking-[0.2em] uppercase mt-1">
-                  DIFC · ADGM Advisory
-                </div>
-              </div>
-              <div className="w-10 h-px bg-[#8B7355]/30" />
-              <div className="text-right">
-                <div className="text-[#E5E2DC] text-sm font-serif tracking-tight">
-                  Principals Only
-                </div>
-                <div className="text-[rgba(248,247,244,0.4)] text-[10px] tracking-[0.2em] uppercase mt-1">
-                  Qualified Investor Access
-                </div>
-              </div>
-            </div>
-          </motion.div>
+        {/* Presents / Country */}
+        <div className="hero-reveal-delayed mt-20 sm:mt-24 md:mt-28 drop-shadow-[0_1px_6px_rgba(0,0,0,0.25)]">
+          <p
+            className={`${jost.className} pl-[0.9em] text-sm font-light uppercase tracking-[0.9em] text-white/90 sm:text-base md:text-lg`}
+          >
+            Presents
+          </p>
+          <p
+            className={`${jost.className} mt-4 pl-[0.5em] text-xs font-normal uppercase tracking-[0.5em] sm:text-sm md:text-base`}
+          >
+            UAE
+          </p>
         </div>
       </div>
+
+      {/* Tagline */}
+      <div className="absolute bottom-8 left-0 right-0 z-10 text-center">
+        <p
+          className={`${jost.className} pl-[0.35em] text-[10px] font-light uppercase tracking-[0.35em] text-white/70`}
+        >
+          The Concierge of Capital
+        </p>
+      </div>
+
+      <style jsx global>{`
+        @keyframes heroReveal {
+          from { opacity: 0; transform: translateY(12px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        .hero-reveal { animation: heroReveal 1.5s ease-out both; }
+        .hero-reveal-delayed { animation: heroReveal 1.8s ease-out 0.35s both; }
+        @media (prefers-reduced-motion: reduce) {
+          .hero-reveal, .hero-reveal-delayed { animation: none; }
+        }
+      `}</style>
     </section>
   )
 }

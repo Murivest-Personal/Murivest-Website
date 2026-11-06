@@ -1,0 +1,3 @@
+﻿supabase\functions\deliver-events\index.ts:    .from("event_outbox")
+supabase\functions\deliver-events\index.ts:      await supabase.from("event_outbox")
+supabase\functions\deliver-events\index.ts:      await supabase.from("event_outbox").update({

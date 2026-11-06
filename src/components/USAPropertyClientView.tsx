@@ -740,7 +740,7 @@ export default function PropertyClientView({
             not be construed as investment, legal, or tax advice. Past performance is not indicative
             of future returns. Available exclusively to mandated partners and qualified investors
             under NDA, subject to KYC/AML verification. Murivest Group Ltd is an independent
-            commercial real estate advisory firm; it does not act as a licensed investment advisor,
+            commercial real estate services firm; it does not act as a licensed investment advisor,
             does not operate collective investment schemes, and does not pool investor capital.
             All US transactions are subject to formal mandate agreements and independent due
             diligence. Transactions in US real estate may involve additional regulatory, tax, and

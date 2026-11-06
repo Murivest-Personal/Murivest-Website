@@ -894,7 +894,7 @@ export default function DIFCPage() {
       <section className="py-20 md:py-32 lg:py-40 px-6 md:px-12 lg:px-20 bg-[#1B4332] text-white">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-[10px] uppercase tracking-[0.25em] text-white/60 mb-4">
-            Institutional Commercial Real Estate Advisory
+            Institutional commercial real estate services
           </p>
           <h2 className="font-display text-[34px] md:text-[48px] lg:text-[56px] leading-[1.05] mb-4 md:mb-6">
             Invest in DIFC with Confidence

@@ -26,9 +26,9 @@ export interface CountrySEOConfig {
 export const countrySEO: Record<CountryCode, CountrySEOConfig> = {
   global: {
     title:
-      'Commercial Real Estate Advisory Kenya | Office, Industrial & Investment | Murivest - Est. 2025',
+      'commercial real estate services Kenya | Office, Industrial & Investment | Murivest - Est. 2025',
     description:
-      'Murivest Group Ltd is a Nairobi-based commercial real estate advisory founded in 2025 by Mark Muriithi. Mandate-based advisory for office, industrial, and investment across Kenya and East Africa.',
+      'Murivest Group is the global leader in commercial real estate services and investment advisory specializing in institutional-grade opportunities. Mandate-based advisory for office, industrial, and investment Globally.',
     domain: 'https://murivest.com',
     canonical: 'https://murivest.com',
     locale: 'en_KE',
@@ -38,7 +38,7 @@ export const countrySEO: Record<CountryCode, CountrySEOConfig> = {
     schemaRegion: 'KE',
     telephone: '+254-115-277-610',
     keywords: [
-      'commercial real estate advisory Kenya',
+      'commercial real estate services Kenya',
       'Nairobi commercial property',
       'office space Nairobi',
       'industrial property Kenya',
@@ -55,7 +55,7 @@ export const countrySEO: Record<CountryCode, CountrySEOConfig> = {
     title:
       'Murivest Group Ltd | Institutional Real Estate Advisory Kenya',
     description:
-      'Murivest Group Ltd is an independent commercial real estate advisory firm based in Nairobi. We originate and advise on institutional-grade mandates across East African commercial property markets. Engagements by mandate only.',
+      'Murivest Group Ltd is an Institutional commercial real estate services firm. We originate and advise on institutional-grade mandates Global commercial property markets. Engagements by mandate only.',
     domain: 'https://murivest.com',
     canonical: 'https://murivest.com',
     locale: 'en_KE',
@@ -65,7 +65,7 @@ export const countrySEO: Record<CountryCode, CountrySEOConfig> = {
     schemaRegion: 'KE',
     telephone: '+254-115-277-610',
     keywords: [
-      'commercial real estate advisory Kenya',
+      'commercial real estate services Kenya',
       'Nairobi commercial property',
       'institutional real estate Kenya',
       'commercial property investment Kenya',
@@ -92,7 +92,7 @@ export const countrySEO: Record<CountryCode, CountrySEOConfig> = {
     schemaRegion: 'SG',
     telephone: '+65-0115-277-610 ',
     keywords: [
-      'commercial real estate advisory Singapore',
+      'commercial real estate services Singapore',
       'Singapore institutional real estate',
       'family office real estate Singapore',
       'cross-border real estate investment Asia Pacific',
@@ -117,7 +117,7 @@ export const countrySEO: Record<CountryCode, CountrySEOConfig> = {
     schemaRegion: 'AE',
     telephone: '+971-00-115-277-610 ',
     keywords: [
-      'commercial real estate advisory UAE',
+      'commercial real estate services UAE',
       'Dubai institutional real estate',
       'DIFC real estate advisory',
       'GCC capital formation real estate',
@@ -142,7 +142,7 @@ export const countrySEO: Record<CountryCode, CountrySEOConfig> = {
     schemaRegion: 'GB',
     telephone: '+44-7864-855742 ',
     keywords: [
-      'commercial real estate advisory UK',
+      'commercial real estate services UK',
       'City of London real estate investment',
       'institutional real estate UK',
       'UK logistics property advisory',
@@ -166,7 +166,7 @@ export const countrySEO: Record<CountryCode, CountrySEOConfig> = {
     schemaRegion: 'US',
     telephone: '+1-000-115-277-610 ',
     keywords: [
-      'commercial real estate advisory United States',
+      'commercial real estate services United States',
       'institutional real estate US',
       'US capital markets real estate',
       'Murivest United States',

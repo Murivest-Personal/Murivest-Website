@@ -1,14 +1,14 @@
 export const SITE = {
   name: "Murivest Group",
-  legalName: "Murivest Group",
+  legalName: "Murivest Group Ltd",
   domain: "murivest.com",
   usaBasePath: "/usa",
-  tagline: "Institutional Commercial Real Estate Advisory",
+  tagline: "Global Commercial Real Estate Services",
   description:
     "Murivest Group is an independent commercial real estate advisory firm representing institutional investors, private capital, and principals across U.S. office, industrial, logistics, multifamily, retail, and data center markets.",
-  email: "capitalmarkets@murivest.com",
-  phoneDisplay: "By appointment",
-  foundedYear: 2024,
+  email: "capital@murivest.com",
+  phoneDisplay: "+254 115 277 610",
+  foundedYear: 2025,
 } as const;
 
 export const NAV_LINKS = [

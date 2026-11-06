@@ -120,7 +120,7 @@ export default function CareersPage() {
 
             <p className="text-[15px] leading-[1.8] text-[#5A5A5A] font-light mb-12">
               Murivest is building one of East Africa’s most sophisticated
-              commercial real estate advisory platforms. We work with investors,
+              commercial real estate services platforms. We work with investors,
               developers, family offices, diaspora capital, and institutional
               stakeholders seeking strategic real estate acquisition and market
               intelligence across Kenya.

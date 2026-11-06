@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 
 /* ------------------------------------------------------------------ */
-/*  REAL DATA — Sourced from About Murivest document                   */
+/*  REAL DATA — Sourced from Murivest Group document                   */
 /* ------------------------------------------------------------------ */
 
 const services = [
@@ -252,12 +252,12 @@ export default function AboutClient() {
             <div className="flex items-center gap-3 mb-8">
               <div className="w-8 h-[1px] bg-[#8B7355]" />
               <p className="text-[11px] tracking-[0.4em] uppercase text-[#8B7355] font-medium">
-                About Murivest
+                Murivest Group
               </p>
             </div>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif leading-[1.1] mb-8 text-[#2C2C2C]">
-              Independent Commercial
+              Institutional commercial
               <br />
               <span className="italic text-[#8B7355] font-light">
                 Real Estate Advisory
@@ -267,7 +267,7 @@ export default function AboutClient() {
             <div className="w-16 h-[1px] bg-[#E5E2DC] mb-8" />
 
             <p className="text-[15px] leading-[1.8] text-[#5A5A5A] font-light mb-10 max-w-2xl">
-              Murivest is an independent, Nairobi-founded commercial real estate
+              Murivest is an independent, Global commercial real estate
               advisory practice helping owners, investors and occupiers navigate
               commercial property mandates across selected gateway markets.
             </p>
@@ -895,7 +895,7 @@ export default function AboutClient() {
               </p>
             </div>
             <p className="text-[12px] text-[#8B7355] font-light max-w-md md:text-right">
-              Independent commercial real estate advisory across selected
+              Institutional commercial real estate services across selected
               gateway markets.
             </p>
           </div>

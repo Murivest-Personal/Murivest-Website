@@ -2,7 +2,20 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Shield, Lock, TrendingUp, ArrowUpRight, MapPin } from 'lucide-react';
+import Image from 'next/image';
+import { Cinzel, Jost } from 'next/font/google';
 
+const cinzel = Cinzel({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+});
+
+const jost = Jost({
+  subsets: ['latin'],
+  weight: ['300', '400'],
+  display: 'swap',
+});
 /* ─────────────────────────────────────────────────────────────
    MURIVEST — SINGAPORE
    Genesis Palette: Charcoal #2C2C2C, Brass #8B7355, Ivory #F8F7F4
@@ -22,9 +35,9 @@ const C = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: 'Singapore Commercial Real Estate Advisory | Institutional Mandate-Based Advisory | Murivest',
+  title: 'Singapore commercial real estate services | Institutional Mandate-Based Advisory | Murivest',
   description:
-    'Murivest is establishing institutional commercial real estate advisory coverage in Singapore in 2026. Mandate-based acquisition, disposition and capital structuring advisory for institutional and private capital. NDA/KYC only. Where local licensed representation is required, via appropriately licensed partners.',
+    'Murivest is establishing institutional commercial real estate services coverage in Singapore in 2026. Mandate-based acquisition, disposition and capital structuring advisory for institutional and private capital. NDA/KYC only. Where local licensed representation is required, via appropriately licensed partners.',
   alternates: {
     canonical: `${SITE_URL}${PAGE_PATH}`,
     languages: {
@@ -39,7 +52,7 @@ export const metadata: Metadata = {
     locale: 'en_SG',
     url: `${SITE_URL}${PAGE_PATH}`,
     siteName: 'Murivest',
-    title: 'Singapore Commercial Real Estate Advisory | Murivest',
+    title: 'Singapore commercial real estate services | Murivest',
     description:
       'Institutional mandate-based advisory extending to Singapore in 2026. Acquisition, disposition and capital structuring for private and institutional capital.',
     images: [
@@ -47,13 +60,13 @@ export const metadata: Metadata = {
         url: '/og-singapore.jpg', // 1200x630 WebP <120kb - skyline + logo on forest
         width: 1200,
         height: 630,
-        alt: 'Murivest — Singapore Commercial Real Estate Advisory',
+        alt: 'Murivest — Singapore commercial real estate services',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Singapore Commercial Real Estate Advisory | Murivest',
+    title: 'Singapore commercial real estate services | Murivest',
     description: 'Mandate-based institutional advisory establishing coverage in Singapore 2026.',
     images: ['/og-singapore.jpg'],
   },
@@ -77,14 +90,14 @@ function StructuredData() {
           address: { '@type': 'PostalAddress', addressLocality: 'Nairobi', addressCountry: 'KE' },
         },
         founder: { '@id': `${SITE_URL}/leadership#markmuriithi` },
-        slogan: 'Independent commercial real estate advisory. Founded 2025 Nairobi.',
+        slogan: 'Institutional commercial real estate services. Founded 2025 Nairobi.',
         areaServed: [
           { '@type': 'Country', name: 'Kenya' },
           { '@type': 'Country', name: 'United Arab Emirates' },
           { '@type': 'Country', name: 'United Kingdom' },
           { '@type': 'Country', name: 'Singapore' },
         ],
-        knowsAbout: ['Commercial Real Estate Advisory', 'Mandate-based Acquisition', 'Disposition Strategy'],
+        knowsAbout: ['commercial real estate services', 'Mandate-based Acquisition', 'Disposition Strategy'],
         sameAs: ['https://www.instagram.com/murivest_realty_group', 'https://www.linkedin.com/company/murivest-realty-group'],
       },
       {
@@ -93,7 +106,7 @@ function StructuredData() {
         name: 'Mark Muriithi',
         jobTitle: 'Founder & Chief Executive Officer',
         worksFor: { '@id': `${SITE_URL}/#organization` },
-        description: 'Founder of Murivest Group Ltd in Nairobi in 2025. Independent mandate-based commercial real estate advisory across Kenya, UAE, UK and Singapore coverage from 2026.',
+        description: 'Founder of Murivest Group Ltd in Nairobi in 2025. Independent mandate-based commercial real estate services across Kenya, UAE, UK and Singapore coverage from 2026.',
         sameAs: ['https://www.instagram.com/murivest_realty_group'],
       },
       {
@@ -115,7 +128,7 @@ function StructuredData() {
         '@type': 'WebPage',
         '@id': `${SITE_URL}${PAGE_PATH}/#webpage`,
         url: `${SITE_URL}${PAGE_PATH}`,
-        name: 'Singapore Commercial Real Estate Advisory | Murivest',
+        name: 'Singapore commercial real estate services | Murivest',
         isPartOf: { '@id': `${SITE_URL}/#website` },
         about: { '@id': `${SITE_URL}/#organization` },
         description: 'Murivest is establishing institutional advisory coverage of Singapore in 2026. Mandate-based, NDA/KYC, via licensed partners where required under the Estate Agents Act.',
@@ -199,42 +212,66 @@ export default function SingaporePage() {
     <>
       <StructuredData />
       <main className="bg-[#F8F7F4]">
-        {/* Breadcrumb UI */}
-        <nav aria-label="Breadcrumb" className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 pt-6">
-          <ol className="flex items-center gap-2 text-[10px] tracking-[0.14em] uppercase text-[#2C2C2C]/60">
-            <li><Link href="/" className="hover:text-[#8B7355] transition-colors">Home</Link></li>
-            <li aria-hidden="true" className="text-[#8B7355]/40">/</li>
-            <li className="text-[#2C2C2C]" aria-current="page">Singapore</li>
-          </ol>
-        </nav>
+        
+      {/* GLOBAL HOMEPAGE HERO */}
+      <section className="relative flex min-h-[100svh] w-full items-center justify-center overflow-hidden bg-[#17251D]">
 
-        {/* HERO - Forest Deep, no black, no image LCP killer */}
-        <section className="relative overflow-hidden bg-[#0B3D2E] mt-6" aria-label="Singapore Commercial Real Estate Advisory">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#2C2C2C]/90 via-[#2C2C2C] to-[#2C2C2C]" />
-          <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: `linear-gradient(${C.gold} 1px, transparent 1px), linear-gradient(90deg, ${C.gold} 1px, transparent 1px)`, backgroundSize: '80px 80px' }} />
-          <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 pt-28 pb-24">
-            <div className="max-w-3xl">
-              <div className="flex items-center gap-4 mb-8">
-                <span className="w-8 h-px bg-[#8B7355]/60" />
-                <p className="text-[10px] md:text-[11px] tracking-[0.35em] uppercase text-[#8B7355] font-medium">Singapore · Coverage Established 2026</p>
-              </div>
-              <h1 className="font-serif text-[2.4rem] md:text-[3.2rem] lg:text-[3.8rem] text-white leading-[1.05] mb-7">
-                Institutional Commercial Real Estate Advisory, <em className="italic text-[#8B7355] font-light">Now in Singapore</em>
-              </h1>
-              <p className="text-[15px] md:text-[17px] text-white/75 leading-[1.7] font-light max-w-2xl mb-10">
-                Murivest is extending its institutional, mandate-based practice to Singapore in 2026. We advise institutional and private capital on acquisition, disposition and structuring of commercial real estate — with the same underwriting discipline that governs every mandate we accept. NDA and KYC gated. Where local licensed representation is required, via licensed partners.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <a href="#request-introduction" className="inline-flex items-center gap-3 px-7 py-3.5 bg-[#F8F7F4] text-[#2C2C2C] text-[11px] tracking-[0.2em] uppercase font-semibold hover:bg-[#8B7355] hover:text-white transition-colors duration-500">
-                  Request an Introduction <ArrowUpRight className="w-3.5 h-3.5" strokeWidth={1.5} />
-                </a>
-                <a href="#coverage" className="inline-flex items-center gap-2 px-7 py-3.5 border border-[#8B7355]/40 text-white/80 text-[11px] tracking-[0.2em] uppercase font-medium hover:border-[#8B7355] hover:text-white transition-all duration-500">
-                  Our Coverage Approach
-                </a>
-              </div>
-            </div>
+       {/* Background video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+          aria-label="Murivest luxury architectural background video"
+        >
+          <source src="/images/herosg.mp4" type="video/mp4" />
+          
+        </video>
+
+        {/* Light overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/5 to-black/20" />
+
+        {/* Central presentation */}
+        <div className="relative z-10 flex w-full flex-col items-center px-6 pt-[10svh] text-center text-white">
+
+          {/* Murivest wordmark */}
+          <div className="hero-reveal inline-flex flex-col items-center drop-shadow-[0_1px_8px_rgba(0,0,0,0.25)]">
+
+            <h1
+              className={`${cinzel.className} pl-[0.1em] text-[1.9rem] font-normal uppercase leading-none tracking-[0.1em] sm:text-4xl md:text-5xl lg:text-[3.5rem]`}
+            >
+              Murivest
+            </h1>
+
+            {/* Wordmark underline */}
+            <div className="mt-2 h-px w-full bg-white/90" />
+
+            <p
+              className={`${jost.className} mt-2 pl-[0.5em] text-[9px] font-light uppercase tracking-[0.5em] sm:text-[10px] md:text-xs`}
+            >
+              Group
+            </p>
           </div>
-        </section>
+
+          {/* Presents / Global designation */}
+          <div className="hero-reveal-delayed mt-20 drop-shadow-[0_1px_6px_rgba(0,0,0,0.25)] sm:mt-24 md:mt-28">
+
+            <p
+              className={`${jost.className} pl-[0.9em] text-sm font-light uppercase tracking-[0.9em] text-white/90 sm:text-base md:text-lg`}
+            >
+              Presents
+            </p>
+
+            <p
+              className={`${jost.className} mt-4 pl-[0.5em] text-xs font-normal uppercase tracking-[0.5em] sm:text-sm md:text-base`}
+            >
+              SINGAPORE
+            </p>
+          </div>
+        </div>
+      </section>
 
         {/* FOUNDING NOTE */}
         <section className="py-20 md:py-28 bg-white border-y border-[#8B7355]/15">

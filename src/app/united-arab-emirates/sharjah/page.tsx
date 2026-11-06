@@ -20,7 +20,7 @@ import {
 export const metadata: Metadata = {
   title: 'Sharjah Commercial Real Estate Investment | Institutional Advisory | Murivest',
   description:
-    "Institutional commercial real estate advisory in Sharjah — the UAE's cultural capital and third-largest industrial economy. SAIF Zone, Hamriyah Free Zone, Al Majaz waterfront, and University City advisory for family offices and institutional capital.",
+    "Institutional commercial real estate services in Sharjah — the UAE's cultural capital and third-largest industrial economy. SAIF Zone, Hamriyah Free Zone, Al Majaz waterfront, and University City advisory for family offices and institutional capital.",
   keywords: [
     'Sharjah commercial real estate investment',
     'Sharjah industrial property advisory',
@@ -62,7 +62,7 @@ const schemaOrg = {
       '@type': 'RealEstateAgent',
       name: 'Murivest Sharjah',
       url: 'https://murivest.com/united-arab-emirates/sharjah',
-      description: 'Institutional commercial real estate advisory in Sharjah, United Arab Emirates',
+      description: 'Institutional commercial real estate services in Sharjah, United Arab Emirates',
       areaServed: [
         'SAIF Zone',
         'Hamriyah Free Zone',
@@ -636,7 +636,7 @@ export default function SharjahPage() {
       {/* ─── Footer ────────────────────────────────────────────────────────── */}
       <section className="px-5 sm:px-8 py-12 sm:py-16 border-t border-[#B8956B]/10 text-center">
         <p className="text-xs sm:text-sm text-[#B5AC9C] mb-3 sm:mb-4">
-          Murivest Dubai — Institutional Commercial Real Estate Advisory
+          Murivest Dubai — Institutional commercial real estate services
         </p>
         <p className="text-[10px] sm:text-xs text-[#8A8275]">Sharjah, United Arab Emirates</p>
       </section>

@@ -450,7 +450,7 @@ export default function TenantAdvisoryPage() {
               <div className="col-span-2 md:col-span-1">
                 <p className="font-serif text-[1.25rem] text-[#F8F7F4] mb-4 tracking-[0.15em] uppercase">Murivest</p>
                 <p className="font-sans text-[0.8rem] leading-[1.7] font-light">
-                  Institutional commercial real estate advisory, capital markets, and asset management.
+                  Institutional commercial real estate services, capital markets, and asset management.
                 </p>
               </div>
               <div>

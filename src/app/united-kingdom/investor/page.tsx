@@ -26,7 +26,7 @@ export default async function Page({
         <h1 className={styles.h1}>UK property investor enquiry</h1>
         <p className={styles.lede}>
           Tell us what you are looking for and we will respond with the relevant information. Murivest provides a
-          Nairobi-based point of contact for investors exploring selected UK opportunities, alongside its UK commercial
+          Global point of contact for investors exploring selected UK opportunities, alongside its UK commercial
           real estate advisory.
         </p>
         <p className={styles.notice}>

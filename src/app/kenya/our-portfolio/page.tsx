@@ -53,7 +53,7 @@ const orgSchema = {
   '@type': 'RealEstateAgent',
   name: 'Murivest Group Ltd',
   url: 'https://murivest.com',
-  description: 'Institutional commercial real estate advisory and transaction services across Nairobi, London, Dubai, and Southeast Asia.',
+  description: 'Institutional commercial real estate services and transaction services across Nairobi, London, Dubai, and Southeast Asia.',
   areaServed: ['Nairobi', 'Kenya', 'London', 'Dubai', 'Bangkok', 'Bali'],
 };
 
@@ -76,26 +76,14 @@ const featuredDeals = [
     size: '32,000 sqft',
     yield: '9.2%',
     status: 'Under Negotiation',
-    tenure: 'Freehold',
+    tenure: 'Leasehold',
     tenants: 'Multi-tenant, financial services & tech',
-    price: 'KES 420M',
+    price: 'KES 800M',
     highlight: 'Fully let. USD-denominated leases. Clean title verified.',
   },
+
   {
     id: 'MRV-002',
-    name: 'Sameer Business Park — Block D',
-    address: 'Mombasa Road, Industrial Area, Nairobi',
-    sector: 'Industrial / Logistics',
-    size: '48,000 sqft',
-    yield: '11.4%',
-    status: 'Off-Market',
-    tenure: 'Leasehold (94 years remaining)',
-    tenants: 'FMCG distributor (single anchor)',
-    price: 'KES 290M',
-    highlight: 'Long-term anchor tenant. Modern loading infrastructure. Clear title.',
-  },
-  {
-    id: 'MRV-003',
     name: 'Suite Life Serviced Residences',
     address: 'LR No. 1/844, Kilimani, Nairobi',
     sector: 'Serviced Apartments',
@@ -110,49 +98,24 @@ const featuredDeals = [
   {
     id: 'MRV-004',
     name: 'Rahimtulla Trust Building',
-    address: 'LR No. 209/561, Upper Hill, Nairobi',
+    address: 'Moi Avenue, Nairobi CBD',
     sector: 'Grade-A Office',
-    size: '55,000 sqft (full building)',
+    size: '(full building)',
     yield: '9.8%',
     status: 'Off-Market',
-    tenure: 'Freehold',
+    tenure: 'Leasehold',
     tenants: 'Institutional office, mixed-covenant',
-    price: 'KES 680M',
+    price: 'KES 1.2B',
     highlight: 'Whole-building acquisition. Long WAULT. Institutional-grade covenant.',
   },
-  {
-    id: 'MRV-005',
-    name: 'Eastern Bypass Logistics Hub',
-    address: 'Eastern Bypass, Ruiru, Greater Nairobi',
-    sector: 'Industrial / Logistics',
-    size: '80,000 sqft (development ready)',
-    yield: '12.5% (projected, stabilised)',
-    status: 'Development Mandate',
-    tenure: 'Freehold (titled, zoned industrial)',
-    tenants: 'Committed pre-let, cold chain occupier',
-    price: 'Development budget: KES 380M',
-    highlight: 'Cold-chain pre-let. Scarce product type. First-mover positioning.',
-  },
-  {
-    id: 'MRV-006',
-    name: 'Ngong Road Neighbourhood Centre',
-    address: 'Ngong Road Node, Kilimani/Dagoretti, Nairobi',
-    sector: 'Neighbourhood Retail',
-    size: '18,500 sqft',
-    yield: '11.2%',
-    status: 'Available',
-    tenure: 'Freehold',
-    tenants: 'Anchor: domestic grocery. Mix of food & service tenants',
-    price: 'KES 185M',
-    highlight: 'Domestic anchor. Satellite corridor organic demand. Defensible yield.',
-  },
+
 ];
 
 const stats = [
   { value: '15+', label: 'Verified Transactions', note: 'Active pipeline across sectors' },
-  { value: 'KES 2.5B+', label: 'Transaction Value', note: 'Aggregate deal pipeline under mandate' },
+  { value: 'KES 10.5B+', label: 'Pipeline Value', note: 'Aggregate deal pipeline under mandate' },
   { value: '8.5–13%', label: 'USD Yield Range', note: 'Across office, industrial & mixed-use' },
-  { value: '6', label: 'Global Markets', note: 'Nairobi · London · Dubai · USA · Bangkok · Bali' },
+  { value: '9', label: 'Global Markets', note: 'Kenya · UK · UAE · USA · Singapore · Bali' },
 ];
 
 const statusBadge: Record<string, { bg: string; color: string }> = {
@@ -188,7 +151,7 @@ export default function OurPortfolioPage() {
             </nav>
             <div className="max-w-3xl">
               <p className="text-[10px] font-bold tracking-[0.45em] uppercase mb-5" style={{ color: '#F59E0B' }}>
-                Transaction Pipeline — Q2 2026
+                Asset Pipeline — Q4 2026
               </p>
               <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-normal leading-[1.1] text-white mb-6" style={{ fontFamily: 'Georgia, serif' }}>
                 Active{' '}
@@ -202,7 +165,7 @@ export default function OurPortfolioPage() {
                 <Link href="/contact" className="inline-block px-8 py-3 text-[12px] font-medium tracking-[0.2em] uppercase text-white transition-opacity hover:opacity-80" style={{ backgroundColor: '#8B7355' }}>
                   Request Deal Access
                 </Link>
-                <Link href="/kenya/pricing" className="inline-block px-8 py-3 text-[12px] font-medium tracking-[0.2em] uppercase transition-opacity hover:opacity-80" style={{ border: '1px solid #475569', color: '#94A3B8' }}>
+                <Link href="/kenya/contact" className="inline-block px-8 py-3 text-[12px] font-medium tracking-[0.2em] uppercase transition-opacity hover:opacity-80" style={{ border: '1px solid #475569', color: '#94A3B8' }}>
                   View Advisory Fees
                 </Link>
               </div>
@@ -364,7 +327,7 @@ export default function OurPortfolioPage() {
               <Link href="/kenya/broker" className="inline-block px-8 py-3 text-[12px] font-medium tracking-[0.2em] uppercase text-white transition-opacity hover:opacity-80" style={{ backgroundColor: '#8B7355' }}>
                 Submit Mandate As A Broker
               </Link>
-              <Link href="/kenya/pricing" className="inline-block px-8 py-3 text-[12px] font-medium tracking-[0.2em] uppercase transition-opacity hover:opacity-80" style={{ border: '1px solid #8B7355', color: '#8B7355' }}>
+              <Link href="/kenya/contact" className="inline-block px-8 py-3 text-[12px] font-medium tracking-[0.2em] uppercase transition-opacity hover:opacity-80" style={{ border: '1px solid #8B7355', color: '#8B7355' }}>
                 Advisory Fees
               </Link>
             </div>

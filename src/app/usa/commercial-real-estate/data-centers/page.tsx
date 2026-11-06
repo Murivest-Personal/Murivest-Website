@@ -5,7 +5,7 @@ import { PROPERTY_TYPES, SITE } from "../../lib/site";
 const type = PROPERTY_TYPES.find((p) => p.slug === "data-centers")!;
 
 export const metadata: Metadata = {
-  title: "Data Centers — USA Commercial Real Estate Advisory",
+  title: "Data Centers — USA commercial real estate services",
   description:
     "Murivest Group's U.S. data center real estate practice — investment sales for hyperscale, colocation, and edge data center facilities in primary U.S. data center markets.",
   alternates: { canonical: `https://${SITE.domain}/usa/commercial-real-estate/data-centers` },
