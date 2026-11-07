@@ -31,7 +31,7 @@ const CEOInstitutionalProfile = () => {
           >
             <div className="relative aspect-[4/5] border border-[#E5E2DC] overflow-hidden">
               <Image
-                src="/CEO.Founder.webp"
+                src="/ceo.png"
                 alt="Mark Muriithi - Chief Executive Officer"
                 fill
                 className="object-cover"

@@ -112,7 +112,7 @@ const usaOrganizationSchema = {
   },
   sameAs: [
     "https://www.linkedin.com/company/murivest-realty-group",
-    "https://www.instagram.com/murivest_realty",
+    "https://www.instagram.com/murivest_group",
   ],
   knowsAbout: [
     "Commercial Real Estate",

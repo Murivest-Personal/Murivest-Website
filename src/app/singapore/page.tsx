@@ -98,7 +98,7 @@ function StructuredData() {
           { '@type': 'Country', name: 'Singapore' },
         ],
         knowsAbout: ['commercial real estate services', 'Mandate-based Acquisition', 'Disposition Strategy'],
-        sameAs: ['https://www.instagram.com/murivest_realty_group', 'https://www.linkedin.com/company/murivest-realty-group'],
+        sameAs: ['https://www.instagram.com/murivest_group', 'https://www.linkedin.com/company/murivest-realty-group'],
       },
       {
         '@type': 'Person',
@@ -107,7 +107,7 @@ function StructuredData() {
         jobTitle: 'Founder & Chief Executive Officer',
         worksFor: { '@id': `${SITE_URL}/#organization` },
         description: 'Founder of Murivest Group Ltd in Nairobi in 2025. Independent mandate-based commercial real estate services across Kenya, UAE, UK and Singapore coverage from 2026.',
-        sameAs: ['https://www.instagram.com/murivest_realty_group'],
+        sameAs: ['https://www.instagram.com/murivest_group'],
       },
       {
         '@type': 'WebSite',

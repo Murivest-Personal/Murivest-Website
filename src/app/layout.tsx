@@ -118,7 +118,7 @@ const globalOrganizationSchema = {
     'Murivest Group Ltd is a Global commercial real estate services firm founded in 2025 by Mark Muriithi. Mandate-based advisory for office, industrial, and investment Globally.',
   sameAs: [
     'https://www.linkedin.com/company/murivest-realty-group',
-    'https://www.instagram.com/murivest_realty',
+    'https://www.instagram.com/murivest_group',
   ],
   contactPoint: {
     '@type': 'ContactPoint',

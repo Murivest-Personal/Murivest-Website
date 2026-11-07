@@ -175,7 +175,7 @@ const Contact = () => {
                 <Mail className="w-5 h-5 text-[#8B7355] mt-0.5" strokeWidth={1} />
                 <div>
                   <p className="text-[12px] tracking-[0.15em] uppercase text-[#5A5A5A] mb-2">Email</p>
-                  <p className="text-[14px] text-[#2C2C2C] font-light">advisory@murivest.com</p>
+                  <p className="text-[14px] text-[#2C2C2C] font-light">office@murivest.com</p>
                 </div>
               </div>
 

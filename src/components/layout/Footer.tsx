@@ -29,7 +29,7 @@ const Footer: React.FC<FooterProps> = ({ copyrightYear }) => {
 
   const socialLinks = [
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/murivest-realty-group', icon: FaLinkedinIn },
-    { name: 'Instagram', href: 'https://www.instagram.com/murivest_realty_group', icon: FaInstagram },
+    { name: 'Instagram', href: 'https://www.instagram.com/murivest_group', icon: FaInstagram },
     { name: 'X', href: 'https://twitter.com/murivestrealty', icon: FaXTwitter },
     { name: 'YouTube', href: 'https://www.youtube.com/@murivestrealty', icon: FaYoutube },
     { name: 'WhatsApp', href: 'https://wa.me/254115277610', icon: FaWhatsapp },
