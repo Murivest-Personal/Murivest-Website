@@ -4,25 +4,27 @@ import Link from 'next/link';
 import { ArrowUpRight, TrendingUp, TrendingDown, Minus } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+const PERIOD = 'Q4 2026';
+
 const marketData = [
   {
     category: 'Grade A Office',
-    subtext: 'Westlands · Gigiri · Karen',
+    subtext: 'Westlands · Nairobi CBD · Parklands',
     yield: '8.5%',
     vacancy: '19.3%',
     trend: 'Compressing',
     trendDir: 'up',
-    note: 'Westlands leads absorption — flight-to-quality demand accelerating',
+    note: 'Nairobi CBD leads absorption; flight-to-quality accelerating',
     allocation: 'Core',
   },
   {
     category: 'Industrial & Logistics',
-    subtext: 'Nairobi · Tatu City · JKIA Zone',
+    subtext: 'Thika Road · Ruaraka · Mombasa Road',
     yield: '9.5%',
     vacancy: '17.0%',
     trend: 'Tightening',
     trendDir: 'up',
-    note: 'Structural demand expansion from e-commerce and agro-logistics',
+    note: 'E-commerce and agro-logistics drive structural demand',
     allocation: 'Overweight',
   },
   {
@@ -32,7 +34,7 @@ const marketData = [
     vacancy: '19.8%',
     trend: 'Stable',
     trendDir: 'neutral',
-    note: 'Selective node strength — anchor-tenant covenants remain resilient',
+    note: 'Selective node strength; anchor covenants resilient',
     allocation: 'Neutral',
   },
   {
@@ -42,7 +44,7 @@ const marketData = [
     vacancy: '~18.5%',
     trend: 'Outperforming',
     trendDir: 'up',
-    note: 'Highest blended yield — diversified income structure',
+    note: 'Highest blended yield; diversified income',
     allocation: 'Core',
   },
 ];
@@ -76,12 +78,12 @@ export default function ResearchPreview() {
             <div className="flex items-center gap-3 mb-6">
               <div className="w-6 h-px bg-[#8B7355]" />
               <p className="text-[10px] tracking-[0.35em] uppercase text-[#8B7355]">
-                Market Intelligence · Q2 2026
+                Market Intelligence · {PERIOD}
               </p>
             </div>
 
             <h2 className="text-3xl md:text-5xl font-serif leading-[1.1] text-[#2C2C2C]">
-              Nairobi Commercial
+              Global Commercial
               <br />
               <span className="italic font-light text-[#5A5A5A]">
                 Real Estate Intelligence
@@ -97,9 +99,9 @@ export default function ResearchPreview() {
             className="lg:col-span-7"
           >
             <p className="text-[14px] md:text-[15px] text-[#5A5A5A] leading-[1.85] font-light border-l border-[#8B7355] pl-6">
-              Nairobi's commercial market is undergoing structural rebalancing. Capital is
-              concentrating in Grade A office, logistics, and mixed-use corridors, while
-              secondary stock continues to dilute pricing power and occupancy across the metro area.
+              The Global commercial market is rebalancing. Capital is concentrating in Grade A
+              office, logistics, and mixed-use corridors, while secondary stock loses pricing
+              power and occupancy.
             </p>
           </motion.div>
         </div>
@@ -107,7 +109,6 @@ export default function ResearchPreview() {
         {/* ── DESKTOP TABLE ──────────────────── */}
         <div className="hidden md:block border border-[#E5E2DC] bg-white shadow-sm">
 
-          {/* Table header */}
           <div className="grid grid-cols-12 px-6 py-4 text-[9px] uppercase tracking-[0.3em] text-[#A9A39A] border-b border-[#E5E2DC] bg-[#F8F7F4]">
             <div className="col-span-4">Asset Class</div>
             <div className="col-span-1 text-right">Yield</div>
@@ -200,17 +201,16 @@ export default function ResearchPreview() {
         {/* ── INSIGHT CALLOUT ────────────────── */}
         <div className="mt-12 border-l border-[#8B7355] pl-5 sm:pl-6">
           <p className="text-[14px] md:text-[15px] leading-[1.85] text-[#5A5A5A] font-light">
-            Grade A assets continue to outperform across Westlands, Gigiri, and Karen, driven
-            by tenant consolidation and flight-to-quality dynamics. Industrial logistics remains
-            the strongest structural allocation theme in Kenya, supported by sustained regional
-            distribution and e-commerce demand.
+            Grade A assets continue to outperform across Westlands, Gigiri, and Karen on tenant
+            consolidation and flight-to-quality demand. Industrial logistics remains Kenya's
+            strongest structural allocation theme.
           </p>
         </div>
 
         {/* ── CTA ────────────────────────────── */}
         <div className="mt-14 pt-10 border-t border-[#E5E2DC] flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <p className="text-[10px] uppercase tracking-wider text-[#A9A39A]">
-            Mandated intelligence only · KYC required · Q2 2026
+            Mandated intelligence only · KYC required · {PERIOD}
           </p>
           <Link
             href="/contact"

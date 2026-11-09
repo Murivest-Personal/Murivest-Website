@@ -71,7 +71,7 @@ const featuredDeals = [
   {
     id: 'MRV-001',
     name: 'Reliable Towers',
-    address: '11 Mogotio Road, Westlands, Nairobi',
+    address: '11 Mogotio Road, Parklands, Nairobi',
     sector: 'Grade-A Office',
     size: '32,000 sqft',
     yield: '9.2%',

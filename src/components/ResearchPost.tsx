@@ -13,7 +13,6 @@ import { researchData, type researchPostData } from '@/lib/researchData';
 // ─── Discussion imports (Claude's addition) ────────────────────────────────────
 import AnalystSummary    from '@/components/discussions/AnalystSummary';
 import DiscussionSection from '@/components/discussions/DiscussionSection';
-import RelatedInsights   from '@/components/discussions/RelatedInsights';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 interface TocItem {
@@ -206,89 +205,6 @@ function TableOfContents({ toc }: { toc: TocItem[] }) {
   );
 }
 
-// ─── Inline Related Posts (ad-style cards inside article) ─────────────────────
-function InlineRelatedPosts({ currentId, category }: { currentId: string; category: string }) {
-  const related = getRelatedPosts(currentId, category, 2);
-  if (related.length === 0) return null;
-
-  return (
-    <aside aria-label="Recommended reading" style={{ 
-      margin: '48px 0', 
-      padding: '28px', 
-      background: '#F5F3EE', 
-      border: '1px solid #E2DDD6',
-      borderLeft: '3px solid #7B6C55'
-    }}>
-      <p style={{ 
-        fontFamily: 'Georgia, serif', 
-        fontSize: '10px', 
-        letterSpacing: '0.22em', 
-        textTransform: 'uppercase', 
-        color: '#9B8F7E', 
-        marginBottom: '20px' 
-      }}>
-        You might also like
-      </p>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '20px' }}>
-        {related.map(({ id, data }) => (
-          <Link key={id} href={`/research/${id}`} style={{ 
-            textDecoration: 'none', 
-            display: 'block',
-            background: '#FAFAF8',
-            border: '1px solid #E2DDD6',
-            padding: '20px',
-            transition: 'border-color 0.2s, box-shadow 0.2s',
-          }}>
-            <p style={{ 
-              fontFamily: 'Georgia, serif', 
-              fontSize: '10px', 
-              letterSpacing: '0.15em', 
-              textTransform: 'uppercase', 
-              color: '#9B8F7E', 
-              marginBottom: '8px' 
-            }}>
-              {data.category}
-            </p>
-            <p style={{ 
-              fontFamily: 'Georgia, "Times New Roman", serif', 
-              fontSize: '15px', 
-              fontWeight: '700', 
-              color: '#1C1C1C', 
-              lineHeight: '1.4', 
-              marginBottom: '10px' 
-            }}>
-              {data.title}
-            </p>
-            <p style={{ 
-              fontFamily: 'Georgia, serif', 
-              fontSize: '13px', 
-              color: '#6B6259', 
-              lineHeight: '1.5',
-              marginBottom: '12px',
-              display: '-webkit-box',
-              WebkitLineClamp: 2,
-              WebkitBoxOrient: 'vertical',
-              overflow: 'hidden'
-            }}>
-              {data.excerpt || stripHtml(data.content).slice(0, 120)}...
-            </p>
-            <span style={{ 
-              display: 'inline-flex', 
-              alignItems: 'center', 
-              gap: '4px',
-              fontFamily: 'Georgia, serif', 
-              fontSize: '11px', 
-              color: '#7B6C55', 
-              letterSpacing: '0.05em' 
-            }}>
-              Read article <ChevronRight style={{ width: '12px', height: '12px' }} />
-            </span>
-          </Link>
-        ))}
-      </div>
-    </aside>
-  );
-}
 
 // ─── Newsletter CTA (original interactive form restored) ────────────────────────
 function NewsletterCTA() {
@@ -338,26 +254,6 @@ function NewsletterCTA() {
   );
 }
 
-// ─── Bottom Related Posts (original grid layout restored) ─────────────────────
-function RelatedPosts({ posts }: { posts: Array<{ id: string; data: researchPostData }> }) {
-  if (posts.length === 0) return null;
-  return (
-    <section aria-label="Related articles" style={{ borderTop: '1px solid #E2DDD6', paddingTop: '48px', marginTop: '48px' }}>
-      <p style={{ fontFamily: 'Georgia, serif', fontSize: '10px', letterSpacing: '0.22em', textTransform: 'uppercase', color: '#9B8F7E', marginBottom: '24px' }}>
-        Related Reading
-      </p>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '24px' }}>
-        {posts.map(({ id, data }) => (
-          <Link key={id} href={`/research/${id}`} style={{ textDecoration: 'none', display: 'block', borderTop: '2px solid #E2DDD6', paddingTop: '16px' }}>
-            <p style={{ fontFamily: 'Georgia, serif', fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#9B8F7E', marginBottom: '8px' }}>{data.category}</p>
-            <p style={{ fontFamily: 'Georgia, "Times New Roman", serif', fontSize: '15px', fontWeight: '700', color: '#1C1C1C', lineHeight: '1.4', marginBottom: '8px' }}>{data.title}</p>
-            <p style={{ fontFamily: 'Georgia, serif', fontSize: '12px', color: '#9B8F7E' }}>{data.readTime || calcReadTime(data.content)}</p>
-          </Link>
-        ))}
-      </div>
-    </section>
-  );
-}
 
 // ─── Author Bio ───────────────────────────────────────────────────────────────
 function AuthorBio({ authorName }: { authorName: string }) {
@@ -471,22 +367,6 @@ export default function researchPost({ post: postProp, analystSummary: analystSu
 
       <div style={{ minHeight: '100vh', background: '#FAFAF8', paddingTop: '64px' }}>
 
-        {/* Top Nav */}
-        <div style={{ borderBottom: '1px solid #E2DDD6', background: '#FAFAF8' }}>
-          <div style={{ maxWidth: '860px', margin: '0 auto', padding: '18px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
-            <Link href="/kenya/research" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '11px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#7B6C55', textDecoration: 'none', fontFamily: 'Georgia, serif' }}>
-              <ArrowLeft style={{ width: '14px', height: '14px' }} strokeWidth={1.5} /> Back to Journal
-            </Link>
-            <nav aria-label="Breadcrumb" style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '11px', color: '#9B8F7E', fontFamily: 'Georgia, serif', flexWrap: 'wrap' }}>
-              <Link href="/" style={{ color: '#9B8F7E', textDecoration: 'none' }}>Home</Link>
-              <ChevronRight style={{ width: '10px', height: '10px' }} />
-              <Link href="/kenya/research" style={{ color: '#9B8F7E', textDecoration: 'none' }}>Research</Link>
-              <ChevronRight style={{ width: '10px', height: '10px' }} />
-              <span style={{ color: '#6B6259', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '180px' }}>{post.title}</span>
-            </nav>
-          </div>
-        </div>
-
         {/* Article */}
         <article style={{ maxWidth: '860px', margin: '0 auto', padding: '0 24px 80px 24px' }}>
 
@@ -519,22 +399,6 @@ export default function researchPost({ post: postProp, analystSummary: analystSu
             <ShareBar title={post.title} url={postUrl} />
           </header>
 
-          {/* Hero Image */}
-          <div className="relative w-full overflow-hidden rounded-2xl bg-neutral-100">
-            <Image
-              src={heroImage}
-              alt={post.title}
-              width={1600}
-              height={900}
-              priority
-              className="w-full h-auto object-contain"
-              sizes="(max-width: 860px) 100vw, 860px"
-              placeholder="blur"
-              blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'%3E%3Crect fill='%23E8E4DE'/%3E%3C/svg%3E"
-              onError={(e) => { (e.target as HTMLImageElement).src = '/default-research-image.webp'; }}
-            />
-          </div>
-
           <TableOfContents toc={toc} />
 
           {/* Body */}
@@ -544,7 +408,6 @@ export default function researchPost({ post: postProp, analystSummary: analystSu
               dangerouslySetInnerHTML={{ __html: processedContent }}
             />
 
-            <InlineRelatedPosts currentId={id} category={post.category} />
             {ctaShown && <NewsletterCTA />}
           </div>
 
@@ -567,7 +430,6 @@ export default function researchPost({ post: postProp, analystSummary: analystSu
           </div>
 
           <AuthorBio authorName={post.author} />
-          <RelatedPosts posts={relatedPosts} />
 
           {/* ── Claude's new discussion sections ─────────────────────────── */}
           {summaryToShow && (
@@ -582,7 +444,6 @@ export default function researchPost({ post: postProp, analystSummary: analystSu
             variant="article"
           />
 
-          <RelatedInsights variant="article" />
 
           <div style={{ textAlign: 'center', paddingTop: '8px', marginTop: '48px', borderTop: '1px solid #E2DDD6' }}>
             <Link href="/kenya/research" style={{ fontFamily: 'Georgia, serif', fontSize: '12px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#7B6C55', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>

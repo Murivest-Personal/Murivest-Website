@@ -10,7 +10,7 @@ const strategies = [
     id: '01',
     title: 'Grade A Office Assets',
     subtitle: 'Core Office Market',
-    desc: 'Institutional-grade office buildings anchored by long-duration tenants across Nairobi\s prime commercial nodes — Westlands, Gigiri, and Karen. Focus on occupancy resilience and capital preservation through market cycles.',
+    desc: 'Institutional-grade offices anchored by long-duration tenants in Westlands, Gigiri, and Karen. Focus on occupancy resilience and capital preservation.',
     yieldRange: '8.5% – 10.0%',
     holdHorizon: '7 – 10 years',
     structure: 'Acquisition & Leaseback',
@@ -21,7 +21,7 @@ const strategies = [
     id: '02',
     title: 'Hospitality & Hotel Assets',
     subtitle: 'High-Yield Hospitality',
-    desc: 'Selective hospitality mandates in high-demand urban and tourism corridors. Underwriting prioritises RevPAR stability, operator covenant strength, and repositioning upside in supply-constrained markets.',
+    desc: 'Selective mandates in high-demand urban and tourism corridors. Underwriting prioritises RevPAR stability, operator covenant strength, and repositioning upside.',
     yieldRange: '10.0% – 12.5%',
     holdHorizon: '5 – 8 years',
     structure: 'Acquisition & Operator Mandate',
@@ -32,7 +32,7 @@ const strategies = [
     id: '03',
     title: 'Retail & Mixed-Use Hubs',
     subtitle: 'Defensive Retail',
-    desc: 'Destination retail and integrated mixed-use centres anchored by essential-service tenants with strong catchment fundamentals. Positioned for income durability and structural demand from Kenya\'s expanding urban consumer base.',
+    desc: "Destination retail and mixed-use centres anchored by essential-service tenants, positioned for income durability and Kenya's expanding urban consumer base.",
     yieldRange: '9.5% – 11.5%',
     holdHorizon: '6 – 9 years',
     structure: 'Stabilised Income Mandate',
@@ -87,9 +87,9 @@ const CoreInvestmentStrategies = () => {
             className="hidden lg:block lg:col-span-6"
           >
             <p className="text-[15px] leading-[1.9] text-[#5A5A5A] font-light border-l border-[#8B7355] pl-6">
-              Murivest structures disciplined, mandate-based real estate strategies across three
-              commercial asset classes — each selected for income durability, institutional
-              governance, and risk-adjusted return profiles Global cycles.
+              Mandate-based strategies across three commercial asset classes, selected for
+              income durability, institutional governance, and risk-adjusted returns through
+              market cycles.
             </p>
           </motion.div>
         </div>
@@ -109,17 +109,15 @@ const CoreInvestmentStrategies = () => {
             >
               <div className="p-10 lg:p-12 flex flex-col flex-1">
 
-                {/* Strategy ID & Icon */}
                 <div className="flex items-start justify-between mb-10">
                   <span className="text-[10px] tracking-[0.3em] uppercase text-[#8B7355]">
                     {item.id}
                   </span>
-                  <div className="w-11 h-11 rounded-full border border-[#8B7355] group-hover:border-[#8B7355] flex items-center justify-center transition-colors duration-500">
+                  <div className="w-11 h-11 rounded-full border border-[#8B7355] flex items-center justify-center transition-colors duration-500">
                     <item.icon className="h-4 w-4 text-[#8B7355]" strokeWidth={1.5} />
                   </div>
                 </div>
 
-                {/* Title */}
                 <p className="text-[10px] tracking-[0.25em] uppercase text-[#8B7355] mb-3">
                   {item.subtitle}
                 </p>
@@ -130,7 +128,6 @@ const CoreInvestmentStrategies = () => {
                   {item.desc}
                 </p>
 
-                {/* Metrics */}
                 <div className="mt-8 pt-6 border-t border-[#E5E2DC] space-y-2">
                   <div className="flex justify-between items-baseline">
                     <span className="text-[10px] uppercase tracking-[0.2em] text-[#A9A39A]">Target Yield</span>
@@ -146,7 +143,6 @@ const CoreInvestmentStrategies = () => {
                   </div>
                 </div>
 
-                {/* CTA */}
                 <Link
                   href={item.href}
                   className="mt-6 inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.25em] text-[#8B7355] opacity-0 group-hover:opacity-100 transition-opacity duration-500"

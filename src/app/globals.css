@@ -166,6 +166,10 @@ img {
   background-color: var(--color-cream-dark);
 }
 
+.btn-forest {
+  background-color: #1f3d2b; color: #ffffff; padding: 12px 24px; text-decoration: none; display: inline-block; font-weight: 600; letter-spacing: 0.02em;
+}
+
 /* =================================
    MAPS
 ================================= */

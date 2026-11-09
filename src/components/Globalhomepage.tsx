@@ -65,7 +65,7 @@ const SERVICES = [
   {
     title: 'Market Intelligence',
     desc: 'Primary research from Nairobi ground data. Market theses, sector analysis, and allocation briefings drawn from on-the-ground due diligence, not third-party aggregates.',
-    href: '/research',
+    href: '/kenya/research',
   },
 ];
 
@@ -79,7 +79,7 @@ const INSIGHTS = [
     image: '/research-images/global-macro-allocation-commercial-real-estate-dedollarization-2026.webp',
   },
   {
-    href: 'research/industrial-property-investment-uk-growth-corridors-2026',
+    href: '/united-kingdom/research/industrial-property-investment-uk-growth-corridors-2026',
     title: 'Where to Buy UK Industrial Property in 2026?',
     subtitle: 'Infrastructure-led analysis of the UK\'s premier logistics corridors, examining motorway networks, port connectivity, and land constraints to identify optimal industrial deployment locations.',
     image:'/research-images/industrial-property-investment-uk-growth-corridors-2026.webp',
@@ -87,11 +87,11 @@ const INSIGHTS = [
     date: 'June 2026',
   },
   {
-    href: 'research/us-investors-rotating-into-uk-property-2026',
+    href: '/usa/research/us-investors-rotating-into-uk-property-2026',
     title: 'Why American Capital Is Rotating Into UK Real Estate',
     subtitle: 'US investors are increasingly allocating capital into UK residential and commercial property as taxes, insurance costs, and market fragmentation reshape global investment strategy.',
     image: '/research-images/us-investors-uk-property-2026.webp',
-    category: 'Global Capital Markets',
+    category: 'USA Capital Markets',
     date: 'May 2026',
   },
 ];
@@ -154,16 +154,16 @@ const ABOUT_PARAGRAPHS = [
 
 const TRUST_METRICS = [
   {
-    value: '2025',
-    label: 'Established Nairobi',
+    value: '8-15%',
+    label: 'Targeted Risk-Adjusted Returns',
   },
   {
     value: 'Decades',
     label: 'Leadership Experience',
   },
   {
-    value: 'Mandate-Only',
-    label: 'Advisory Model',
+    value: 'Institutional Real Estate',
+    label: 'Focus',
   },
   {
     value: 'Global',
@@ -373,11 +373,11 @@ export default function GlobalHomePage() {
               <div className="flex items-center gap-3 mb-6">
                 <span className="w-8 h-[1px] bg-[#8B7355]" />
                 <p className="text-[10px] tracking-[0.35em] uppercase text-[#8B7355] font-medium">
-                  Advisory Services
+                  Commercial Real Estate Services
                 </p>
               </div>
               <h2 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-[#2C2C2C] leading-[1.1]">
-                Structured advisory for institutional execution.
+                Structured services for institutional execution.
               </h2>
               <div className="w-16 h-[1px] bg-[#E5E2DC] mt-8 hidden lg:block" />
             </div>
@@ -422,7 +422,7 @@ export default function GlobalHomePage() {
                 </p>
               </div>
               <h2 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-[#2C2C2C] leading-[1.1]">
-                Primary research from Nairobi ground data
+                Global Commercial Real Estate Research
               </h2>
             </div>
             <Link

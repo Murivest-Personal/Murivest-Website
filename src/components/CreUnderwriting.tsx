@@ -633,7 +633,7 @@ export default function MurivestatUW(): React.ReactElement {
               <div className="lg:col-span-5">
                 <Panel title="Property Details">
                   <FI label="Property Name" value={d.propName} onChange={setDf('propName')} placeholder="e.g. Riverside Plaza" />
-                  <FI label="Submarket / Location" value={d.submarket} onChange={setDf('submarket')} placeholder="e.g. Westlands, Nairobi" />
+                  <FI label="Submarket / Location" value={d.submarket} onChange={setDf('submarket')} placeholder="e.g. Parklands, Nairobi" />
                   <div className="grid grid-cols-1 min-[400px]:grid-cols-2 gap-x-6">
                     <FI label="Asset Type" value={d.assetType} onChange={setDf('assetType')} placeholder="Office / Retail / Mixed" />
                     <FI label="Tenure" value={d.tenure} onChange={setDf('tenure')} placeholder="Freehold / Leasehold" />

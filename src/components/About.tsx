@@ -586,7 +586,7 @@ export default function About() {
           padding: '2.5rem 0', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         }}>
           <span style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.05rem', fontStyle: 'italic', color: '#3D3328' }}>
-            Murivest Group Ltd. — Westlands, Nairobi
+            Murivest Group Ltd. — Parklands, Nairobi
           </span>
           <span style={{ fontFamily: "'Libre Baskerville', Georgia, serif", fontSize: '0.58rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: '#8B6C2A' }}>
             KEREA · Engagements by Mandate Only

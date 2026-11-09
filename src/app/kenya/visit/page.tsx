@@ -758,7 +758,7 @@ export default function VisitPage() {
                   <div>
                     <MicroLabel>Property Particulars</MicroLabel>
                     <div className="grid sm:grid-cols-2 gap-x-8 gap-y-8">
-                      <FormField label="Property Location" name="propertyLocation" value={formData.propertyLocation} onChange={handleChange} placeholder="e.g. Westlands, Nairobi" icon={MapPin} />
+                      <FormField label="Property Location" name="propertyLocation" value={formData.propertyLocation} onChange={handleChange} placeholder="e.g. Parklands, Nairobi" icon={MapPin} />
                       <FormField label="Property Name (if known)" name="propertyName" value={formData.propertyName} onChange={handleChange} placeholder="e.g. The Meridian Tower" icon={Building2} required={false} />
                     </div>
                   </div>

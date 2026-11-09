@@ -33,15 +33,50 @@ const research: ResearchEntry[] = [
     featured: true,
   },
   {
+  id: 'uk-bond-market-labour-rhetoric-housing-2026',
+  title: 'UK Bond Markets Are Repricing Political Risk',
+  excerpt: 'Rising gilt yields and renewed concerns around fiscal discipline are reshaping mortgage pricing, residential demand, and investor sentiment across the British housing market.',
+  author: getAuthor('market'),
+  image: '/research-images/uk-bond-market-housing-2026.webp',
+  category: 'Market Intelligence',
+  date: '2026-05-18',
+  readTime: '9 min read',
+  featured: true
+},
+
+ {
+  id: 'inflation-property-industry-reaction-uk-2026',
+  title: 'UK Inflation Surprise Reshapes Property and Mortgage Pricing Expectations',
+  excerpt: 'The UK inflation rate unexpectedly fell to 2.8% in May 2026, easing pressure across mortgage markets and triggering renewed debate around interest rates, housing affordability, and institutional property allocation strategies.',
+  image: '/research-images/uk-inflation-property-reaction-2026.webp',
+  author: getAuthor('investment'),
+  date: '2026-05-20',
+  readTime: '6 min read',
+  category: 'Global Property & Capital Markets',
+  featured: false
+},
+
+  {
+  id: 'uk-first-time-buyer-deposit-scheme-2026',
+  title: 'Low-Deposit Lending Is Returning to the UK Housing Market',
+  excerpt: 'Lloyds Banking Group’s £5,000 deposit mortgage signals the cautious return of high loan-to-value lending as affordability pressures reshape the UK housing market.',
+  author: getAuthor('market'),
+  image: '/research-images/uk-first-time-buyers-2026.webp',
+  category: 'Residential Intelligence',
+  date: '2026-05-18',
+  readTime: '7 min read',
+  featured: false
+},
+  {
     id: 'uk-property-investment-outlook-2026-capital-allocation-matrix',
-      title: 'UK Property Investment Outlook 2026: Where Patient Capital Moves Next',
-      excerpt: 'UK property investment outlook 2026: the Murivest Capital Allocation Matrix assesses income resilience, entry discipline and exit liquidity across London, commuter and regional markets.',
-      author: getAuthor('research'),
-      category: 'Research',
-      image: '/p3/uk-outlook-2026.webp',
-      date: '2026-10-14',
-      readTime: '16 min read',
-      featured: true,
+    title: 'UK Property Investment Outlook 2026: Where Patient Capital Moves Next',
+    excerpt: 'UK property investment outlook 2026: the Murivest Capital Allocation Matrix assesses income resilience, entry discipline and exit liquidity across London, commuter and regional markets.',
+    author: getAuthor('research'),
+    category: 'Research',
+    image: '/p3/uk-outlook-2026.webp',
+    date: '2026-10-14',
+    readTime: '16 min read',
+    featured: true,
   },
   {
     id: 'buy-property-uk-overseas-buyers-seven-gate-acquisition-test',

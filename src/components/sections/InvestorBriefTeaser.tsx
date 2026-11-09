@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Lock, ArrowRight } from 'lucide-react';
 
+const EDITION = 'Q2 2025 Edition';
+
 export default function InvestorBriefTeaser() {
   return (
     <section className="bg-[#F8F7F4] border-b border-[#E5E2DC]">
@@ -19,7 +21,6 @@ export default function InvestorBriefTeaser() {
                 width={90}
                 height={120}
                 className="w-full h-auto"
-                crossOrigin="anonymous"
               />
             </div>
 
@@ -36,7 +37,7 @@ export default function InvestorBriefTeaser() {
               </h2>
 
               <p className="text-[13px] text-[#5A5A5A] leading-relaxed font-light">
-                Institutional-grade overview of Nairobi commercial real estate opportunities,
+                Institutional overview of Nairobi commercial real estate opportunities,
                 valuations, and capital positioning.
               </p>
 
@@ -55,7 +56,7 @@ export default function InvestorBriefTeaser() {
               <ArrowRight className="h-4 w-4" />
             </Link>
             <p className="text-[10px] tracking-[0.15em] uppercase text-[#5A5A5A]/60">
-              Q2 2025 Edition
+              {EDITION}
             </p>
           </div>
         </div>
@@ -70,7 +71,6 @@ export default function InvestorBriefTeaser() {
                 width={60}
                 height={80}
                 className="w-full h-auto"
-                crossOrigin="anonymous"
               />
             </div>
 
@@ -88,11 +88,11 @@ export default function InvestorBriefTeaser() {
           </div>
 
           <p className="text-[12px] text-[#5A5A5A] leading-relaxed font-light mb-4">
-            Institutional overview of Nairobi commercial real estate opportunities and market positioning.
+            Institutional overview of Nairobi commercial real estate opportunities.
           </p>
 
           <Link
-            href="/portal"
+            href="https://portal.murivest.com"
             className="w-full inline-flex items-center justify-center gap-2 bg-[#0B3D2E] text-[#F8F7F4] py-3 text-[11px] tracking-[0.2em] uppercase font-medium"
           >
             Investor Access
@@ -100,7 +100,7 @@ export default function InvestorBriefTeaser() {
           </Link>
 
           <p className="text-center mt-3 text-[9px] tracking-[0.18em] uppercase text-[#5A5A5A]/50">
-            Q2 2025 Edition · Verified Investors Only
+            {EDITION} · Verified Investors Only
           </p>
         </div>
       </div>

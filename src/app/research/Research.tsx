@@ -45,6 +45,40 @@ const research: ResearchEntry[] = [
     image: '/research-images/africa-report-2026-cover.webp',
   },
 
+  {
+    id: 'why-institutional-capital-rotating-kenya-real-estate-2026',
+    title: 'Why Institutional Capital Is Rotating Into Kenyan Real Estate',
+    excerpt: 'Kenya’s listed REIT market, structural housing demand, and a widening yield gap are pulling pension funds, family offices, and cross-border allocators into Nairobi and its satellite cities.',
+    author: getAuthor('market'),
+    image: '/research-images/kenya-institutional-capital-rotation-2026.webp',
+    category: 'Kenyan Capital Markets',
+    date: '2026-06-10',
+    readTime: '11 min read',
+    featured: false
+  },
+  {
+    id: 'kenya-industrial-logistics-institutional-yield-2026',
+    title: 'Kenya Industrial Logistics: The Institutional Yield Frontier',
+    excerpt: 'East Africa’s first USD-denominated industrial REIT has given institutional allocators a benchmark for logistics real estate in Nairobi—and the supply-demand gap remains wide.',
+    author: getAuthor('market'),
+    image: '/research-images/kenya-industrial-logistics-institutional-2026.webp',
+    category: 'Industrial & Logistics',
+    date: '2026-06-17',
+    readTime: '11 min read',
+    featured: false
+  },
+  {
+    id: 'kenya-build-to-rent-institutional-housing-thesis-2026',
+    title: 'Build-to-Rent Kenya: The Institutional Housing Thesis',
+    excerpt: 'Kenya’s first build-to-rent development REIT has given institutional allocators a governance-wrapped route into the country’s structural rental housing shortage—without direct development risk.',
+    author: getAuthor('market'),
+    image: '/research-images/kenya-build-to-rent-institutional-2026.webp',
+    category: 'Residential & Build-to-Rent',
+    date: '2026-06-24',
+    readTime: '11 min read',
+    featured: false
+  }
+
 ];
 
 // ─────────────────────────────────────────────────────────────

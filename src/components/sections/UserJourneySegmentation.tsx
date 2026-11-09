@@ -12,7 +12,7 @@ const principles = [
     statLabel: 'HNWI wealth in primary homes',
     statDelta: '↓ from 50–60% (2024)',
     body:
-      "Capital is rotating away from lifestyle property into income-producing commercial assets. Knight Frank confirms a structural reallocation: primary residence exposure collapsed in a single year. The implication is simple — capital that does not enter structured income assets is left exposed to informal mid-market risk and construction-sector stress.",
+      'Capital is rotating from lifestyle property into income-producing commercial assets. Capital outside structured income assets stays exposed to informal mid-market risk and construction-sector stress.',
     source: 'Knight Frank Wealth Report 2025',
   },
   {
@@ -23,7 +23,7 @@ const principles = [
     statLabel: 'Prime logistics yield — Nairobi',
     statDelta: '83% Africa warehouse occupancy',
     body:
-      "Industrial real estate is the strongest structural signal in the market. Occupancy across Africa reached a decade high, driven by e-commerce and agro-logistics demand. In Nairobi, Grade A logistics assets continue to show yield premium and supply constraints relative to demand.",
+      'Industrial is the market’s strongest structural signal. African occupancy is at a decade high on e-commerce and agro-logistics demand, and Nairobi Grade A logistics shows a yield premium with constrained supply.',
     source: 'Knight Frank Africa Industrial H1 2025',
   },
   {
@@ -34,7 +34,7 @@ const principles = [
     statLabel: 'Vacancy stress test buffer',
     statDelta: 'Murivest underwriting standard',
     body:
-      "Every acquisition is stress-tested beyond current market conditions, including vacancy expansion and rent compression scenarios. Capital preservation is not assumed — it is engineered. This discipline reflects broader private market reality where operational resilience now drives returns more than leverage.",
+      'Every acquisition is stress-tested for vacancy expansion and rent compression. Capital preservation is engineered, not assumed. Operational resilience now drives returns more than leverage.',
     source: 'Murivest Underwriting Framework',
   },
   {
@@ -45,7 +45,7 @@ const principles = [
     statLabel: 'US CRE loans underwater (2025)',
     statDelta: '~$500B exposed globally',
     body:
-      "Global commercial real estate stress highlights the cost of aggressive leverage cycles. Underwater loan exposure in major markets reinforces a structural shift: debt must be sized to income resilience under stress, not optimistic pricing cycles.",
+      'Global commercial real estate stress shows the cost of aggressive leverage. Debt must be sized to income resilience under stress, not optimistic pricing.',
     source: 'MSCI Real Estate in Focus 2025',
   },
   {
@@ -56,7 +56,7 @@ const principles = [
     statLabel: 'Global population (UHNWIs)',
     statDelta: 'Control > 1/3 global private wealth',
     body:
-      "UHNW capital behaves differently — it requires access, structuring, and governance. Institutional managers increasingly compete on access to private capital networks, not just deal flow. Murivest operates within that framework: off-market access, structured entry, defined exit.",
+      'UHNW capital requires access, structuring, and governance. Murivest operates within that framework: off-market access, structured entry, defined exit.',
     source: 'Knight Frank / McKinsey Wealth Data',
   },
 ]
@@ -84,8 +84,8 @@ export default function InvestmentFramework() {
 
           <div className="lg:col-span-7">
             <p className="text-[14px] sm:text-[15px] leading-[1.8] text-[#5A5A5A] font-light border-l border-[#8B7355] pl-5">
-              Capital in this market is rotating faster than at any point in the last decade.
-              The question is not whether it moves — but whether it moves into structure or exposure.
+              Capital is rotating faster than at any point in the last decade. The question is
+              whether it moves into structure or exposure.
             </p>
           </div>
 
@@ -134,14 +134,12 @@ export default function InvestmentFramework() {
             {/* DESKTOP GRID */}
             <div className="hidden lg:grid grid-cols-12">
 
-              {/* LEFT STRIP */}
               <div className="col-span-1 bg-[#F8F7F4] flex items-center justify-center border-r border-[#E5E2DC]">
                 <span className="text-[10px] tracking-[0.2em] text-[#8B7355]">
                   {p.number}
                 </span>
               </div>
 
-              {/* STAT */}
               <div className="col-span-3 p-8 border-r border-[#E5E2DC]">
                 <p className="text-[10px] uppercase tracking-[0.2em] text-[#8B7355] mb-6">
                   {p.tag}
@@ -160,7 +158,6 @@ export default function InvestmentFramework() {
                 </p>
               </div>
 
-              {/* BODY */}
               <div className="col-span-8 p-8">
                 <h3 className="font-serif text-xl mb-4">
                   {p.headline}
@@ -187,9 +184,8 @@ export default function InvestmentFramework() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-8 lg:px-16 py-16 flex flex-col lg:flex-row justify-between gap-8">
 
           <p className="text-[14px] text-[#5A5A5A] leading-relaxed max-w-xl">
-            This framework is applied only to mandated capital relationships.
-            Every allocation is reviewed against downside protection, exit clarity,
-            and structural resilience before execution.
+            Applied only to mandated capital relationships. Every allocation is reviewed for
+            downside protection, exit clarity, and structural resilience before execution.
           </p>
 
           <Link
@@ -204,4 +200,4 @@ export default function InvestmentFramework() {
 
     </section>
   );
-};
+}

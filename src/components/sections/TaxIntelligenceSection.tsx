@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Timer, ShieldAlert, FileCheck } from 'lucide-react';
 
@@ -11,7 +12,7 @@ const items = [
     statUnit: 'Year Hold Horizon',
     title: 'Exit Is Designed at Entry',
     body:
-      "Institutional capital globally now holds assets for 6–7 years on average. Murivest pre-defines exit timing, buyer profile, and disposal pathway at mandate inception so every lease and capital decision aligns with exit value creation.",
+      'Institutional capital now holds assets 6–7 years on average. Murivest defines exit timing, buyer profile, and disposal pathway at mandate inception.',
     footnote: 'McKinsey Global Private Markets Report 2026',
   },
   {
@@ -20,7 +21,7 @@ const items = [
     statUnit: 'of Land Fraud Cases in Kenya',
     title: 'Title Risk Is Structural',
     body:
-      "Land-related fraud remains the dominant form of financial loss in Kenya’s property market, with over 10,000 active investigations. Every mandate begins with forensic title verification, encumbrance checks, and regulatory compliance screening.",
+      'Land fraud is the dominant form of financial loss in Kenya’s property market, with over 10,000 active investigations. Every mandate begins with forensic title verification, encumbrance checks, and compliance screening.',
     footnote: 'EACC 2023 · Ministry of Lands Kenya 2024',
   },
   {
@@ -29,7 +30,7 @@ const items = [
     statUnit: 'Exit Structures',
     title: 'Liquidity Is Engineered',
     body:
-      "Exit is structured through institutional sale, recapitalisation, or sale-leaseback mechanisms depending on asset profile. Each route is designed for tax efficiency, compliance alignment, and capital mobility under IFRS standards.",
+      'Exit runs through institutional sale, recapitalisation, or sale-leaseback, depending on asset profile, designed for tax efficiency, compliance, and capital mobility under IFRS.',
     footnote: 'McKinsey GPM 2025 · IFRS 16 · KRA CGT Framework',
   },
 ];
@@ -73,10 +74,9 @@ const TaxIntelligenceSection = () => {
             className="lg:col-span-7"
           >
             <p className="text-[14px] md:text-[15px] leading-[1.8] text-[#5A5A5A] font-light border-l border-[#8B7355] pl-5 md:pl-6">
-              In Kenyan commercial real estate, losses rarely come from market cycles —
-              they come from structural failures: title defects, poor exit planning,
-              and regulatory exposure. Murivest structures the exit before acquisition,
-              ensuring every asset is engineered for controlled liquidity and capital protection.
+              In Kenyan commercial real estate, losses rarely come from market cycles. They come
+              from title defects, poor exit planning, and regulatory exposure. Murivest structures
+              the exit before acquisition.
             </p>
           </motion.div>
         </div>
@@ -94,14 +94,12 @@ const TaxIntelligenceSection = () => {
               className="bg-white md:bg-[#F8F7F4] p-6 md:p-10 lg:p-12 border border-[#E5E2DC] md:border-0"
             >
 
-              {/* Icon */}
               <div className="mb-5 md:mb-6">
                 <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-[#8B7355] flex items-center justify-center">
                   <item.icon className="h-5 w-5 md:h-6 md:w-6 text-[#8B7355]" strokeWidth={1.5} />
                 </div>
               </div>
 
-              {/* Stat */}
               <div className="mb-5 md:mb-6">
                 <p className="text-3xl md:text-5xl font-serif text-[#2C2C2C] leading-none">
                   {item.stat}
@@ -111,17 +109,14 @@ const TaxIntelligenceSection = () => {
                 </p>
               </div>
 
-              {/* Title */}
               <h3 className="text-lg font-serif text-[#2C2C2C] mb-3 md:mb-4">
                 {item.title}
               </h3>
 
-              {/* Body */}
               <p className="text-[13px] md:text-[14px] leading-[1.7] text-[#5A5A5A] font-light">
                 {item.body}
               </p>
 
-              {/* Footnote */}
               <div className="mt-6 md:mt-8 pt-5 border-t border-[#E5E2DC]">
                 <p className="text-[10px] tracking-[0.2em] uppercase text-[#8B7355]">
                   {item.footnote}
@@ -139,12 +134,12 @@ const TaxIntelligenceSection = () => {
             “Capital without structured exit design is exposure, not investment.”
           </p>
 
-          <a
+          <Link
             href="/kenya/exit-strategy-planning"
             className="inline-flex items-center gap-2 text-[11px] tracking-[0.25em] uppercase text-[#2C2C2C] border border-[#2C2C2C] px-6 py-3 hover:bg-[#0B3D2E] hover:text-[#F8F7F4] transition whitespace-nowrap"
           >
             Request Exit Brief
-          </a>
+          </Link>
 
         </div>
 

@@ -754,39 +754,7 @@ const research: ResearchEntry[] = [
       featured: false
     },
 
-    {
-      id: 'uk-bond-market-labour-rhetoric-housing-2026',
-      title: 'UK Bond Markets Are Repricing Political Risk',
-      excerpt: 'Rising gilt yields and renewed concerns around fiscal discipline are reshaping mortgage pricing, residential demand, and investor sentiment across the British housing market.',
-      author: getAuthor('market'),
-      image: '/research-images/uk-bond-market-housing-2026.webp',
-      category: 'Market Intelligence',
-      date: '2026-05-18',
-      readTime: '9 min read',
-      featured: true
-    },
-    {
-      id: 'uk-first-time-buyer-deposit-scheme-2026',
-      title: 'Low-Deposit Lending Is Returning to the UK Housing Market',
-      excerpt: 'Lloyds Banking Group’s £5,000 deposit mortgage signals the cautious return of high loan-to-value lending as affordability pressures reshape the UK housing market.',
-      author: getAuthor('market'),
-      image: '/research-images/uk-first-time-buyers-2026.webp',
-      category: 'Residential Intelligence',
-      date: '2026-05-18',
-      readTime: '7 min read',
-      featured: false
-    },
-    {
-      id: 'us-investors-rotating-into-uk-property-2026',
-      title: 'Why American Capital Is Rotating Into UK Real Estate',
-      excerpt: 'US investors are increasingly allocating capital into UK residential and commercial property as taxes, insurance costs, and market fragmentation reshape global investment strategy.',
-      author: getAuthor('market'),
-      image: '/research-images/us-investors-uk-property-2026.webp',
-      category: 'Global Capital Markets',
-      date: '2026-05-18',
-      readTime: '11 min read',
-      featured: true
-    },
+
     {
       id: 'global-capital-allocation-dubai-2026',
       title: 'Global Capital Allocation: Why Dubai’s Real Estate Market Remains Highly Resilient',
@@ -844,17 +812,7 @@ const research: ResearchEntry[] = [
       category: 'Private Wealth & Capital Strategy',
       featured: false
     },
-    {
-      id: 'inflation-property-industry-reaction-uk-2026',
-      title: 'UK Inflation Surprise Reshapes Property and Mortgage Pricing Expectations',
-      excerpt: 'The UK inflation rate unexpectedly fell to 2.8% in May 2026, easing pressure across mortgage markets and triggering renewed debate around interest rates, housing affordability, and institutional property allocation strategies.',
-      image: '/research-images/uk-inflation-property-reaction-2026.webp',
-      author: getAuthor('investment'),
-      date: '2026-05-20',
-      readTime: '6 min read',
-      category: 'Global Property & Capital Markets',
-      featured: false
-    },
+   
 
   {
     id: 'nairobi-grade-a-office-vacancy-yield-analysis-2026',

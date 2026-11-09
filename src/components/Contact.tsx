@@ -146,7 +146,7 @@ const Contact = () => {
                 <div>
                   <p className="text-[12px] tracking-[0.15em] uppercase text-[#5A5A5A] mb-2">Nairobi Office</p>
                   <p className="text-[14px] text-[#2C2C2C] font-light leading-relaxed">
-                    14th Floor, The Lofts<br />Riverside Drive, Westlands<br />Nairobi, Kenya
+                    1st Floor, Diamond Plaza<br />4th Avenue Parklands<br />Nairobi, Kenya
                   </p>
                 </div>
               </div>

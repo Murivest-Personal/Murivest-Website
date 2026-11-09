@@ -84,7 +84,7 @@ const COUNTRY_CONFIG: Record<string, {
 }> = {
   KE: {
     name: 'Kenya', currency: 'KES',
-    office: '14th Floor, The Lofts, Riverside Drive, Westlands, Nairobi',
+    office: '14th Floor, The Lofts, Riverside Drive, Parklands, Nairobi',
     phone: '+254 115 277 610',
     regionNote: 'our curated portfolio of prime Kenyan residential and commercial opportunities',
   },

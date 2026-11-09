@@ -22,16 +22,16 @@ interface ResearchEntry {
 
 const research: ResearchEntry[] = [
   {
-    id: 'global-commercial-real-estate-2026',
-    title: 'Global Commercial Real Estate Roars Back in 2026: $144 Billion in Fresh Capital Ready to Deploy',
-    excerpt: 'After years of hesitation, institutional investors are returning to commercial real estate with renewed conviction. Falling interest rates and structural shifts in occupier demand have sparked a $144 billion capital wave, reshaping the investment landscape across offices, logistics, and alternative assets.',
-    author: getAuthor('global-research'),
-    image: '/research-images/global-commercial-real-estate-2026.webp',
-    category: 'Global Commercial Real Estate',
-    date: '2026-08-11',
-    readTime: '12 min read',
-    featured: true,
-  },
+  id: 'us-investors-rotating-into-uk-property-2026',
+  title: 'Why American Capital Is Rotating Into UK Real Estate',
+  excerpt: 'US investors are increasingly allocating capital into UK residential and commercial property as taxes, insurance costs, and market fragmentation reshape global investment strategy.',
+  author: getAuthor('market'),
+  image: '/research-images/us-investors-uk-property-2026.webp',
+  category: 'Global Capital Markets',
+  date: '2026-05-18',
+  readTime: '11 min read',
+  featured: true
+},
 
 
 ];

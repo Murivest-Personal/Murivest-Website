@@ -9,32 +9,34 @@ const CEOInstitutionalProfile = () => {
   return (
     <section className="bg-[#FFFFFF] text-[#2C2C2C] border-t border-[#E5E2DC]">
 
-      <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-16 py-20 lg:py-32">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-16 py-20 lg:py-28">
 
         {/* ── HEADER LABEL ───────────────────────────── */}
-        <div className="mb-14">
+        <div className="mb-12 flex items-center gap-4">
+          <span className="h-px w-10 bg-[#C4B59D]" aria-hidden="true" />
           <p className="text-[11px] tracking-[0.35em] uppercase text-[#8B7355] font-medium">
             Executive Leadership
           </p>
         </div>
 
         {/* ── LAYOUT ─────────────────────────────────── */}
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
 
-          {/* ── IMAGE (mobile first full width feel) ── */}
+          {/* ── PORTRAIT (compact) ───────────────────── */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-4"
+            className="lg:col-span-3"
           >
-            <div className="relative aspect-[4/5] border border-[#E5E2DC] overflow-hidden">
+            <div className="relative w-full max-w-[200px] sm:max-w-[220px] lg:max-w-[240px] aspect-[4/5] border border-[#E5E2DC] overflow-hidden bg-[#F8F7F4]">
               <Image
-                src="/ceo.png"
+                src="/ceo.webp"
                 alt="Mark Muriithi - Chief Executive Officer"
                 fill
-                className="object-cover"
+                sizes="(min-width: 1024px) 240px, 220px"
+                className="object-cover object-top"
               />
             </div>
           </motion.div>
@@ -45,7 +47,7 @@ const CEOInstitutionalProfile = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="lg:col-span-8"
+            className="lg:col-span-9 max-w-[820px]"
           >
 
             {/* NAME */}
@@ -53,9 +55,25 @@ const CEOInstitutionalProfile = () => {
               Mark Muriithi
             </h2>
 
-            <p className="text-[12px] tracking-[0.2em] uppercase text-[#5A5A5A] mb-10">
+            <p className="text-[12px] tracking-[0.2em] uppercase text-[#5A5A5A] mb-8">
               Chief Executive Officer · Founder
             </p>
+
+            {/* ── KEY FACTS ──────────────────────────── */}
+            <dl className="grid sm:grid-cols-3 gap-6 border-t border-b border-[#E5E2DC] py-6 mb-10">
+              <div>
+                <dt className="text-[10px] tracking-[0.25em] uppercase text-[#8B7355] mb-1.5">Founded</dt>
+                <dd className="text-[13px] text-[#2C2C2C]">2025</dd>
+              </div>
+              <div>
+                <dt className="text-[10px] tracking-[0.25em] uppercase text-[#8B7355] mb-1.5">Mandate</dt>
+                <dd className="text-[13px] text-[#2C2C2C]">Institutional advisory &amp; off-market execution</dd>
+              </div>
+              <div>
+                <dt className="text-[10px] tracking-[0.25em] uppercase text-[#8B7355] mb-1.5">Market</dt>
+                <dd className="text-[13px] text-[#2C2C2C]">Global commercial real estate services</dd>
+              </div>
+            </dl>
 
             {/* ── CORE QUOTE ─────────────────────────── */}
             <blockquote className="border-l border-[#C4B59D] pl-6 italic text-[15px] sm:text-[16px] leading-[1.9] text-[#5A5A5A] mb-10">
@@ -64,12 +82,12 @@ const CEOInstitutionalProfile = () => {
               precedes structure. Structure precedes return.”
             </blockquote>
 
-            {/* ── BIO (tightened, less CV tone) ───────── */}
+            {/* ── BIO ─────────────────────────────────── */}
             <div className="space-y-6 text-[14px] leading-[1.9] text-[#5A5A5A] font-light">
 
               <p>
                 Mark Muriithi founded Murivest Group Ltd in 2025 to bridge institutional
-                capital and Kenya’s commercial real estate market through structured advisory,
+                capital and global commercial real estate markets through structured advisory,
                 disciplined underwriting, and off-market execution.
               </p>
 
@@ -91,7 +109,7 @@ const CEOInstitutionalProfile = () => {
 
             </div>
 
-            {/* ── CTA (subtle institutional action) ───── */}
+            {/* ── CTA ─────────────────────────────────── */}
             <div className="mt-12">
               <Link
                 href="/kenya/institutional-investors"

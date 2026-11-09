@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import InteractiveButton from "@/components/InteractiveButton";
 import { Cinzel, Jost } from 'next/font/google';
+import UkMarketOutlookSection from "@/components/sections/UKMarketOutlook";
 
 const cinzel = Cinzel({
   subsets: ['latin'],
@@ -405,34 +406,9 @@ export default function MurivestUKHomepage() {
         {/* ═════════════════════════════════════════════════════════
             3. RESEARCH & MARKET INTELLIGENCE STRIP
         ═════════════════════════════════════════════════════════ */}
-        <section className="m-ivory-bg border-b m-hairline">
-          <div className="max-w-[1280px] mx-auto px-8 py-14">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 items-start">
-              <div>
-                <span className="eyebrow">Latest UK CRE Intelligence</span>
-                <h3 className="font-serif text-[1.35rem] text-[#2C2C2C] mb-3 leading-snug">
-                  UK Commercial Real Estate Outlook 2026
-                </h3>
-                <Link href="/research/uk-cre-outlook-2026" className="link-hover font-sans text-xs font-semibold tracking-[0.15em] uppercase text-[#2C2C2C] inline-flex items-center gap-2">
-                  Read the Report <span className="text-base">→</span>
-                </Link>
-              </div>
-              <div className="border-l border-[#8B7355] pl-6">
-                <p className="font-sans text-[0.7rem] font-medium tracking-[0.15em] uppercase text-[#5A5A5A] mb-2">Markets Covered</p>
-                <p className="font-serif text-[1.05rem] text-[#2C2C2C] leading-snug">London · Birmingham · Manchester · Leeds · Edinburgh · Glasgow</p>
-              </div>
-              <div className="border-l border-[#8B7355] pl-6">
-                <p className="font-sans text-[0.7rem] font-medium tracking-[0.15em] uppercase text-[#5A5A5A] mb-2">Sectors</p>
-                <p className="font-serif text-[1.05rem] text-[#2C2C2C] leading-snug">Offices · Industrial · Logistics · Retail · Healthcare · Alternatives</p>
-              </div>
-              <div className="border-l border-[#8B7355] pl-6">
-                <p className="font-sans text-[0.7rem] font-medium tracking-[0.15em] uppercase text-[#5A5A5A] mb-2">Investor Focus</p>
-                <p className="font-serif text-[1.05rem] text-[#2C2C2C] leading-snug">Private · Institutional · Cross-Border</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
+        <>
+        <UKMarketeOutlookSection/>
+        </>
         {/* ═════════════════════════════════════════════════════════
             4. INVEST & ACQUIRE
         ═════════════════════════════════════════════════════════ */}

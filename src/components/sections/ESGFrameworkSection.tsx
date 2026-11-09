@@ -10,7 +10,7 @@ const esgPillars = [
     id: '01',
     title: 'Responsible Investment Integration',
     label: 'Environmental',
-    desc: 'Environmental, social, and governance considerations are embedded directly into underwriting rather than treated as post-investment reporting. Each mandate is screened through a risk-adjusted lens consistent with institutional capital expectations, including PRI-aligned frameworks where applicable.',
+    desc: 'ESG is embedded in underwriting, not treated as post-investment reporting. Each mandate is screened through a risk-adjusted lens, including PRI-aligned frameworks where applicable.',
     benchmark: 'PRI-informed underwriting lens',
     standard: 'UNPRI / ESG Risk Screen',
     icon: Leaf,
@@ -20,7 +20,7 @@ const esgPillars = [
     id: '02',
     title: 'Built Asset Sustainability Standards',
     label: 'Social',
-    desc: 'Asset selection prioritises measurable efficiency in energy use, water consumption, and embodied carbon. Where applicable, developments are assessed against IFC EDGE and LEED frameworks, with emphasis on climate resilience and long-term operating cost stability.',
+    desc: 'Asset selection prioritises measurable energy, water, and embodied-carbon efficiency. Developments are assessed against IFC EDGE and LEED where applicable, with emphasis on climate resilience and stable operating costs.',
     benchmark: 'EDGE / LEED benchmarked assets',
     standard: 'IFC EDGE · LEED Certification',
     icon: ShieldCheck,
@@ -30,7 +30,7 @@ const esgPillars = [
     id: '03',
     title: 'Institutional Governance & Reporting',
     label: 'Governance',
-    desc: 'Each mandate is structured with formal governance controls, legal compliance verification, and reporting frameworks aligned with institutional investor requirements. ESG and financial performance are tracked in parallel where required for fiduciary reporting obligations.',
+    desc: 'Each mandate carries formal governance controls, legal compliance verification, and reporting aligned with institutional requirements. ESG and financial performance are tracked in parallel where fiduciary reporting requires.',
     benchmark: 'GRI-aligned reporting structure',
     standard: 'GRI Standards · IFRS Disclosure',
     icon: LineChart,
@@ -77,12 +77,11 @@ const ESGFrameworkSection = () => {
             className="lg:col-span-7 lg:pt-10"
           >
             <p className="text-[14px] sm:text-[15px] leading-[1.9] text-[#5A5A5A] font-light border-l border-[#8B7355] pl-6 mb-6">
-              ESG at Murivest is not a reporting function — it is a capital protection filter.
-              It determines what is investable, what is bankable, and what is institutionally
-              acceptable before capital is deployed into East African real estate markets.
+              ESG at Murivest is a capital protection filter, not a reporting function. It
+              determines what is investable, bankable, and institutionally acceptable before
+              capital is deployed.
             </p>
 
-            {/* ESG overview metrics */}
             <div className="grid grid-cols-3 gap-4 pl-6 border-l border-transparent">
               {[
                 { label: 'ESG-Screened Mandates', value: '100%' },
@@ -111,32 +110,27 @@ const ESGFrameworkSection = () => {
             >
               <div className="p-8 sm:p-10 lg:p-12 flex flex-col flex-1">
 
-                {/* ID + Icon row */}
                 <div className="flex items-start justify-between mb-8">
                   <span className="text-[10px] tracking-[0.3em] uppercase text-[#8B7355]">
                     {item.id}
                   </span>
-                  <div className="w-11 h-11 rounded-full border border-[#8B7355] group-hover:border-[#8B7355] flex items-center justify-center transition-colors duration-500">
+                  <div className="w-11 h-11 rounded-full border border-[#8B7355] flex items-center justify-center transition-colors duration-500">
                     <item.icon className="h-4 w-4 text-[#8B7355]" strokeWidth={1.5} />
                   </div>
                 </div>
 
-                {/* Label */}
                 <p className="text-[9px] tracking-[0.3em] uppercase text-[#8B7355] mb-3">
                   {item.label}
                 </p>
 
-                {/* Title */}
                 <h3 className="text-lg sm:text-[19px] font-serif mb-5 leading-snug group-hover:text-[#8B7355] transition-colors duration-500">
                   {item.title}
                 </h3>
 
-                {/* Body */}
                 <p className="text-[13px] leading-[1.85] text-[#5A5A5A] font-light flex-1">
                   {item.desc}
                 </p>
 
-                {/* Benchmark block */}
                 <div className="mt-8 pt-6 border-t border-[#E5E2DC] space-y-2">
                   <div className="flex justify-between items-baseline">
                     <span className="text-[9px] uppercase tracking-[0.2em] text-[#A9A39A]">Benchmark</span>
@@ -148,7 +142,6 @@ const ESGFrameworkSection = () => {
                   </div>
                 </div>
 
-                {/* Hover CTA */}
                 <Link
                   href={item.href}
                   className="mt-6 inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.25em] text-[#8B7355] hover:text-[#6B5635] opacity-0 group-hover:opacity-100 transition-opacity duration-500"

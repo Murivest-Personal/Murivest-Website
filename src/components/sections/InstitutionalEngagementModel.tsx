@@ -12,7 +12,7 @@ const platforms = [
     title: 'Core Office Strategy',
     category: 'Income-Oriented Commercial Assets',
     thesis:
-      'Institutional-grade office exposure supported by multinational tenancy demand and constrained Grade A supply dynamics.',
+      'Institutional-grade office exposure backed by multinational tenancy demand and constrained Grade A supply.',
     metrics: [
       'Long-Duration Occupancy',
       'Tenant Covenant Focus',
@@ -21,13 +21,12 @@ const platforms = [
     image: '/nairobi.webp',
     href: '/platforms/core-office',
   },
-
   {
     id: '02',
     title: 'Urban Mixed-Use Platforms',
     category: 'Retail · Office Integration',
     thesis:
-      'Diversified mixed-use positioning across high-density urban corridors with defensive occupancy characteristics.',
+      'Diversified mixed-use positioning across high-density urban corridors with defensive occupancy.',
     metrics: [
       'Diversified Income',
       'Urban Density Exposure',
@@ -36,7 +35,6 @@ const platforms = [
     image: '/mall.avif',
     href: '/platforms/mixed-use',
   },
-
   {
     id: '03',
     title: 'Logistics & Industrial Corridors',
@@ -51,12 +49,12 @@ const platforms = [
     image: '/p/IMG-20250813-WA0001.jpg',
     href: '/platforms/logistics',
   },
-   {
+  {
     id: '04',
     title: 'Multi-Family Residential',
     category: 'Residential · Urban Living',
     thesis:
-      'Strategic positioning in multi-family residential assets to get consistent cashflows at the right location and refinance with increased rental rates and gain from capital appreciation.',
+      'Well-located multi-family assets for consistent cashflow, rental-led refinancing, and capital appreciation.',
     metrics: [
       'Urban Living Exposure',
       'Rental Demand Growth',
@@ -100,7 +98,7 @@ const InstitutionalPlatforms = () => {
 
             <p className="text-[13px] leading-[1.9] text-[#505050] max-w-[420px]">
               Murivest Group Ltd advises across selected commercial real estate sectors
-              aligned with urbanisation, infrastructure expansion, and institutional demand trends.
+              aligned with urbanisation, infrastructure expansion, and institutional demand.
             </p>
 
           </div>
@@ -197,7 +195,7 @@ const InstitutionalPlatforms = () => {
 
         </div>
 
-        {/* MOBILE — MINIMAL INSTITUTIONAL */}
+        {/* MOBILE */}
         <div className="md:hidden pt-10">
 
           <div className="divide-y divide-[#E1DDD4]">
@@ -212,7 +210,6 @@ const InstitutionalPlatforms = () => {
 
                 <div className="flex gap-4 items-start">
 
-                  {/* SMALL THUMB */}
                   <div className="relative w-[72px] h-[72px] overflow-hidden flex-shrink-0 bg-[#ECE8DF]">
 
                     <Image
@@ -224,7 +221,6 @@ const InstitutionalPlatforms = () => {
 
                   </div>
 
-                  {/* TEXT */}
                   <div className="flex-1 min-w-0">
 
                     <div className="flex items-start justify-between gap-4">

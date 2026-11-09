@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { DollarSign, Building, Wrench, CheckCircle } from 'lucide-react';
 
@@ -13,37 +14,37 @@ const pricingPlans = [
       'Property acquisition advisory',
       'Transaction structuring',
       'Due diligence coordination',
-      'Closing support'
+      'Closing support',
     ],
     pricing: '2.0-3.5% commission',
-    popular: false
+    popular: false,
   },
   {
     name: 'AssetCare+ Management',
     icon: Wrench,
-    description: 'Comprehensive smart building management services',
+    description: 'Smart building management services',
     features: [
       '24/7 facility monitoring',
       'Predictive maintenance',
       'Tenant coordination',
-      'Financial reporting'
+      'Financial reporting',
     ],
     pricing: 'From $2,500/month',
-    popular: true
+    popular: true,
   },
   {
     name: 'Institutional Advisory',
     icon: DollarSign,
-    description: 'Full-service investment advisory for large mandates',
+    description: 'Full-service advisory for large mandates',
     features: [
       'Portfolio strategy',
       'Market intelligence',
       'Tax optimization',
-      'Performance reporting'
+      'Performance reporting',
     ],
     pricing: 'Custom pricing',
-    popular: false
-  }
+    popular: false,
+  },
 ];
 
 const PricingSection = () => {
@@ -64,7 +65,7 @@ const PricingSection = () => {
               <span className="block text-amber-200/90 font-serif italic">Clear Costs</span>
             </h1>
             <p className="text-lg text-slate-400 mb-8 leading-relaxed font-light">
-              Transparent pricing for CRE brokerage and AssetCare+ services. No surprises, no hidden fees - just clear, competitive costs for premium commercial real estate services.
+              Clear, competitive costs for CRE brokerage and AssetCare+ services. No surprises.
             </p>
           </div>
         </div>
@@ -114,13 +115,16 @@ const PricingSection = () => {
                   ))}
                 </ul>
 
-                <button className={`w-full py-3 px-6 font-bold uppercase tracking-widest transition-all ${
-                  plan.popular
-                    ? 'bg-amber-500 text-black hover:bg-amber-400'
-                    : 'border border-amber-500/60 text-amber-300 hover:bg-amber-500 hover:text-black'
-                }`}>
+                <Link
+                  href="/contact"
+                  className={`block text-center w-full py-3 px-6 font-bold uppercase tracking-widest transition-all ${
+                    plan.popular
+                      ? 'bg-amber-500 text-black hover:bg-amber-400'
+                      : 'border border-amber-500/60 text-amber-300 hover:bg-amber-500 hover:text-black'
+                  }`}
+                >
                   Get Started
-                </button>
+                </Link>
               </motion.div>
             ))}
           </div>
@@ -134,17 +138,17 @@ const PricingSection = () => {
             Need Custom Pricing?
           </h2>
           <p className="text-slate-400 text-xl mb-8 leading-relaxed font-light">
-            For institutional mandates, large portfolios, or specialized services, contact our team for customized pricing structures.
+            For institutional mandates, large portfolios, or specialised services, we build custom pricing structures.
           </p>
 
           <div className="bg-white/[0.02] border border-white/10 rounded-lg p-8">
             <h3 className="text-xl font-serif mb-4">Institutional Partnerships</h3>
             <p className="text-slate-400 mb-6 font-light">
-              Volume discounts available for institutional clients with multiple properties or ongoing management needs.
+              Volume discounts for clients with multiple properties or ongoing management needs.
             </p>
-            <div className="text-amber-400 font-serif italic">
+            <Link href="/contact" className="text-amber-400 font-serif italic hover:text-amber-300 transition-colors">
               Contact us for enterprise pricing
-            </div>
+            </Link>
           </div>
         </div>
       </section>
