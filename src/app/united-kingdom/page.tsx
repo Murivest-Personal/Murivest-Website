@@ -406,9 +406,8 @@ export default function MurivestUKHomepage() {
         {/* ═════════════════════════════════════════════════════════
             3. RESEARCH & MARKET INTELLIGENCE STRIP
         ═════════════════════════════════════════════════════════ */}
-        <>
-        <UKMarketeOutlookSection/>
-        </>
+        <UkMarketOutlookSection />
+        
         {/* ═════════════════════════════════════════════════════════
             4. INVEST & ACQUIRE
         ═════════════════════════════════════════════════════════ */}
